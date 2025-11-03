@@ -24,7 +24,7 @@ function TeamMemberPage() {
   // Restore scroll position when going back
   const handleBackClick = () => {
     const scrollPosition = sessionStorage.getItem('scrollPosition');
-    navigate('/#/');
+    navigate('/');
     if (scrollPosition) {
       setTimeout(() => {
         window.scrollTo(0, parseInt(scrollPosition, 10));
@@ -45,7 +45,7 @@ function TeamMemberPage() {
           <div className="text-center">
             <h1 className="text-4xl font-bold mb-4">{t('team.notFound')}</h1>
             <Link 
-              to="/#/" 
+              to="/" 
               className="text-bolf-neon-blue hover:text-bolf-orange transition-colors"
             >
               {t('team.backToHome')}

@@ -112,6 +112,8 @@ function Header() {
               src="/assets/icons/logo_cropped_by_gunduzdev/logobeyazpng_Çalışma Yüzeyi 1c.png" 
               alt="BOLF Games Logo"
               className="h-10 md:h-12 w-auto"
+              loading="eager"
+              decoding="async"
               onError={(e) => {
                 (e.target as HTMLImageElement).src = '/assets/icons/logo_transparant/logobznpng_Çalışma Yüzeyi 1.png';
               }}

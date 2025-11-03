@@ -98,6 +98,8 @@ function HeroSection() {
               src="/assets/icons/logo_cropped_by_gunduzdev/fulllogobeyazpng_Çalışma Yüzeyi 1.png" 
               alt="BOLF Games"
               className="h-32 md:h-48 lg:h-64 w-auto mx-auto"
+              loading="eager"
+              decoding="async"
               onError={(e) => {
                 (e.target as HTMLImageElement).src = '/assets/icons/logo_name_transparent/fulllogobznpng_Çalışma Yüzeyi 1.png';
               }}

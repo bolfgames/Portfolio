@@ -10,9 +10,19 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  base: './',
+  // GitHub Pages için base path: /Portolio/
+  base: process.env.NODE_ENV === 'production' ? '/Portolio/' : '/',
   build: {
     outDir: 'dist',
+    assetsDir: 'assets',
+    // Production'da asset path'lerini optimize et
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name]-[hash][extname]',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
+      },
+    },
   },
 })
 
