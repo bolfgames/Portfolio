@@ -125,6 +125,8 @@ export function InteractionProjectCard({
                 alt={project.name}
                 className="w-full h-full object-cover"
                 style={{ transform: 'translateZ(20px)' }}
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 flex items-center justify-center bg-bolf-black/40 hover:bg-bolf-black/20 transition-colors">
                 <button
@@ -157,6 +159,8 @@ export function InteractionProjectCard({
               alt={project.name}
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
               style={{ transform: 'translateZ(20px)' }}
+              loading="lazy"
+              decoding="async"
               onError={(e) => {
                 (e.target as HTMLImageElement).src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23000" width="400" height="300"/%3E%3Ctext fill="%23fff" x="50%25" y="50%25" text-anchor="middle" dy=".3em" font-size="24"%3EProject Image%3C/text%3E%3C/svg%3E';
               }}
@@ -330,6 +334,8 @@ export function InteractionTeamMemberCard({
             alt={member.name}
             className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
             style={{ transform: 'translateZ(20px)' }}
+            loading="lazy"
+            decoding="async"
             onError={(e) => {
               (e.target as HTMLImageElement).src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="300" height="300"%3E%3Crect fill="%23000" width="300" height="300"/%3E%3Ccircle cx="150" cy="120" r="40" fill="%2300BFFF"/%3E%3Cpath fill="%23000" d="M150 180 L110 240 L190 240 Z"/%3E%3C/svg%3E';
             }}
