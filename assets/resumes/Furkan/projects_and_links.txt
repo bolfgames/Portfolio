@@ -1,0 +1,32 @@
+PROJECTS AND LINKS FROM RESUME
+==================================================
+
+KNOWN LINKS:
+- GitHub: github.com/dgdfurkan
+- LinkedIn: linkedin.com/in/furkangunduz60
+- Email: furkangunduz.dev@gmail.com
+- Phone: +90 537 222 8360
+
+PROJECTS MENTIONED:
+- the Birdie (Published on Google Play Store)
+- Bus Jam (Rollic)
+- Bomberman (Local Multiplayer)
+- Various freelance touch table games
+- Multiple Unity projects (2021-2025)
+
+EXTRACTED FROM PDF:
+Project: ParkingJam3D Clone
+Project: Basic Blocks
+Project: Bomberman
+Project: Crypto Ball
+Project: Crypto Jumper
+Project: Stack Diamonds
+Project: Math Game
+Project: inspir ed by Bomberman.
+GitHub: github.com/dgdfurk an
+Project: Bomberman-style game with boosters .
+Project: Buildopolis
+Project: Bus Jam, collabor ating closely with
+Project: Bus Jam
+Project: MatchTile
+Project: ISH - Mad Libs

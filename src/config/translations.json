@@ -54,6 +54,25 @@
         "level-designer": "SEVİYE TASARIMCISI"
       }
     },
+    "portfolio": {
+      "contact": "İletişim",
+      "education": "Eğitim",
+      "experience": "Deneyim",
+      "skills": "Teknik Yetenekler",
+      "projects": "Portföy Projeleri",
+      "company": "Şirket",
+      "position": "Pozisyon",
+      "duration": "Süre",
+      "clickToPause": "Duraklatmak için tıklayın",
+      "viewLink": "Bağlantıyı Görüntüle",
+      "features": "Özellikler",
+      "projectsByYear": "Yıllara Göre Projeler",
+      "degree": "Derece",
+      "university": "Üniversite",
+      "faculty": "Fakülte",
+      "location": "Konum",
+      "period": "Dönem"
+    },
     "footer": {
       "contact": "İletişim",
       "socialMedia": "Sosyal Medya",
@@ -187,6 +206,25 @@
         "designer": "DESIGNER",
         "level-designer": "LEVEL DESIGNER"
       }
+    },
+    "portfolio": {
+      "contact": "Contact",
+      "education": "Education",
+      "experience": "Experience",
+      "skills": "Technical Skills",
+      "projects": "Portfolio Projects",
+      "company": "Company",
+      "position": "Position",
+      "duration": "Duration",
+      "clickToPause": "Click to pause",
+      "viewLink": "View Link",
+      "features": "Features",
+      "projectsByYear": "Projects by Year",
+      "degree": "Degree",
+      "university": "University",
+      "faculty": "Faculty",
+      "location": "Location",
+      "period": "Period"
     },
     "footer": {
       "contact": "Contact",
@@ -322,6 +360,25 @@
         "level-designer": "LEVEL DESIGNER"
       }
     },
+    "portfolio": {
+      "contact": "Kontakt",
+      "education": "Ausbildung",
+      "experience": "Erfahrung",
+      "skills": "Technische Fähigkeiten",
+      "projects": "Portfolio-Projekte",
+      "company": "Unternehmen",
+      "position": "Position",
+      "duration": "Dauer",
+      "clickToPause": "Zum Pausieren klicken",
+      "viewLink": "Link anzeigen",
+      "features": "Funktionen",
+      "projectsByYear": "Projekte nach Jahr",
+      "degree": "Abschluss",
+      "university": "Universität",
+      "faculty": "Fakultät",
+      "location": "Standort",
+      "period": "Zeitraum"
+    },
     "footer": {
       "contact": "Kontakt",
       "socialMedia": "Soziale Medien",
@@ -455,6 +512,25 @@
         "designer": "DESIGNER",
         "level-designer": "CONCEPTEUR DE NIVEAUX"
       }
+    },
+    "portfolio": {
+      "contact": "Contact",
+      "education": "Éducation",
+      "experience": "Expérience",
+      "skills": "Compétences Techniques",
+      "projects": "Projets de Portfolio",
+      "company": "Entreprise",
+      "position": "Poste",
+      "duration": "Durée",
+      "clickToPause": "Cliquer pour mettre en pause",
+      "viewLink": "Voir le Lien",
+      "features": "Caractéristiques",
+      "projectsByYear": "Projets par Année",
+      "degree": "Diplôme",
+      "university": "Université",
+      "faculty": "Faculté",
+      "location": "Localisation",
+      "period": "Période"
     },
     "footer": {
       "contact": "Contact",
@@ -590,6 +666,25 @@
         "level-designer": "DISЕÑADOR DE NIVELES"
       }
     },
+    "portfolio": {
+      "contact": "Contacto",
+      "education": "Educación",
+      "experience": "Experiencia",
+      "skills": "Habilidades Técnicas",
+      "projects": "Proyectos de Portfolio",
+      "company": "Empresa",
+      "position": "Posición",
+      "duration": "Duración",
+      "clickToPause": "Clic para pausar",
+      "viewLink": "Ver Enlace",
+      "features": "Características",
+      "projectsByYear": "Proyectos por Año",
+      "degree": "Título",
+      "university": "Universidad",
+      "faculty": "Facultad",
+      "location": "Ubicación",
+      "period": "Período"
+    },
     "footer": {
       "contact": "Contacto",
       "socialMedia": "Redes Sociales",
@@ -724,6 +819,25 @@
         "level-designer": "レベルデザイナー"
       }
     },
+    "portfolio": {
+      "contact": "連絡先",
+      "education": "教育",
+      "experience": "経験",
+      "skills": "技術スキル",
+      "projects": "ポートフォリオプロジェクト",
+      "company": "会社",
+      "position": "役職",
+      "duration": "期間",
+      "clickToPause": "一時停止するにはクリック",
+      "viewLink": "リンクを表示",
+      "features": "機能",
+      "projectsByYear": "年別プロジェクト",
+      "degree": "学位",
+      "university": "大学",
+      "faculty": "学部",
+      "location": "場所",
+      "period": "期間"
+    },
     "footer": {
       "contact": "お問い合わせ",
       "socialMedia": "ソーシャルメディア",
@@ -857,6 +971,25 @@
         "designer": "设计师",
         "level-designer": "关卡设计师"
       }
+    },
+    "portfolio": {
+      "contact": "联系方式",
+      "education": "教育",
+      "experience": "经验",
+      "skills": "技术技能",
+      "projects": "作品集项目",
+      "company": "公司",
+      "position": "职位",
+      "duration": "持续时间",
+      "clickToPause": "点击暂停",
+      "viewLink": "查看链接",
+      "features": "特性",
+      "projectsByYear": "按年份分类的项目",
+      "degree": "学位",
+      "university": "大学",
+      "faculty": "学院",
+      "location": "地点",
+      "period": "期间"
     },
     "footer": {
       "contact": "联系方式",

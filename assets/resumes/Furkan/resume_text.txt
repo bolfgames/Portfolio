@@ -1,0 +1,334 @@
+=== PAGE 1 ===
+FURKAN 
+GÜNDÜZ 
+Unity Game De v eloper 
+Or ganized and adaptable team play er, 
+skilled at handling multiple pr ojects 
+and r esponsibilities. 
++90 537 222 8360 
+Ank ar a, Türkiy e 
+furk angunduz.de v@gmail.com 
+link edin.com/in/furk angunduz60 EXPERIENCE CONT A CT 
+Sept 202 4 – 
+Jan 2025 BOLF Games 
+• De v eloped and published “ the Bir die ” 
+on Google Play Stor e , a le v el-based 
+ar cade game inspir ed by Flapp y Bir d. 
+• Implemented in-game boosters  (e.g., 
+shield f or in vincibility, pipe gap 
+e xtender, continuous run boosters) with 
+pur chase and usage systems. 
+• Designed and integr ated char acter 
+customization f eatur es , including 
+unlock able skins and outﬁts f or the bir d. 
+• Built a leaderboar d system  with 
+online play er visibility, incr easing 
+competition and engagement. 
+• Optimized physics-based mechanics 
+f or smooth and r esponsiv e gameplay 
+acr oss de vices. Unity Game 
+De v eloper 
+github.com/dgdfurk an 
+B A CHEL OR OF 
+DIGIT AL GAME DESIGN 
+F aculty of Communication 
+İstanbul Bilgi Univ ersity 
+2019-202 4 
+Istanbul, Türkiy e EDUCA TION 
+• Unity Engine 
+• C# 
+• Git - GitHub 
+• Sour cetr ee 
+• Jetbr ains Rider 
+EXPERIENCE 
+Oct 202 4 – 
+Jan 2025 Fr eelance 
+• De v eloped digital multiplay er 
+games  f or inter activ e touch tables, 
+including Air Hock ey, Ludo, a casual 
+f ootball game with po w er-ups, and a 
+Bomberman-style game with boosters . 
+• Designed and implemented local 
+multiplay er systems  with intuitiv e 
+touch contr ols. 
+• Optimized perf ormance and 
+gameplay logic f or smooth and 
+engaging tabletop-style digital 
+games . 
+• Integr ated po w er-up mechanics, 
+sound eﬀects, visual eﬀects, and 
+haptic f eedback  to enhance play er 
+e xperience. Unity Game 
+De v eloper 
+
+
+=== PAGE 2 ===
+FURKAN 
+GÜNDÜZ 
+Unity Game De v eloper 
+Or ganized and adaptable team play er, 
+skilled at handling multiple pr ojects 
+and r esponsibilities. 
++90 537 222 8360 
+Ank ar a, Türkiy e 
+furk angunduz.de v@gmail.com 
+link edin.com/in/furk angunduz60 CONT A CT 
+2022 - 2023 RA TIC 
+• De v eloped 2D and 3D games  in 
+Unity using C#, implementing div erse 
+mechanics and gameplay systems. 
+• Built and maintained back end 
+systems  f or play er data, integr ated 
+monetization with A dMob & AppLo vin, 
+and cr eated leaderboar ds f or 
+competition. 
+• Designed multiplay er 2D  games 
+using Photon with smooth netw orking 
+e xperiences. 
+• Utilized  Cinemachine  f or camer a 
+contr ol, DO T w een f or animations, and 
+ScriptableObjects to build modular, 
+scalable ar chitectur es. 
+• Applied best pr actices in game 
+optimization  and clean code 
+principles . Unity Game 
+De v eloper 
+github.com/dgdfurk an 
+B A CHEL OR OF 
+DIGIT AL GAME DESIGN 
+F aculty of Communication 
+İstanbul Bilgi Univ ersity 
+2019-202 4 
+Istanbul, Türkiy e EDUCA TION 
+• Unity Engine 
+• C# 
+• Git - GitHub 
+• Sour cetr ee 
+• Jetbr ains Rider 
+EXPERIENCE 
+EXPERIENCE July - Sept. 
+202 4 R ollic 
+• Contributed to the de v elopment of 
+Bus Jam, collabor ating closely with 
+senior de v elopers and designers. 
+• Implemented shine eﬀects , 
+ColorBlind mode,  and customized 
+UI/animation systems  to impr o v e 
+accessibility and play er e xperience. 
+• Integr ated back end-contr olled 
+f eatur es  to allo w liv e updates without 
+r equiring ne w builds. 
+• Conducted A/B testing  to optimize 
+gameplay mechanics and boost user 
+engagement. 
+• Gained hands-on e xperience in 
+mobile game pr oduction pipelines  
+and team w ork in a pr of essional 
+en vir onment. Unity Game 
+De v eloper 
+
+
+=== PAGE 3 ===
+FURKAN 
+GÜNDÜZ 
+Unity Game De v eloper 
+POR TFOLIO 
+2024 - 2025 
+the Bir die 
+ Bomberman 
+ Bus Jam 
+• Le v el-based ar cade game 
+inspir ed by Flapp y Bir d. 
+• Implemented boosters, 
+char acter skins, and a shop 
+system. 
+• Integr ated leaderboar d and 
+optimized physics-based 
+gameplay. • Local multiplay er game 
+inspir ed by Bomberman. 
+• Designed booster and 
+po w er-up mechanics to enhance 
+gameplay. 
+• Implemented smooth contr ols 
+and r esponsiv e visual/sound 
+eﬀects. • Contributed to f eatur e 
+de v elopment and r eﬁnement 
+with senior de v elopers. 
+• Implemented shine eﬀects, 
+ColorBlind mode, and custom 
+animations/UI. 
+• Used back end-contr olled 
+systems and A/B testing to 
+impr o v e engagement. 
+
+=== PAGE 4 ===
+FURKAN 
+GÜNDÜZ 
+Unity Game De v eloper 
+2023 - 2024 
+ParkingJam3D Clone 
+ BattleWheelsMayhemAr ena 
+ MatchTile 
+• DO T w een f or eﬀects (e x. 
+cr ash and camer a shaking) 
+• AudioManager 
+• PathF ollo w er system 
+integr ated 
+• Used UnityA ction as Signals 
+• T ouch Input system added • Shop System 
+• Object Pooling 
+• Singleton 
+• Cinemachine f or camer a 
+• Scriptable Object (V ehicle, 
+W eapon, Le v el Datas) • Object Pooling 
+• Boosters and Shop system 
+• Playf ab integr ated f or 
+leaderboar d 
+• V ibr ation integr ated 
+• Saf e Ar eas Handler f or 
+iPhone notch issue 
+• Scriptable Object f or le v es POR TFOLIO (CONTINUED) 
+
+=== PAGE 5 ===
+FURKAN 
+GÜNDÜZ 
+Unity Game De v eloper 
+POR TFOLIO (CONTINUED) 
+2023 - 2024 
+Buildopolis 
+Victr o yDawn 
+• Cinemachine f or camer a 
+• W orldSpace Can v as f or 
+tutorial 
+• Used UnityA ction as Signals 
+• Interf ace (IDamageable) 
+• AudioManager 
+• Grid system 
+• Postpr ocess 
+Claw of V engeance 
+
+=== PAGE 6 ===
+FURKAN 
+GÜNDÜZ 
+Unity Game De v eloper 
+POR TFOLIO (CONTINUED) 
+2023 - 2024 
+R e v olt of the Exiles 
+Stack Diamonds 
+ISH - Mad Libs 
+• Multiplay er mode with 
+Photon 
+• Cr eate r oom, join and edit 
+game settings 
+• F ir ebase to sav e datas 
+• Inﬁnity looping back gr ound 
+UI 
+
+=== PAGE 7 ===
+FURKAN 
+GÜNDÜZ 
+Unity Game De v eloper 
+POR TFOLIO (CONTINUED) 
+2022 - 2023 
+Ratic 
+Crypto Jumper 
+ Slopp y Jelly 
+Space Blizzar d 
+ Crypto Ball 
+Multi Mer ge 
+
+=== PAGE 8 ===
+FURKAN 
+GÜNDÜZ 
+Unity Game De v eloper 
+POR TFOLIO (CONTINUED) 
+2022 - 2023 
+Laser Def ender 
+• DO T w een f or eﬀects (e x. 
+cr ash and camer a shaking) 
+• AudioManager 
+• PathF ollo w er system 
+integr ated 
+• Used UnityA ction as Signals 
+• T ouch Input system added 
+Sav e The Villagers 
+Ar gon Assoult Ships 
+
+=== PAGE 9 ===
+FURKAN 
+GÜNDÜZ 
+Unity Game De v eloper 
+POR TFOLIO (CONTINUED) 
+2021 - 2022 
+Basic Blocks 
+Wizar d Guesser 
+Math Game 
+• AudioManager added 
+• Used F ir ebase f or login and 
+leaderboar d system 
+• Clue system added 
+
+=== PAGE 10 ===
+FURKAN 
+GÜNDÜZ 
+Unity Game De v eloper 
+POR TFOLIO (CONTINUED) 
+2021 - 2022 
+Br eaking Blocks 
+TileV ania • AudioManager 
+• Le v el system 
+• AudioManager 
+• Le v el system 
+• Cinemachine f or camer a 
+• AudioManager 
+• Grid system 
+• Le v el system 
+
+=== PAGE 11 ===
+CONT A CT 10.09.2025 
+Dear Hiring Manager, 
+I am writing to e xpr ess m y inter est in the Unity 
+De v eloper position at y our compan y. W ith 
+hands-on e xperience in de v eloping both 2D and 
+3D games, I hav e built systems that include 
+monetization, animation management, 
+multiplay er f eatur es, and optimized gameplay 
+mechanics. I am conﬁdent that m y technical 
+e xpertise and pr oblem-solving skills mak e me a 
+str ong ﬁt f or this r ole. 
+What e x cites me most about y our compan y is its 
+str ong r eputation f or cr eativity and inno v ation in 
+the gaming industry. I am eager to bring m y 
+passion f or game de v elopment and m y 
+commitment to writing clean, scalable code to 
+y our team, contributing to pr ojects that engage 
+and inspir e play ers w orldwide. 
+Thank y ou f or considering m y application. I look 
+f orw ar d to the opportunity to discuss ho w m y 
+back gr ound and skills can add v alue to y our 
+team. 
+Y ours sincer ely, 
+Furkan Gündüz 
+FURKAN 
+GÜNDÜZ 
+Unity Game De v eloper 
++90 537 222 8360 
+Ank ar a, Türkiy e 
+furk angunduz.de v@gmail.com 
+link edin.com/in/furk angunduz60 CONT A CT 
+github.com/dgdfurk an 
+EDUCA TION 
+B A CHEL OR OF 
+DIGIT AL GAME DESIGN 
+F aculty of Communication 
+İstanbul Bilgi Univ ersity 
+2019-202 4 
+Istanbul, Türkiy e Or ganized and adaptable team play er, 
+skilled at handling multiple pr ojects 
+and r esponsibilities. 
+• Unity Engine 
+• C# 
+• Git - GitHub 
+• Sour cetr ee 
+• Jetbr ains Rider 
+CO VER LETTER 

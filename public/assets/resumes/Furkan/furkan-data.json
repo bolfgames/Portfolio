@@ -1,0 +1,307 @@
+{
+  "contact": {
+    "email": "furkangunduz.dev@gmail.com",
+    "phone": "+90 537 222 8360",
+    "location": "Ankara, Türkiye",
+    "github": "github.com/dgdfurkan",
+    "linkedin": "linkedin.com/in/furkangunduz60"
+  },
+  "education": {
+    "degree": "Bachelor of Digital Game Design",
+    "university": "İstanbul Bilgi University",
+    "faculty": "Faculty of Communication",
+    "period": "2019-2024",
+    "location": "Istanbul, Türkiye"
+  },
+  "experience": [
+    {
+      "company": "BOLF Games",
+      "position": "Unity Game Developer",
+      "period": "Sept 2024 – Jan 2025",
+      "projects": [
+        {
+          "name": "the Birdie",
+          "description": "Level-based arcade game inspired by Flappy Bird",
+          "features": [
+            "Implemented boosters (shield, pipe gap extender, continuous run boosters) with purchase and usage systems",
+            "Designed and integrated character customization features, including unlockable skins and outfits for the bird",
+            "Built a leaderboard system with online player visibility, increasing competition and engagement",
+            "Optimized physics-based mechanics for smooth and responsive gameplay across devices"
+          ],
+          "link": "Google Play Store",
+          "linkUrl": "https://play.google.com/store/search?q=the%20Birdie"
+        }
+      ]
+    },
+    {
+      "company": "Freelance",
+      "position": "Unity Game Developer",
+      "period": "Oct 2024 – Jan 2025",
+      "projects": [
+        {
+          "name": "Air Hockey",
+          "description": "Local multiplayer for touch tables"
+        },
+        {
+          "name": "Ludo",
+          "description": "Digital board game for touch tables"
+        },
+        {
+          "name": "Casual Football Game",
+          "description": "With power-ups for touch tables"
+        },
+        {
+          "name": "Bomberman-style Game",
+          "description": "Local multiplayer with boosters"
+        }
+      ]
+    },
+    {
+      "company": "Rollic",
+      "position": "Unity Game Developer",
+      "period": "July – Sept 2024",
+      "projects": [
+        {
+          "name": "Bus Jam",
+          "description": "Contributed to feature development",
+          "features": [
+            "Implemented shine effects, ColorBlind mode, custom UI/animation systems",
+            "Integrated backend-controlled features to allow live updates without requiring new builds",
+            "Conducted A/B testing to optimize gameplay mechanics and boost user engagement",
+            "Gained hands-on experience in mobile game production pipelines and teamwork in a professional environment"
+          ],
+          "link": "App Store / Google Play Store",
+          "linkUrl": "https://play.google.com/store/search?q=Bus%20Jam"
+        }
+      ]
+    },
+    {
+      "company": "RATIC",
+      "position": "Unity Game Developer",
+      "period": "2022-2023",
+      "projects": [
+        {
+          "name": "Multiple 2D and 3D Unity Games",
+          "description": "Developed various Unity games using C#, implementing diverse mechanics and gameplay systems",
+          "features": [
+            "Built and maintained backend systems for player data",
+            "Integrated monetization with AdMob & AppLovin",
+            "Created leaderboards for competition",
+            "Designed multiplayer 2D games using Photon with smooth networking experiences",
+            "Utilized Cinemachine for camera control, DOTween for animations, and ScriptableObjects to build modular, scalable architectures",
+            "Applied best practices in game optimization and clean code principles"
+          ]
+        }
+      ]
+    }
+  ],
+  "skills": [
+    "Unity Engine",
+    "C#",
+    "Git - GitHub",
+    "SourceTree",
+    "JetBrains Rider"
+  ],
+  "projects": [
+    {
+      "year": "2024-2025",
+      "projects": [
+        {
+          "name": "the Birdie",
+          "image": "TheBirdie.jpg",
+          "description": "Published arcade game",
+          "details": "Level-based arcade game inspired by Flappy Bird. Features boosters, character skins, and a shop system. Integrated leaderboard and optimized physics-based gameplay.",
+          "link": "Google Play Store",
+          "linkUrl": "https://play.google.com/store/search?q=the%20Birdie",
+          "isLandscape": false
+        },
+        {
+          "name": "Bomberman",
+          "image": "Bomberman.jpg",
+          "description": "Local multiplayer game",
+          "details": "Local multiplayer game inspired by Bomberman. Designed booster and power-up mechanics to enhance gameplay. Implemented smooth controls and responsive visual/sound effects.",
+          "isLandscape": false
+        },
+        {
+          "name": "Bus Jam",
+          "image": "BusJam.jpg",
+          "description": "Professional game development",
+          "details": "Contributed to feature development and refinement with senior developers. Implemented shine effects, ColorBlind mode, and custom animations/UI. Used backend-controlled systems and A/B testing to improve engagement.",
+          "link": "App Store / Google Play Store",
+          "linkUrl": "https://play.google.com/store/search?q=Bus%20Jam",
+          "isLandscape": false
+        }
+      ]
+    },
+    {
+      "year": "2023-2024",
+      "projects": [
+        {
+          "name": "ParkingJam3D Clone",
+          "image": "ParkingJam3D.jpg",
+          "description": "DOTween, AudioManager, PathFollower, Touch Input",
+          "details": "DOTween for effects (e.g., crash and camera shaking), AudioManager, PathFollower system integrated, Used UnityAction as Signals, Touch Input system added",
+          "isLandscape": false
+        },
+        {
+          "name": "BattleWheelsMayhemArena",
+          "image": "BattleWheelsMayhemArena.jpg",
+          "description": "Shop System, Object Pooling, Singleton, Cinemachine, ScriptableObjects",
+          "details": "Shop System, Object Pooling, Singleton, Cinemachine for camera, Scriptable Object (Vehicle, Weapon, Level Datas)",
+          "isLandscape": false
+        },
+        {
+          "name": "MatchTile",
+          "image": "MatchTile.jpg",
+          "description": "Object Pooling, Boosters, PlayFab leaderboard, Vibration, Safe Areas Handler",
+          "details": "Object Pooling, Boosters and Shop system, PlayFab integrated for leaderboard, Vibration integrated, Safe Areas Handler for iPhone notch issue, Scriptable Object for levels",
+          "isLandscape": false
+        },
+        {
+          "name": "Buildopolis",
+          "image": "Buildopolis.jpg",
+          "description": "Cinemachine, WorldSpace Canvas, UnityAction Signals, Interface (IDamageable)",
+          "details": "Cinemachine for camera, WorldSpace Canvas for tutorial, Used UnityAction as Signals, Interface (IDamageable)",
+          "isLandscape": false
+        },
+        {
+          "name": "VictoryDawn",
+          "image": "VictroyDawn.jpg",
+          "description": "AudioManager, Grid system, Post-process",
+          "details": "AudioManager, Grid system, Post-process",
+          "isLandscape": false
+        },
+        {
+          "name": "Claw of Vengeance",
+          "image": "Claw of Vengeance.jpg",
+          "description": "",
+          "details": "",
+          "isLandscape": false
+        },
+        {
+          "name": "Revolt of the Exiles",
+          "image": "Revolt of the Exiles.jpg",
+          "description": "Photon multiplayer, Firebase, Infinity looping background UI",
+          "details": "Multiplayer mode with Photon, Create room, join and edit game settings, Firebase to save datas, Infinity looping background UI",
+          "isLandscape": false
+        },
+        {
+          "name": "Stack Diamonds",
+          "image": "Stack Diamonds.jpg",
+          "description": "",
+          "details": "",
+          "isLandscape": false
+        },
+        {
+          "name": "ISH - Mad Libs",
+          "image": "ISH - Mad Libs.jpg",
+          "description": "",
+          "details": "",
+          "isLandscape": false
+        }
+      ]
+    },
+    {
+      "year": "2022-2023",
+      "projects": [
+        {
+          "name": "Crypto Jumper",
+          "image": "Crypto Jumper.jpg",
+          "description": "",
+          "details": "",
+          "isLandscape": false
+        },
+        {
+          "name": "Sloppy Jelly",
+          "image": "Sloppy Jelly.jpg",
+          "description": "",
+          "details": "",
+          "isLandscape": false
+        },
+        {
+          "name": "Space Blizzard",
+          "image": "Space Blizzard.jpg",
+          "description": "",
+          "details": "",
+          "isLandscape": false
+        },
+        {
+          "name": "Crypto Ball",
+          "image": "CryptoBall.jpg",
+          "description": "",
+          "details": "",
+          "isLandscape": false
+        },
+        {
+          "name": "Multi Merge",
+          "image": "Multi Merge.jpg",
+          "description": "",
+          "details": "",
+          "isLandscape": false
+        },
+        {
+          "name": "Laser Defender",
+          "image": "Laser Defender.jpg",
+          "description": "DOTween, AudioManager, PathFollower, Touch Input",
+          "details": "DOTween for effects (e.g., crash and camera shaking), AudioManager, PathFollower system integrated, Used UnityAction as Signals, Touch Input system added",
+          "isLandscape": false
+        },
+        {
+          "name": "Save The Villagers",
+          "image": "Save The Villagers.jpg",
+          "description": "",
+          "details": "",
+          "isLandscape": false
+        },
+        {
+          "name": "Argon Assault Ships",
+          "image": "Argon Assoult Ships.jpg",
+          "description": "",
+          "details": "",
+          "isLandscape": false
+        }
+      ]
+    },
+    {
+      "year": "2021-2022",
+      "projects": [
+        {
+          "name": "Basic Blocks",
+          "image": "Basic Blocks.jpg",
+          "description": "",
+          "details": "",
+          "isLandscape": false
+        },
+        {
+          "name": "Wizard Guesser",
+          "image": "Wizard Guesser.jpg",
+          "description": "Firebase login/leaderboard, clue system",
+          "details": "AudioManager added, Used Firebase for login and leaderboard system, Clue system added",
+          "isLandscape": false
+        },
+        {
+          "name": "Math Game",
+          "image": "MathGame.jpg",
+          "description": "",
+          "details": "",
+          "isLandscape": false
+        },
+        {
+          "name": "Breaking Blocks",
+          "image": "Breaking Blocks.jpg",
+          "description": "",
+          "details": "",
+          "isLandscape": false
+        },
+        {
+          "name": "TileVania",
+          "image": "TileVania.jpg",
+          "description": "AudioManager, Level system, Cinemachine, Grid system",
+          "details": "AudioManager, Level system, Cinemachine for camera, Grid system",
+          "isLandscape": false
+        }
+      ]
+    }
+  ]
+}
+
