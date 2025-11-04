@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { getAssetPath } from '../../utils/assetPath';
+import { useI18n } from '../../contexts/I18nContext';
 
 interface Project {
   name: string;
   image: string;
-  description: string;
-  details?: string;
+  features?: string[];
   link?: string;
   linkUrl?: string;
   isLandscape?: boolean;
@@ -15,14 +15,25 @@ interface Project {
 interface ProjectSliderProps {
   projects: Project[];
   year: string;
+  currentIndex?: number;
   onProjectChange?: (project: Project) => void;
+  onIndexChange?: (index: number) => void;
   onPause?: () => void;
 }
 
-export default function ProjectSlider({ projects, year, onProjectChange, onPause }: ProjectSliderProps) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+export default function ProjectSlider({ projects, year, currentIndex: externalIndex, onProjectChange, onIndexChange, onPause }: ProjectSliderProps) {
+  const { t } = useI18n();
+  const [currentIndex, setCurrentIndex] = useState(externalIndex ?? 0);
   const [isPaused, setIsPaused] = useState(false);
   const pauseTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const lastClickTimeRef = useRef<number>(0);
+
+  // Sync with external index if provided
+  useEffect(() => {
+    if (externalIndex !== undefined && externalIndex !== currentIndex) {
+      setCurrentIndex(externalIndex);
+    }
+  }, [externalIndex, currentIndex]);
 
   useEffect(() => {
     if (projects.length === 0) return;
@@ -32,11 +43,17 @@ export default function ProjectSlider({ projects, year, onProjectChange, onPause
     }
 
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % projects.length);
+      setCurrentIndex((prev) => {
+        const newIndex = (prev + 1) % projects.length;
+        if (onIndexChange) {
+          onIndexChange(newIndex);
+        }
+        return newIndex;
+      });
     }, 3500); // 3.5 saniye
 
     return () => clearInterval(interval);
-  }, [projects.length, isPaused]);
+  }, [projects.length, isPaused, onIndexChange]);
 
   useEffect(() => {
     if (onProjectChange && projects[currentIndex]) {
@@ -44,29 +61,43 @@ export default function ProjectSlider({ projects, year, onProjectChange, onPause
     }
   }, [currentIndex, projects, onProjectChange]);
 
-  const handlePause = () => {
-    setIsPaused(true);
-    
-    // Clear existing timeout
-    if (pauseTimeoutRef.current) {
-      clearTimeout(pauseTimeoutRef.current);
+  const handleIndexChange = (newIndex: number) => {
+    setCurrentIndex(newIndex);
+    if (onIndexChange) {
+      onIndexChange(newIndex);
     }
-
-    // Notify parent
-    if (onPause) {
-      onPause();
-    }
-
-    // Resume after 5 seconds
-    pauseTimeoutRef.current = setTimeout(() => {
-      setIsPaused(false);
-    }, 5000);
   };
 
-  // Expose pause function via ref (will be handled by parent)
-  useEffect(() => {
-    // This will be called from parent if needed
-  }, []);
+  const handleClick = () => {
+    const now = Date.now();
+    const timeSinceLastClick = now - lastClickTimeRef.current;
+    
+    if (isPaused && timeSinceLastClick > 300) {
+      // Resume if paused
+      setIsPaused(false);
+      if (pauseTimeoutRef.current) {
+        clearTimeout(pauseTimeoutRef.current);
+        pauseTimeoutRef.current = null;
+      }
+    } else {
+      // Pause if not paused
+      setIsPaused(true);
+      
+      if (pauseTimeoutRef.current) {
+        clearTimeout(pauseTimeoutRef.current);
+      }
+
+      if (onPause) {
+        onPause();
+      }
+
+      pauseTimeoutRef.current = setTimeout(() => {
+        setIsPaused(false);
+      }, 5000);
+    }
+    
+    lastClickTimeRef.current = now;
+  };
 
   useEffect(() => {
     return () => {
@@ -84,31 +115,6 @@ export default function ProjectSlider({ projects, year, onProjectChange, onPause
 
   return (
     <div className="relative w-full h-full flex flex-col">
-      {/* Project Name - shown in mockup */}
-      {year && (
-        <motion.h2
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-xl md:text-2xl font-bold text-bolf-white mb-2 text-center"
-        >
-          {year}
-        </motion.h2>
-      )}
-      
-      <AnimatePresence mode="wait">
-        <motion.h3
-          key={`${currentProject.name}-${currentIndex}`}
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.3 }}
-          className="text-sm md:text-base font-semibold text-bolf-white mb-2 text-center"
-        >
-          {currentProject.name}
-        </motion.h3>
-      </AnimatePresence>
-
       {/* Image Container */}
       <div className="relative w-full flex-1 flex items-center justify-center min-h-0">
         <AnimatePresence mode="wait">
@@ -129,14 +135,14 @@ export default function ProjectSlider({ projects, year, onProjectChange, onPause
           />
         </AnimatePresence>
         
-        {/* Click on image to pause - overlay */}
+        {/* Click on image to pause/resume - overlay */}
         <div
           className="absolute inset-0 cursor-pointer z-10"
           onClick={(e) => {
             e.stopPropagation();
-            handlePause();
+            handleClick();
           }}
-          title="Click to pause"
+          title={isPaused ? t('portfolio.clickToResume') : t('portfolio.clickToPause')}
         />
       </div>
 
@@ -147,8 +153,8 @@ export default function ProjectSlider({ projects, year, onProjectChange, onPause
             key={index}
             onClick={(e) => {
               e.stopPropagation();
-              setCurrentIndex(index);
-              handlePause();
+              handleIndexChange(index);
+              handleClick();
             }}
             className={`h-1.5 rounded-full transition-all duration-300 ${
               index === currentIndex
@@ -168,10 +174,9 @@ export default function ProjectSlider({ projects, year, onProjectChange, onPause
           exit={{ opacity: 0 }}
           className="text-xs text-bolf-gray/60 text-center mt-1"
         >
-          Paused
+          {t('portfolio.paused')}
         </motion.div>
       )}
     </div>
   );
 }
-

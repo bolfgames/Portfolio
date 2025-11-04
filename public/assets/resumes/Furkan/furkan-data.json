@@ -109,8 +109,14 @@
         {
           "name": "the Birdie",
           "image": "TheBirdie.jpg",
-          "description": "Published arcade game",
-          "details": "Level-based arcade game inspired by Flappy Bird. Features boosters, character skins, and a shop system. Integrated leaderboard and optimized physics-based gameplay.",
+          "features": [
+            "Level-based arcade game inspired by Flappy Bird",
+            "Boosters system",
+            "Character skins and customization",
+            "Shop system",
+            "Leaderboard integration",
+            "Optimized physics-based gameplay"
+          ],
           "link": "Google Play Store",
           "linkUrl": "https://play.google.com/store/search?q=the%20Birdie",
           "isLandscape": false
@@ -118,15 +124,25 @@
         {
           "name": "Bomberman",
           "image": "Bomberman.jpg",
-          "description": "Local multiplayer game",
-          "details": "Local multiplayer game inspired by Bomberman. Designed booster and power-up mechanics to enhance gameplay. Implemented smooth controls and responsive visual/sound effects.",
+          "features": [
+            "Local multiplayer game",
+            "Booster and power-up mechanics",
+            "Smooth controls",
+            "Responsive visual and sound effects"
+          ],
           "isLandscape": false
         },
         {
           "name": "Bus Jam",
           "image": "BusJam.jpg",
-          "description": "Professional game development",
-          "details": "Contributed to feature development and refinement with senior developers. Implemented shine effects, ColorBlind mode, and custom animations/UI. Used backend-controlled systems and A/B testing to improve engagement.",
+          "features": [
+            "Professional game development",
+            "Shine effects implementation",
+            "ColorBlind mode",
+            "Custom animations and UI",
+            "Backend-controlled systems",
+            "A/B testing integration"
+          ],
           "link": "App Store / Google Play Store",
           "linkUrl": "https://play.google.com/store/search?q=Bus%20Jam",
           "isLandscape": false
@@ -139,64 +155,88 @@
         {
           "name": "ParkingJam3D Clone",
           "image": "ParkingJam3D.jpg",
-          "description": "DOTween, AudioManager, PathFollower, Touch Input",
-          "details": "DOTween for effects (e.g., crash and camera shaking), AudioManager, PathFollower system integrated, Used UnityAction as Signals, Touch Input system added",
+          "features": [
+            "DOTween for effects (crash and camera shaking)",
+            "AudioManager",
+            "PathFollower system integrated",
+            "UnityAction as Signals",
+            "Touch Input system"
+          ],
           "isLandscape": false
         },
         {
           "name": "BattleWheelsMayhemArena",
           "image": "BattleWheelsMayhemArena.jpg",
-          "description": "Shop System, Object Pooling, Singleton, Cinemachine, ScriptableObjects",
-          "details": "Shop System, Object Pooling, Singleton, Cinemachine for camera, Scriptable Object (Vehicle, Weapon, Level Datas)",
+          "features": [
+            "Shop System",
+            "Object Pooling",
+            "Singleton",
+            "Cinemachine for camera",
+            "Scriptable Object (Vehicle, Weapon, Level Datas)"
+          ],
           "isLandscape": false
         },
         {
           "name": "MatchTile",
           "image": "MatchTile.jpg",
-          "description": "Object Pooling, Boosters, PlayFab leaderboard, Vibration, Safe Areas Handler",
-          "details": "Object Pooling, Boosters and Shop system, PlayFab integrated for leaderboard, Vibration integrated, Safe Areas Handler for iPhone notch issue, Scriptable Object for levels",
+          "features": [
+            "Object Pooling",
+            "Boosters and Shop system",
+            "PlayFab integrated for leaderboard",
+            "Vibration integrated",
+            "Safe Areas Handler for iPhone notch issue",
+            "Scriptable Object for levels"
+          ],
           "isLandscape": false
         },
         {
           "name": "Buildopolis",
           "image": "Buildopolis.jpg",
-          "description": "Cinemachine, WorldSpace Canvas, UnityAction Signals, Interface (IDamageable)",
-          "details": "Cinemachine for camera, WorldSpace Canvas for tutorial, Used UnityAction as Signals, Interface (IDamageable)",
+          "features": [
+            "Cinemachine for camera",
+            "WorldSpace Canvas for tutorial",
+            "UnityAction as Signals",
+            "Interface (IDamageable)"
+          ],
           "isLandscape": false
         },
         {
           "name": "VictoryDawn",
           "image": "VictroyDawn.jpg",
-          "description": "AudioManager, Grid system, Post-process",
-          "details": "AudioManager, Grid system, Post-process",
+          "features": [
+            "AudioManager",
+            "Grid system",
+            "Post-process"
+          ],
           "isLandscape": false
         },
         {
           "name": "Claw of Vengeance",
           "image": "Claw of Vengeance.jpg",
-          "description": "",
-          "details": "",
+          "features": [],
           "isLandscape": false
         },
         {
           "name": "Revolt of the Exiles",
           "image": "Revolt of the Exiles.jpg",
-          "description": "Photon multiplayer, Firebase, Infinity looping background UI",
-          "details": "Multiplayer mode with Photon, Create room, join and edit game settings, Firebase to save datas, Infinity looping background UI",
+          "features": [
+            "Multiplayer mode with Photon",
+            "Create room, join and edit game settings",
+            "Firebase to save datas",
+            "Infinity looping background UI"
+          ],
           "isLandscape": false
         },
         {
           "name": "Stack Diamonds",
           "image": "Stack Diamonds.jpg",
-          "description": "",
-          "details": "",
+          "features": [],
           "isLandscape": false
         },
         {
           "name": "ISH - Mad Libs",
           "image": "ISH - Mad Libs.jpg",
-          "description": "",
-          "details": "",
+          "features": [],
           "isLandscape": false
         }
       ]
@@ -207,57 +247,55 @@
         {
           "name": "Crypto Jumper",
           "image": "Crypto Jumper.jpg",
-          "description": "",
-          "details": "",
+          "features": [],
           "isLandscape": false
         },
         {
           "name": "Sloppy Jelly",
           "image": "Sloppy Jelly.jpg",
-          "description": "",
-          "details": "",
+          "features": [],
           "isLandscape": false
         },
         {
           "name": "Space Blizzard",
           "image": "Space Blizzard.jpg",
-          "description": "",
-          "details": "",
+          "features": [],
           "isLandscape": false
         },
         {
           "name": "Crypto Ball",
           "image": "CryptoBall.jpg",
-          "description": "",
-          "details": "",
+          "features": [],
           "isLandscape": false
         },
         {
           "name": "Multi Merge",
           "image": "Multi Merge.jpg",
-          "description": "",
-          "details": "",
+          "features": [],
           "isLandscape": false
         },
         {
           "name": "Laser Defender",
           "image": "Laser Defender.jpg",
-          "description": "DOTween, AudioManager, PathFollower, Touch Input",
-          "details": "DOTween for effects (e.g., crash and camera shaking), AudioManager, PathFollower system integrated, Used UnityAction as Signals, Touch Input system added",
+          "features": [
+            "DOTween for effects (crash and camera shaking)",
+            "AudioManager",
+            "PathFollower system integrated",
+            "UnityAction as Signals",
+            "Touch Input system"
+          ],
           "isLandscape": false
         },
         {
           "name": "Save The Villagers",
           "image": "Save The Villagers.jpg",
-          "description": "",
-          "details": "",
+          "features": [],
           "isLandscape": false
         },
         {
           "name": "Argon Assault Ships",
           "image": "Argon Assoult Ships.jpg",
-          "description": "",
-          "details": "",
+          "features": [],
           "isLandscape": false
         }
       ]
@@ -268,40 +306,43 @@
         {
           "name": "Basic Blocks",
           "image": "Basic Blocks.jpg",
-          "description": "",
-          "details": "",
+          "features": [],
           "isLandscape": false
         },
         {
           "name": "Wizard Guesser",
           "image": "Wizard Guesser.jpg",
-          "description": "Firebase login/leaderboard, clue system",
-          "details": "AudioManager added, Used Firebase for login and leaderboard system, Clue system added",
+          "features": [
+            "AudioManager",
+            "Firebase for login and leaderboard system",
+            "Clue system"
+          ],
           "isLandscape": false
         },
         {
           "name": "Math Game",
           "image": "MathGame.jpg",
-          "description": "",
-          "details": "",
+          "features": [],
           "isLandscape": false
         },
         {
           "name": "Breaking Blocks",
           "image": "Breaking Blocks.jpg",
-          "description": "",
-          "details": "",
+          "features": [],
           "isLandscape": false
         },
         {
           "name": "TileVania",
           "image": "TileVania.jpg",
-          "description": "AudioManager, Level system, Cinemachine, Grid system",
-          "details": "AudioManager, Level system, Cinemachine for camera, Grid system",
+          "features": [
+            "AudioManager",
+            "Level system",
+            "Cinemachine for camera",
+            "Grid system"
+          ],
           "isLandscape": false
         }
       ]
     }
   ]
 }
-

@@ -44,8 +44,7 @@ interface FurkanData {
     projects: Array<{
       name: string;
       image: string;
-      description: string;
-      details?: string;
+      features?: string[];
       link?: string;
       linkUrl?: string;
       isLandscape?: boolean;
