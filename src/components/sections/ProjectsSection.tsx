@@ -46,7 +46,7 @@ function ProjectsSection() {
           </p>
         </motion.div>
 
-        <div className="flex flex-wrap gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -54,8 +54,6 @@ function ProjectsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="flex-grow basis-full xs:basis-[calc(50%-0.5rem)] md:basis-[calc(33.333%-0.83rem)] lg:basis-[calc(25%-0.75rem)] xl:basis-[calc(20%-0.8rem)] min-w-0 max-w-full"
-              style={{ width: '100%' }}
             >
               <ProjectCard project={project} />
             </motion.div>

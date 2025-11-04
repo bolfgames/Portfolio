@@ -302,7 +302,7 @@ export function ThreeDProjectCard({
       <div className="card-3d-inner" />
       <div className="card-3d-gradient" />
 
-      <div className="card-3d-content p-2 xs:p-3 sm:p-4 md:p-5 lg:p-7">
+      <div className="card-3d-content p-4 sm:p-5 lg:p-7">
         {/* Project Image/Video (for background) */}
         {project.video && !isVideoPlaying && (
           <div className="absolute inset-0 flex items-center justify-center bg-bolf-black/40 hover:bg-bolf-black/20 transition-colors">
@@ -341,21 +341,21 @@ export function ThreeDProjectCard({
         )}
 
         {/* Content */}
-        <div className="relative z-30 bg-gradient-to-t from-bolf-black/95 via-bolf-black/80 to-transparent p-2 xs:p-3" style={{ transform: 'translateZ(25px)', position: 'relative' }}>
-                <h3 className="text-sm xs:text-base sm:text-lg font-bold text-bolf-white mb-0.5 xs:mb-1 hover:text-bolf-neon-blue transition-colors">
+        <div className="relative z-30 bg-gradient-to-t from-bolf-black/95 via-bolf-black/80 to-transparent" style={{ transform: 'translateZ(25px)', position: 'relative' }}>
+                <h3 className="text-lg font-bold text-bolf-white mb-1 hover:text-bolf-neon-blue transition-colors">
                   {project.name}
                 </h3>
           
-          <p className="text-bolf-gray/80 mb-2 xs:mb-3 text-[10px] xs:text-xs line-clamp-2">
+          <p className="text-bolf-gray/80 mb-3 text-xs line-clamp-2">
             {project.description}
           </p>
 
           {/* Platforms */}
-          <div className="flex flex-wrap gap-1 xs:gap-2 mb-2 xs:mb-4">
+          <div className="flex flex-wrap gap-2 mb-4">
             {project.platforms.map((platform) => (
               <span
                 key={platform}
-                className="inline-flex items-center space-x-1 px-2 xs:px-3 py-0.5 xs:py-1 bg-bolf-white/10 backdrop-blur-sm rounded-full text-[10px] xs:text-xs sm:text-sm text-bolf-white"
+                className="inline-flex items-center space-x-1 px-3 py-1 bg-bolf-white/10 backdrop-blur-sm rounded-full text-sm text-bolf-white"
                 style={{ transform: 'translateZ(20px)' }}
               >
                 <span>{platformService.getPlatformIcon(platform)}</span>
@@ -628,17 +628,17 @@ export function ThreeDTeamMemberCard({
       <div className="card-3d-inner" />
       <div className="card-3d-gradient" />
 
-      <div className="card-3d-content p-2 xs:p-2.5 sm:p-3">
+      <div className="card-3d-content p-3">
         {/* Content */}
-        <div className="relative z-30 bg-gradient-to-t from-bolf-black/95 via-bolf-black/80 to-transparent p-1.5 xs:p-2 sm:p-3" style={{ transform: 'translateZ(25px)', position: 'relative' }}>
+        <div className="relative z-30 bg-gradient-to-t from-bolf-black/95 via-bolf-black/80 to-transparent p-3" style={{ transform: 'translateZ(25px)', position: 'relative' }}>
           <h3
-            className="text-sm xs:text-base sm:text-lg font-bold mb-0.5 xs:mb-1 transition-colors"
+            className="text-lg font-bold mb-1 transition-colors"
             style={{ color: roleColor, transform: 'translateZ(30px)' }}
           >
             {member.name}
           </h3>
           
-          <p className="mb-1 xs:mb-1.5 font-semibold text-[10px] xs:text-xs sm:text-sm" style={{ transform: 'translateZ(20px)', color: roleColor }}>
+          <p className="mb-1.5 font-semibold text-xs" style={{ transform: 'translateZ(20px)', color: roleColor }}>
             {member.role}
           </p>
 
