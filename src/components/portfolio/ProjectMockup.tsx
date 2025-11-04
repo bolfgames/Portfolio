@@ -261,19 +261,17 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
           </button>
         )}
 
-        <div className="relative" ref={mockupRef} style={{ perspective: '1000px' }}>
+        <div className="relative" ref={mockupRef}>
           <motion.div
             animate={{
-              rotateY: isLandscape ? 90 : 0,
+              rotate: isLandscape ? 90 : 0,
             }}
             transition={{
               duration: 0.6,
               ease: 'easeInOut',
             }}
             style={{
-              transformStyle: 'preserve-3d',
               transformOrigin: 'center center',
-              backfaceVisibility: 'hidden',
             }}
           >
             {/* iPhone Mockup */}
@@ -283,9 +281,6 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                   ? 'w-[600px] h-[300px] max-w-[90vw] max-h-[45vw]'
                   : 'w-[280px] h-[600px] max-w-[70vw] max-h-[150vw]'
               }`}
-              style={{
-                transformStyle: 'preserve-3d',
-              }}
             >
               {/* Pause/Resume Button - Top Right */}
               <button
