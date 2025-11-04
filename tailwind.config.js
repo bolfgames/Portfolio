@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '512px', // Custom breakpoint for 2-column layout
+      },
       colors: {
         'bolf-black': '#000000',
         'bolf-white': '#FFFFFF',
