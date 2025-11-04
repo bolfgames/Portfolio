@@ -262,26 +262,18 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
         )}
 
         <div className="relative" ref={mockupRef}>
-          <motion.div
-            animate={{
-              rotate: isLandscape ? 90 : 0,
-            }}
-            transition={{
-              duration: 0.6,
-              ease: 'easeInOut',
-            }}
+          {/* iPhone Mockup */}
+          <div
+            className={`relative rounded-[45px] shadow-[0_0_2px_2px_rgba(255,255,255,0.1)] border-8 border-zinc-900 transition-all duration-600 ease-in-out ${
+              isLandscape
+                ? 'w-[600px] h-[300px] max-w-[90vw] max-h-[45vw]'
+                : 'w-[280px] h-[600px] max-w-[70vw] max-h-[150vw]'
+            }`}
             style={{
+              transform: isLandscape ? 'rotate(90deg)' : 'rotate(0deg)',
               transformOrigin: 'center center',
             }}
           >
-            {/* iPhone Mockup */}
-            <div
-              className={`relative rounded-[45px] shadow-[0_0_2px_2px_rgba(255,255,255,0.1)] border-8 border-zinc-900 transition-all duration-600 ease-in-out ${
-                isLandscape
-                  ? 'w-[600px] h-[300px] max-w-[90vw] max-h-[45vw]'
-                  : 'w-[280px] h-[600px] max-w-[70vw] max-h-[150vw]'
-              }`}
-            >
               {/* Pause/Resume Button - Top Right */}
               <button
                 onClick={(e) => {
@@ -377,7 +369,6 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                 </>
               )}
             </div>
-          </motion.div>
         </div>
 
         {/* Next Arrow */}
