@@ -173,6 +173,9 @@ export default function ProjectSlider({
             exit={{ opacity: 0, scale: 1.05 }}
             transition={{ duration: 0.4 }}
             className="w-full h-full object-contain rounded-lg"
+            style={{
+              transform: externalIsLandscape ? 'rotate(-90deg)' : 'rotate(0deg)',
+            }}
             loading="lazy"
             decoding="async"
             onLoad={handleImageLoad}
@@ -182,7 +185,7 @@ export default function ProjectSlider({
       </div>
 
       {/* Slider Indicator - at bottom */}
-      <div className={`flex justify-center gap-2 ${externalIsLandscape ? 'absolute bottom-2 left-1/2 transform -translate-x-1/2 z-30' : 'mt-auto pt-2'} relative z-20`}>
+      <div className={`flex justify-center gap-2 ${externalIsLandscape ? 'absolute bottom-2 left-1/2 transform -translate-x-1/2 z-30' : 'mt-auto pt-2 z-20'}`}>
         {projects.map((_, index) => (
           <button
             key={index}

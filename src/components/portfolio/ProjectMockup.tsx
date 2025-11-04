@@ -270,16 +270,14 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
               transformOrigin: 'center center',
             }}
           >
-              {/* Pause/Resume Button - Top Right (adjusts position when landscape) */}
+              {/* Pause/Resume Button - Top Right */}
               <button
                 onClick={(e) => {
                   e.stopPropagation();
                   togglePause();
                 }}
-                className="absolute z-50 p-2 rounded-full bg-bolf-black/90 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-600 ease-in-out backdrop-blur-sm"
+                className="absolute top-4 right-4 z-50 p-2 rounded-full bg-bolf-black/90 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-600 ease-in-out backdrop-blur-sm"
                 style={{
-                  top: isLandscape ? '4px' : '16px',
-                  right: isLandscape ? '16px' : '16px',
                   transform: isLandscape ? 'rotate(-90deg)' : 'rotate(0deg)',
                 }}
                 aria-label={isPaused ? t('portfolio.clickToResume') : t('portfolio.clickToPause')}
@@ -292,6 +290,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
+                    style={{ transform: 'none' }}
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -304,6 +303,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
+                    style={{ transform: 'none' }}
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </motion.svg>
