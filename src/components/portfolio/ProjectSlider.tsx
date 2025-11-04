@@ -178,8 +178,6 @@ export default function ProjectSlider({
             style={{
               transform: externalIsLandscape ? 'rotate(-90deg)' : 'rotate(0deg)',
               transformOrigin: 'center center',
-              width: externalIsLandscape ? '100%' : '100%',
-              height: externalIsLandscape ? '100%' : '100%',
             }}
             loading="lazy"
             decoding="async"
