@@ -48,6 +48,41 @@ export default function EducationSection({ education }: EducationSectionProps) {
     return education.faculty;
   };
 
+  const getTranslatedPeriod = () => {
+    const periodMap: Record<string, string> = {
+      '2019-2024': 'portfolio.periods.2019-2024',
+    };
+    
+    const key = periodMap[education.period];
+    if (key) {
+      try {
+        const translated = t(key);
+        if (translated && translated !== key) {
+          return translated;
+        }
+      } catch {}
+    }
+    return education.period;
+  };
+
+  const getTranslatedLocation = () => {
+    const locationMap: Record<string, string> = {
+      'Istanbul, Türkiye': 'portfolio.locations.istanbulTurkey',
+      'Ankara, Türkiye': 'portfolio.locations.ankaraTurkey',
+    };
+    
+    const key = locationMap[education.location];
+    if (key) {
+      try {
+        const translated = t(key);
+        if (translated && translated !== key) {
+          return translated;
+        }
+      } catch {}
+    }
+    return education.location;
+  };
+
   return (
     <section className="mb-12">
       <motion.h2
@@ -73,10 +108,9 @@ export default function EducationSection({ education }: EducationSectionProps) {
           {getTranslatedFaculty() && `, ${getTranslatedFaculty()}`}
         </p>
         <p className="text-sm text-bolf-gray/70 mb-2">
-          {education.period} · {education.location}
+          {getTranslatedPeriod()} · {getTranslatedLocation()}
         </p>
       </motion.div>
     </section>
   );
 }
-

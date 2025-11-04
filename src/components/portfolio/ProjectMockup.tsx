@@ -98,6 +98,125 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
     }
   }, [handlePrevious, handleNext, togglePause]);
 
+  // Helper function to translate project features
+  const translateProjectFeature = (feature: string): string => {
+    const featureMap: Record<string, string> = {
+      'Level-based arcade game inspired by Flappy Bird': 'portfolio.projectFeatures.levelBasedArcadeGame',
+      'Boosters system': 'portfolio.projectFeatures.boostersSystem',
+      'Character skins and customization': 'portfolio.projectFeatures.characterSkins',
+      'Shop system': 'portfolio.projectFeatures.shopSystem',
+      'Leaderboard integration': 'portfolio.projectFeatures.leaderboardIntegration',
+      'Optimized physics-based gameplay': 'portfolio.projectFeatures.optimizedPhysics',
+      'Local multiplayer game': 'portfolio.projectFeatures.localMultiplayerGame',
+      'Booster and power-up mechanics': 'portfolio.projectFeatures.boosterPowerUpMechanics',
+      'Smooth controls': 'portfolio.projectFeatures.smoothControls',
+      'Responsive visual and sound effects': 'portfolio.projectFeatures.responsiveVisualSound',
+      'Professional game development': 'portfolio.projectFeatures.professionalGameDev',
+      'Shine effects implementation': 'portfolio.projectFeatures.shineEffects',
+      'ColorBlind mode': 'portfolio.projectFeatures.colorBlindMode',
+      'Custom animations and UI': 'portfolio.projectFeatures.customAnimationsUI',
+      'Backend-controlled systems': 'portfolio.projectFeatures.backendControlledSystems',
+      'A/B testing integration': 'portfolio.projectFeatures.abTestingIntegration',
+      'DOTween for effects (crash and camera shaking)': 'portfolio.projectFeatures.dotweenEffects',
+      'AudioManager': 'portfolio.projectFeatures.audioManager',
+      'PathFollower system integrated': 'portfolio.projectFeatures.pathFollowerSystem',
+      'UnityAction as Signals': 'portfolio.projectFeatures.unityActionSignals',
+      'Touch Input system': 'portfolio.projectFeatures.touchInputSystem',
+      'Object Pooling': 'portfolio.projectFeatures.objectPooling',
+      'Singleton': 'portfolio.projectFeatures.singleton',
+      'Cinemachine for camera': 'portfolio.projectFeatures.cinemachineCamera',
+      'Scriptable Object (Vehicle, Weapon, Level Datas)': 'portfolio.projectFeatures.scriptableObjectVehicle',
+      'Boosters and Shop system': 'portfolio.projectFeatures.boostersShopSystem',
+      'PlayFab integrated for leaderboard': 'portfolio.projectFeatures.playFabLeaderboard',
+      'Vibration integrated': 'portfolio.projectFeatures.vibrationIntegrated',
+      'Safe Areas Handler for iPhone notch issue': 'portfolio.projectFeatures.safeAreasHandler',
+      'Scriptable Object for levels': 'portfolio.projectFeatures.scriptableObjectLevels',
+      'WorldSpace Canvas for tutorial': 'portfolio.projectFeatures.worldSpaceCanvas',
+      'Interface (IDamageable)': 'portfolio.projectFeatures.interfaceIDamageable',
+      'Grid system': 'portfolio.projectFeatures.gridSystem',
+      'Post-process': 'portfolio.projectFeatures.postProcess',
+      'Multiplayer mode with Photon': 'portfolio.projectFeatures.photonMultiplayer',
+      'Create room, join and edit game settings': 'portfolio.projectFeatures.createRoomJoin',
+      'Firebase to save datas': 'portfolio.projectFeatures.firebaseSaveDatas',
+      'Infinity looping background UI': 'portfolio.projectFeatures.infinityLoopingUI',
+      'Firebase for login and leaderboard system': 'portfolio.projectFeatures.firebaseLoginLeaderboard',
+      'Clue system': 'portfolio.projectFeatures.clueSystem',
+      'Level system': 'portfolio.projectFeatures.levelSystem',
+    };
+    
+    const key = featureMap[feature];
+    if (key) {
+      try {
+        const translated = t(key);
+        if (translated && translated !== key) {
+          return translated;
+        }
+      } catch {}
+    }
+    return feature;
+  };
+
+  // Helper function to translate project names
+  const translateProjectName = (name: string): string => {
+    const nameMap: Record<string, string> = {
+      'the Birdie': 'portfolio.projectNames.theBirdie',
+      'Bomberman': 'portfolio.projectNames.bomberman',
+      'Bus Jam': 'portfolio.projectNames.busJam',
+      'ParkingJam3D Clone': 'portfolio.projectNames.parkingJam3D',
+      'BattleWheelsMayhemArena': 'portfolio.projectNames.battleWheels',
+      'MatchTile': 'portfolio.projectNames.matchTile',
+      'Buildopolis': 'portfolio.projectNames.buildopolis',
+      'VictoryDawn': 'portfolio.projectNames.victoryDawn',
+      'Claw of Vengeance': 'portfolio.projectNames.clawOfVengeance',
+      'Revolt of the Exiles': 'portfolio.projectNames.revoltOfExiles',
+      'Stack Diamonds': 'portfolio.projectNames.stackDiamonds',
+      'ISH - Mad Libs': 'portfolio.projectNames.ishMadLibs',
+      'Crypto Jumper': 'portfolio.projectNames.cryptoJumper',
+      'Sloppy Jelly': 'portfolio.projectNames.sloppyJelly',
+      'Space Blizzard': 'portfolio.projectNames.spaceBlizzard',
+      'Crypto Ball': 'portfolio.projectNames.cryptoBall',
+      'Multi Merge': 'portfolio.projectNames.multiMerge',
+      'Laser Defender': 'portfolio.projectNames.laserDefender',
+      'Save The Villagers': 'portfolio.projectNames.saveTheVillagers',
+      'Argon Assault Ships': 'portfolio.projectNames.argonAssaultShips',
+      'Basic Blocks': 'portfolio.projectNames.basicBlocks',
+      'Wizard Guesser': 'portfolio.projectNames.wizardGuesser',
+      'Math Game': 'portfolio.projectNames.mathGame',
+      'Breaking Blocks': 'portfolio.projectNames.breakingBlocks',
+      'TileVania': 'portfolio.projectNames.tileVania',
+    };
+    
+    const key = nameMap[name];
+    if (key) {
+      try {
+        const translated = t(key);
+        if (translated && translated !== key) {
+          return translated;
+        }
+      } catch {}
+    }
+    return name;
+  };
+
+  // Helper function to translate links
+  const translateLink = (link: string): string => {
+    const linkMap: Record<string, string> = {
+      'Google Play Store': 'portfolio.links.googlePlayStore',
+      'App Store / Google Play Store': 'portfolio.links.appStoreGooglePlay',
+    };
+    
+    const key = linkMap[link];
+    if (key) {
+      try {
+        const translated = t(key);
+        if (translated && translated !== key) {
+          return translated;
+        }
+      } catch {}
+    }
+    return link;
+  };
+
   if (projects.length === 0) {
     return null;
   }
@@ -123,7 +242,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
           transition={{ duration: 0.3 }}
           className="text-xl md:text-2xl font-bold text-bolf-white mb-4 text-center"
         >
-          {currentProject.name}
+          {translateProjectName(currentProject.name)}
         </motion.h3>
       )}
 
@@ -142,7 +261,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
           </button>
         )}
 
-        <div className="relative" ref={mockupRef}>
+        <div className="relative" ref={mockupRef} style={{ perspective: '1000px' }}>
           <motion.div
             animate={{
               rotateY: isLandscape ? 90 : 0,
@@ -151,18 +270,19 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
               duration: 0.6,
               ease: 'easeInOut',
             }}
-            className="perspective-1000"
             style={{
-              perspective: '1000px',
+              transformStyle: 'preserve-3d',
+              transformOrigin: 'center center',
+              backfaceVisibility: 'hidden',
             }}
           >
             {/* iPhone Mockup */}
             <div
-              className={`relative ${
+              className={`relative rounded-[45px] shadow-[0_0_2px_2px_rgba(255,255,255,0.1)] border-8 border-zinc-900 transition-all duration-600 ease-in-out ${
                 isLandscape
                   ? 'w-[600px] h-[300px] max-w-[90vw] max-h-[45vw]'
                   : 'w-[280px] h-[600px] max-w-[70vw] max-h-[150vw]'
-              } rounded-[45px] shadow-[0_0_2px_2px_rgba(255,255,255,0.1)] border-8 border-zinc-900`}
+              }`}
               style={{
                 transformStyle: 'preserve-3d',
               }}
@@ -296,7 +416,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                   {currentProject.features.map((feature, index) => (
                     <li key={index} className="text-bolf-gray/80 flex items-start">
                       <span className="text-bolf-neon-blue mr-2">•</span>
-                      <span>{feature}</span>
+                      <span>{translateProjectFeature(feature)}</span>
                     </li>
                   ))}
                 </ul>
@@ -310,7 +430,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-bolf-neon-blue hover:text-bolf-orange transition-colors"
               >
-                {currentProject.link || t('portfolio.viewLink')}
+                {currentProject.link ? translateLink(currentProject.link) : t('portfolio.viewLink')}
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>

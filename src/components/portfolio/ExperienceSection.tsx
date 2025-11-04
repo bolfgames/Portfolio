@@ -55,6 +55,52 @@ export default function ExperienceSection({ experiences }: ExperienceSectionProp
     return position;
   };
 
+  // Helper function to translate periods
+  const translatePeriod = (period: string): string => {
+    const periodMap: Record<string, string> = {
+      'Sept 2024 – Jan 2025': 'portfolio.periods.sept2024Jan2025',
+      'Oct 2024 – Jan 2025': 'portfolio.periods.oct2024Jan2025',
+      'July – Sept 2024': 'portfolio.periods.julySept2024',
+      '2022-2023': 'portfolio.periods.2022-2023',
+      '2019-2024': 'portfolio.periods.2019-2024',
+    };
+    
+    const key = periodMap[period];
+    if (key) {
+      try {
+        const translated = t(key);
+        if (translated && translated !== key) {
+          return translated;
+        }
+      } catch {}
+    }
+    return period;
+  };
+
+  // Helper function to translate project names
+  const translateProjectName = (name: string): string => {
+    const nameMap: Record<string, string> = {
+      'the Birdie': 'portfolio.projectNames.theBirdie',
+      'Air Hockey': 'portfolio.projectNames.airHockey',
+      'Ludo': 'portfolio.projectNames.ludo',
+      'Casual Football Game': 'portfolio.projectNames.casualFootballGame',
+      'Bomberman-style Game': 'portfolio.projectNames.bombermanStyleGame',
+      'Bus Jam': 'portfolio.projectNames.busJam',
+      'Multiple 2D and 3D Unity Games': 'portfolio.projectNames.multipleUnityGames',
+    };
+    
+    const key = nameMap[name];
+    if (key) {
+      try {
+        const translated = t(key);
+        if (translated && translated !== key) {
+          return translated;
+        }
+      } catch {}
+    }
+    return name;
+  };
+
   // Helper function to translate descriptions
   const translateDescription = (description: string): string => {
     const descMap: Record<string, string> = {
@@ -77,6 +123,56 @@ export default function ExperienceSection({ experiences }: ExperienceSectionProp
       } catch {}
     }
     return description;
+  };
+
+  // Helper function to translate features
+  const translateFeature = (feature: string): string => {
+    const featureMap: Record<string, string> = {
+      'Implemented boosters (shield, pipe gap extender, continuous run boosters) with purchase and usage systems': 'portfolio.experienceFeatures.implementedBoosters',
+      'Designed and integrated character customization features, including unlockable skins and outfits for the bird': 'portfolio.experienceFeatures.characterCustomization',
+      'Built a leaderboard system with online player visibility, increasing competition and engagement': 'portfolio.experienceFeatures.leaderboardSystem',
+      'Optimized physics-based mechanics for smooth and responsive gameplay across devices': 'portfolio.experienceFeatures.optimizedPhysicsMechanics',
+      'Implemented shine effects, ColorBlind mode, custom UI/animation systems': 'portfolio.experienceFeatures.shineEffectsColorBlind',
+      'Integrated backend-controlled features to allow live updates without requiring new builds': 'portfolio.experienceFeatures.backendControlledFeatures',
+      'Conducted A/B testing to optimize gameplay mechanics and boost user engagement': 'portfolio.experienceFeatures.abTesting',
+      'Gained hands-on experience in mobile game production pipelines and teamwork in a professional environment': 'portfolio.experienceFeatures.mobileGameProduction',
+      'Built and maintained backend systems for player data': 'portfolio.experienceFeatures.backendSystems',
+      'Integrated monetization with AdMob & AppLovin': 'portfolio.experienceFeatures.monetization',
+      'Created leaderboards for competition': 'portfolio.experienceFeatures.leaderboardsCompetition',
+      'Designed multiplayer 2D games using Photon with smooth networking experiences': 'portfolio.experienceFeatures.photonMultiplayer2D',
+      'Utilized Cinemachine for camera control, DOTween for animations, and ScriptableObjects to build modular, scalable architectures': 'portfolio.experienceFeatures.cinemachineDotween',
+      'Applied best practices in game optimization and clean code principles': 'portfolio.experienceFeatures.optimizationCleanCode',
+    };
+    
+    const key = featureMap[feature];
+    if (key) {
+      try {
+        const translated = t(key);
+        if (translated && translated !== key) {
+          return translated;
+        }
+      } catch {}
+    }
+    return feature;
+  };
+
+  // Helper function to translate links
+  const translateLink = (link: string): string => {
+    const linkMap: Record<string, string> = {
+      'Google Play Store': 'portfolio.links.googlePlayStore',
+      'App Store / Google Play Store': 'portfolio.links.appStoreGooglePlay',
+    };
+    
+    const key = linkMap[link];
+    if (key) {
+      try {
+        const translated = t(key);
+        if (translated && translated !== key) {
+          return translated;
+        }
+      } catch {}
+    }
+    return link;
   };
 
   return (
@@ -104,21 +200,21 @@ export default function ExperienceSection({ experiences }: ExperienceSectionProp
                 {translateCompany(exp.company)}
               </h3>
               <p className="text-lg text-bolf-gray mb-1">{translatePosition(exp.position)}</p>
-              <p className="text-sm text-bolf-gray/70">{exp.period}</p>
+              <p className="text-sm text-bolf-gray/70">{translatePeriod(exp.period)}</p>
             </div>
 
             <div className="space-y-4">
               {exp.projects.map((project, pIndex) => (
                 <div key={`${project.name}-${pIndex}`} className="ml-4">
                   <h4 className="text-xl font-semibold text-bolf-white mb-2">
-                    {project.name}
+                    {translateProjectName(project.name)}
                   </h4>
                   <p className="text-bolf-gray/80 mb-2">{translateDescription(project.description)}</p>
                   
                   {project.features && project.features.length > 0 && (
                     <ul className="list-disc list-inside space-y-1 text-bolf-gray/70 ml-4">
                       {project.features.map((feature, fIndex) => (
-                        <li key={fIndex}>{feature}</li>
+                        <li key={fIndex}>{translateFeature(feature)}</li>
                       ))}
                     </ul>
                   )}
@@ -130,7 +226,7 @@ export default function ExperienceSection({ experiences }: ExperienceSectionProp
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 mt-2 text-bolf-neon-blue hover:text-bolf-orange transition-colors"
                     >
-                      {project.link || t('portfolio.viewLink')}
+                      {project.link ? translateLink(project.link) : t('portfolio.viewLink')}
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                       </svg>
@@ -145,4 +241,3 @@ export default function ExperienceSection({ experiences }: ExperienceSectionProp
     </section>
   );
 }
-

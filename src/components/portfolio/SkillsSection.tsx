@@ -8,6 +8,28 @@ interface SkillsSectionProps {
 export default function SkillsSection({ skills }: SkillsSectionProps) {
   const { t } = useI18n();
 
+  // Helper function to translate skills
+  const translateSkill = (skill: string): string => {
+    const skillMap: Record<string, string> = {
+      'Unity Engine': 'portfolio.skills.unityEngine',
+      'C#': 'portfolio.skills.csharp',
+      'Git - GitHub': 'portfolio.skills.gitGithub',
+      'SourceTree': 'portfolio.skills.sourceTree',
+      'JetBrains Rider': 'portfolio.skills.jetbrainsRider',
+    };
+    
+    const key = skillMap[skill];
+    if (key) {
+      try {
+        const translated = t(key);
+        if (translated && translated !== key) {
+          return translated;
+        }
+      } catch {}
+    }
+    return skill;
+  };
+
   return (
     <section className="mb-12">
       <motion.h2
@@ -33,11 +55,10 @@ export default function SkillsSection({ skills }: SkillsSectionProps) {
             transition={{ duration: 0.3, delay: index * 0.05 }}
             className="px-4 py-2 bg-bolf-neon-blue/20 border border-bolf-neon-blue/30 rounded-full text-bolf-white text-sm md:text-base font-medium"
           >
-            {skill}
+            {translateSkill(skill)}
           </motion.span>
         ))}
       </motion.div>
     </section>
   );
 }
-
