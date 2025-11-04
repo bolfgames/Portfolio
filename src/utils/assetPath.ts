@@ -5,17 +5,18 @@
 
 /**
  * Get asset path with base URL
- * @param path - Asset path starting with /
+ * @param path - Asset path starting with / or without
  * @returns Asset path with base URL (e.g., /Portolio/assets/...)
  */
 export function getAssetPath(path: string): string {
   // Remove leading slash if present
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
   
-  // Get base URL from Vite (includes trailing slash)
-  const baseUrl = import.meta.env.BASE_URL;
+  // Get base URL from Vite (includes trailing slash, e.g., "/Portolio/")
+  const baseUrl = import.meta.env.BASE_URL || '/';
   
   // Combine base URL with path
+  // baseUrl already has trailing slash, cleanPath should not start with /
   return `${baseUrl}${cleanPath}`;
 }
 

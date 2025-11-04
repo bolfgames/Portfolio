@@ -10,8 +10,8 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  // GitHub Pages için base path: /Portolio/
-  // gh-pages branch'ine deploy edildiğinde bu path kullanılır
+  // GitHub Pages için base path
+  // main branch'ten deploy edildiğinde /Portolio/ kullanılır
   base: process.env.NODE_ENV === 'production' ? '/Portolio/' : '/',
   build: {
     outDir: 'dist',
