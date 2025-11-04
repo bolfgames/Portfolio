@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import ProjectSlider from './ProjectSlider';
 import { useI18n } from '../../contexts/I18nContext';
@@ -22,6 +22,9 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
   const [currentProject, setCurrentProject] = useState<Project | null>(null);
   const [isLandscape, setIsLandscape] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const [resetTimer, setResetTimer] = useState(0);
+  const mockupRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (projects.length > 0 && !currentProject) {
@@ -31,28 +34,69 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
     }
   }, [projects, currentProject]);
 
-  const handleProjectChange = (project: Project) => {
+  const handleProjectChange = useCallback((project: Project) => {
     setCurrentProject(project);
-    setIsLandscape(project.isLandscape || false);
     const index = projects.findIndex(p => p.name === project.name && p.image === project.image);
     if (index !== -1) {
       setCurrentIndex(index);
     }
-  };
+  }, [projects]);
 
-  const handlePrevious = () => {
+  const handleLandscapeDetected = useCallback((landscape: boolean) => {
+    setIsLandscape(landscape);
+  }, []);
+
+  const handlePrevious = useCallback(() => {
     const newIndex = (currentIndex - 1 + projects.length) % projects.length;
     setCurrentIndex(newIndex);
     setCurrentProject(projects[newIndex]);
     setIsLandscape(projects[newIndex].isLandscape || false);
-  };
+    setResetTimer(prev => prev + 1); // Reset timer
+  }, [currentIndex, projects]);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     const newIndex = (currentIndex + 1) % projects.length;
     setCurrentIndex(newIndex);
     setCurrentProject(projects[newIndex]);
     setIsLandscape(projects[newIndex].isLandscape || false);
-  };
+    setResetTimer(prev => prev + 1); // Reset timer
+  }, [currentIndex, projects]);
+
+  const togglePause = useCallback(() => {
+    setIsPaused(prev => {
+      const newPaused = !prev;
+      if (newPaused) {
+        setResetTimer(prevTimer => prevTimer + 1);
+      }
+      return newPaused;
+    });
+  }, []);
+
+  const handleMockupClick = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    if (!mockupRef.current) return;
+    
+    const rect = mockupRef.current.getBoundingClientRect();
+    const clickX = e.clientX - rect.left;
+    const width = rect.width;
+    
+    // Calculate click zones: left 30%, center 40%, right 30%
+    const leftZone = width * 0.3;
+    const centerZone = width * 0.7;
+    
+    if (clickX < leftZone) {
+      // Left zone: previous
+      e.stopPropagation();
+      handlePrevious();
+    } else if (clickX > centerZone) {
+      // Right zone: next
+      e.stopPropagation();
+      handleNext();
+    } else {
+      // Center zone: pause/resume
+      e.stopPropagation();
+      togglePause();
+    }
+  }, [handlePrevious, handleNext, togglePause]);
 
   if (projects.length === 0) {
     return null;
@@ -98,7 +142,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
           </button>
         )}
 
-        <div className="relative">
+        <div className="relative" ref={mockupRef}>
           <motion.div
             animate={{
               rotateY: isLandscape ? 90 : 0,
@@ -123,6 +167,41 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                 transformStyle: 'preserve-3d',
               }}
             >
+              {/* Pause/Resume Button - Top Right */}
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  togglePause();
+                }}
+                className="absolute top-4 right-4 z-50 p-2 rounded-full bg-bolf-black/90 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-300 backdrop-blur-sm"
+                aria-label={isPaused ? t('portfolio.clickToResume') : t('portfolio.clickToPause')}
+              >
+                {isPaused ? (
+                  <motion.svg
+                    initial={{ scale: 0.8 }}
+                    animate={{ scale: 1 }}
+                    className="w-5 h-5 text-bolf-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </motion.svg>
+                ) : (
+                  <motion.svg
+                    initial={{ scale: 0.8 }}
+                    animate={{ scale: 1 }}
+                    className="w-5 h-5 text-bolf-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </motion.svg>
+                )}
+              </button>
+
               {/* Dynamic Island */}
               <div
                 className={`absolute top-2 left-1/2 transform -translate-x-1/2 ${
@@ -133,20 +212,26 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
               {/* Border */}
               <div className="absolute -inset-[1px] border-[3px] border-zinc-700 border-opacity-40 rounded-[37px] pointer-events-none" />
 
-              {/* Screen Content */}
+              {/* Screen Content with Click Zones */}
               <div className="relative w-full h-full rounded-[37px] overflow-hidden bg-zinc-900/10">
                 <div 
                   className="w-full h-full flex items-center justify-center p-2 overflow-auto"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                  }}
+                  onClick={handleMockupClick}
                 >
-                  <div className="w-full h-full">
+                  {/* Click Zones - Visual Debug (can be removed in production) */}
+                  {/* <div className="absolute left-0 top-0 w-[30%] h-full bg-red-500/10 z-40 pointer-events-none" />
+                  <div className="absolute left-[30%] top-0 w-[40%] h-full bg-green-500/10 z-40 pointer-events-none" />
+                  <div className="absolute right-0 top-0 w-[30%] h-full bg-blue-500/10 z-40 pointer-events-none" /> */}
+                  
+                  <div className="w-full h-full" onClick={(e) => e.stopPropagation()}>
                     <ProjectSlider
                       projects={projects}
                       currentIndex={currentIndex}
                       onProjectChange={handleProjectChange}
                       onIndexChange={setCurrentIndex}
+                      onLandscapeDetected={handleLandscapeDetected}
+                      isPaused={isPaused}
+                      resetTimer={resetTimer}
                     />
                   </div>
                 </div>
@@ -234,11 +319,6 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
           </div>
         </motion.div>
       )}
-
-      {/* Click to Pause Hint */}
-      <p className="text-xs text-bolf-gray/60 mt-4 text-center">
-        {t('portfolio.clickToPause')}
-      </p>
     </div>
   );
 }

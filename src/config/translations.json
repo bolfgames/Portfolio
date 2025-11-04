@@ -75,7 +75,45 @@
       "university": "Üniversite",
       "faculty": "Fakülte",
       "location": "Konum",
-      "period": "Dönem"
+      "period": "Dönem",
+      "educationData": {
+        "degree": "Dijital Oyun Tasarımı Lisansı",
+        "university": "İstanbul Bilgi Üniversitesi",
+        "faculty": "İletişim Fakültesi"
+      },
+      "positions": {
+        "unityGameDeveloper": "Unity Oyun Geliştirici",
+        "freelance": "Serbest Çalışan"
+      },
+      "companies": {
+        "bolfGames": "BOLF Games",
+        "freelance": "Serbest Çalışan",
+        "rollic": "Rollic",
+        "ratic": "RATIC"
+      },
+      "months": {
+        "jan": "Oca",
+        "feb": "Şub",
+        "mar": "Mar",
+        "apr": "Nis",
+        "may": "May",
+        "jun": "Haz",
+        "july": "Tem",
+        "aug": "Ağu",
+        "sept": "Eyl",
+        "oct": "Eki",
+        "nov": "Kas",
+        "dec": "Ara"
+      },
+      "projectDescriptions": {
+        "levelBasedArcade": "Flappy Bird'den ilham alan seviye tabanlı arcade oyunu",
+        "localMultiplayer": "Dokunmatik masalar için yerel çok oyunculu",
+        "digitalBoardGame": "Dokunmatik masalar için dijital masa oyunu",
+        "powerUps": "Güçlendirmelerle dokunmatik masalar için",
+        "localMultiplayerBoosters": "Güçlendirmelerle yerel çok oyunculu",
+        "contributedFeatureDevelopment": "Özellik geliştirmesine katkıda bulundu",
+        "developedVariousGames": "C# kullanarak çeşitli Unity oyunları geliştirdi, farklı mekanikler ve oynanış sistemleri uyguladı"
+      }
     },
     "footer": {
       "contact": "İletişim",
@@ -232,7 +270,45 @@
       "university": "University",
       "faculty": "Faculty",
       "location": "Location",
-      "period": "Period"
+      "period": "Period",
+      "educationData": {
+        "degree": "Bachelor of Digital Game Design",
+        "university": "Istanbul Bilgi University",
+        "faculty": "Faculty of Communication"
+      },
+      "positions": {
+        "unityGameDeveloper": "Unity Game Developer",
+        "freelance": "Freelance"
+      },
+      "companies": {
+        "bolfGames": "BOLF Games",
+        "freelance": "Freelance",
+        "rollic": "Rollic",
+        "ratic": "RATIC"
+      },
+      "months": {
+        "jan": "Jan",
+        "feb": "Feb",
+        "mar": "Mar",
+        "apr": "Apr",
+        "may": "May",
+        "jun": "Jun",
+        "july": "July",
+        "aug": "Aug",
+        "sept": "Sept",
+        "oct": "Oct",
+        "nov": "Nov",
+        "dec": "Dec"
+      },
+      "projectDescriptions": {
+        "levelBasedArcade": "Level-based arcade game inspired by Flappy Bird",
+        "localMultiplayer": "Local multiplayer for touch tables",
+        "digitalBoardGame": "Digital board game for touch tables",
+        "powerUps": "With power-ups for touch tables",
+        "localMultiplayerBoosters": "Local multiplayer with boosters",
+        "contributedFeatureDevelopment": "Contributed to feature development",
+        "developedVariousGames": "Developed various Unity games using C#, implementing diverse mechanics and gameplay systems"
+      }
     },
     "footer": {
       "contact": "Contact",

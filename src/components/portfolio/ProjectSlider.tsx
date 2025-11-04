@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { getAssetPath } from '../../utils/assetPath';
 import { useI18n } from '../../contexts/I18nContext';
@@ -17,31 +17,65 @@ interface ProjectSliderProps {
   currentIndex?: number;
   onProjectChange?: (project: Project) => void;
   onIndexChange?: (index: number) => void;
-  onPause?: () => void;
+  onLandscapeDetected?: (isLandscape: boolean) => void;
+  isPaused?: boolean;
+  resetTimer?: number;
 }
 
-export default function ProjectSlider({ projects, currentIndex: externalIndex, onProjectChange, onIndexChange, onPause }: ProjectSliderProps) {
+export default function ProjectSlider({ 
+  projects, 
+  currentIndex: externalIndex, 
+  onProjectChange, 
+  onIndexChange, 
+  onLandscapeDetected,
+  isPaused: externalPaused,
+  resetTimer
+}: ProjectSliderProps) {
   const { t } = useI18n();
   const [currentIndex, setCurrentIndex] = useState(externalIndex ?? 0);
-  const [isPaused, setIsPaused] = useState(false);
+  const [isPaused, setIsPaused] = useState(externalPaused ?? false);
+  const [imageLoading, setImageLoading] = useState(true);
   const pauseTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const lastClickTimeRef = useRef<number>(0);
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const imageRef = useRef<HTMLImageElement | null>(null);
 
   // Sync with external index if provided
   useEffect(() => {
     if (externalIndex !== undefined && externalIndex !== currentIndex) {
       setCurrentIndex(externalIndex);
     }
-  }, [externalIndex, currentIndex]);
+  }, [externalIndex]);
 
+  // Sync with external pause state
+  useEffect(() => {
+    if (externalPaused !== undefined && externalPaused !== isPaused) {
+      setIsPaused(externalPaused);
+    }
+  }, [externalPaused]);
+
+  // Handle timer reset
+  useEffect(() => {
+    if (resetTimer !== undefined && resetTimer > 0) {
+      // Timer will be reset when interval recreates
+      // Clear existing interval to force reset
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    }
+  }, [resetTimer]);
+
+  // Auto-advance interval
   useEffect(() => {
     if (projects.length === 0) return;
+    if (isPaused) return;
+    if (imageLoading) return; // Don't advance while image is loading
 
-    if (isPaused) {
-      return;
+    // Clear existing interval
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
     }
 
-    const interval = setInterval(() => {
+    intervalRef.current = setInterval(() => {
       setCurrentIndex((prev) => {
         const newIndex = (prev + 1) % projects.length;
         if (onIndexChange) {
@@ -49,57 +83,62 @@ export default function ProjectSlider({ projects, currentIndex: externalIndex, o
         }
         return newIndex;
       });
-    }, 3500); // 3.5 saniye
+    }, 5000); // 5 saniye
 
-    return () => clearInterval(interval);
-  }, [projects.length, isPaused, onIndexChange]);
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+  }, [projects.length, isPaused, imageLoading, onIndexChange]);
 
+  // Notify project change
   useEffect(() => {
     if (onProjectChange && projects[currentIndex]) {
       onProjectChange(projects[currentIndex]);
     }
   }, [currentIndex, projects, onProjectChange]);
 
-  const handleIndexChange = (newIndex: number) => {
+  // Detect landscape orientation on image load
+  const handleImageLoad = useCallback((e: React.SyntheticEvent<HTMLImageElement>) => {
+    const img = e.currentTarget;
+    setImageLoading(false);
+    
+    // Detect landscape
+    const width = img.naturalWidth;
+    const height = img.naturalHeight;
+    const isLandscape = width > 0 && height > 0 && width / height > 1.2;
+    
+    if (onLandscapeDetected) {
+      onLandscapeDetected(isLandscape);
+    }
+  }, [onLandscapeDetected]);
+
+  const handleImageError = useCallback((e: React.SyntheticEvent<HTMLImageElement>) => {
+    const target = e.target as HTMLImageElement;
+    target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="600"%3E%3Crect fill="%23222" width="400" height="600"/%3E%3Ctext x="50%25" y="50%25" font-family="Arial" font-size="20" fill="%23999" text-anchor="middle" dominant-baseline="middle"%3EImage not found%3C/text%3E%3C/svg%3E';
+    setImageLoading(false);
+  }, []);
+
+  const handleIndexChange = useCallback((newIndex: number) => {
+    setImageLoading(true); // Reset loading state when changing project
     setCurrentIndex(newIndex);
     if (onIndexChange) {
       onIndexChange(newIndex);
     }
-  };
-
-  const handleClick = () => {
-    const now = Date.now();
-    const timeSinceLastClick = now - lastClickTimeRef.current;
-    
-    if (isPaused && timeSinceLastClick > 300) {
-      // Resume if paused
-      setIsPaused(false);
-      if (pauseTimeoutRef.current) {
-        clearTimeout(pauseTimeoutRef.current);
-        pauseTimeoutRef.current = null;
-      }
-    } else {
-      // Pause if not paused
-      setIsPaused(true);
-      
-      if (pauseTimeoutRef.current) {
-        clearTimeout(pauseTimeoutRef.current);
-      }
-
-      if (onPause) {
-        onPause();
-      }
-
-      pauseTimeoutRef.current = setTimeout(() => {
-        setIsPaused(false);
-      }, 5000);
+    // Reset timer by clearing and recreating interval
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
     }
-    
-    lastClickTimeRef.current = now;
-  };
+  }, [onIndexChange]);
 
+
+  // Cleanup on unmount
   useEffect(() => {
     return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
       if (pauseTimeoutRef.current) {
         clearTimeout(pauseTimeoutRef.current);
       }
@@ -116,33 +155,28 @@ export default function ProjectSlider({ projects, currentIndex: externalIndex, o
     <div className="relative w-full h-full flex flex-col">
       {/* Image Container */}
       <div className="relative w-full flex-1 flex items-center justify-center min-h-0">
+        {imageLoading && (
+          <div className="absolute inset-0 flex items-center justify-center z-0">
+            <div className="w-8 h-8 border-2 border-bolf-neon-blue border-t-transparent rounded-full animate-spin" />
+          </div>
+        )}
         <AnimatePresence mode="wait">
           <motion.img
+            ref={imageRef}
             key={`${currentProject.image}-${currentIndex}`}
             src={getAssetPath(`assets/resumes/Furkan/project_images/${currentProject.image}`)}
             alt={currentProject.name}
             initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: imageLoading ? 0 : 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.05 }}
             transition={{ duration: 0.4 }}
             className="w-full h-full object-contain rounded-lg"
             loading="lazy"
             decoding="async"
-            onError={(e) => {
-              (e.target as HTMLImageElement).src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="600"%3E%3Crect fill="%23222" width="400" height="600"/%3E%3Ctext x="50%25" y="50%25" font-family="Arial" font-size="20" fill="%23999" text-anchor="middle" dominant-baseline="middle"%3EImage not found%3C/text%3E%3C/svg%3E';
-            }}
+            onLoad={handleImageLoad}
+            onError={handleImageError}
           />
         </AnimatePresence>
-        
-        {/* Click on image to pause/resume - overlay */}
-        <div
-          className="absolute inset-0 cursor-pointer z-10"
-          onClick={(e) => {
-            e.stopPropagation();
-            handleClick();
-          }}
-          title={isPaused ? t('portfolio.clickToResume') : t('portfolio.clickToPause')}
-        />
       </div>
 
       {/* Slider Indicator - at bottom */}
@@ -153,7 +187,6 @@ export default function ProjectSlider({ projects, currentIndex: externalIndex, o
             onClick={(e) => {
               e.stopPropagation();
               handleIndexChange(index);
-              handleClick();
             }}
             className={`h-1.5 rounded-full transition-all duration-300 ${
               index === currentIndex

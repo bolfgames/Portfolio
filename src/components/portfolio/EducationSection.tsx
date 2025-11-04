@@ -16,6 +16,38 @@ interface EducationSectionProps {
 export default function EducationSection({ education }: EducationSectionProps) {
   const { t } = useI18n();
 
+  // Try to get translated values, fallback to JSON values
+  const getTranslatedDegree = () => {
+    try {
+      const translated = t('portfolio.educationData.degree');
+      if (translated && translated !== 'portfolio.educationData.degree') {
+        return translated;
+      }
+    } catch {}
+    return education.degree;
+  };
+
+  const getTranslatedUniversity = () => {
+    try {
+      const translated = t('portfolio.educationData.university');
+      if (translated && translated !== 'portfolio.educationData.university') {
+        return translated;
+      }
+    } catch {}
+    return education.university;
+  };
+
+  const getTranslatedFaculty = () => {
+    if (!education.faculty) return '';
+    try {
+      const translated = t('portfolio.educationData.faculty');
+      if (translated && translated !== 'portfolio.educationData.faculty') {
+        return translated;
+      }
+    } catch {}
+    return education.faculty;
+  };
+
   return (
     <section className="mb-12">
       <motion.h2
@@ -34,11 +66,11 @@ export default function EducationSection({ education }: EducationSectionProps) {
         className="bg-bolf-black/50 border border-bolf-gray/20 rounded-lg p-6"
       >
         <h3 className="text-2xl font-bold text-bolf-neon-blue mb-2">
-          {education.degree}
+          {getTranslatedDegree()}
         </h3>
         <p className="text-lg text-bolf-gray mb-1">
-          {education.university}
-          {education.faculty && `, ${education.faculty}`}
+          {getTranslatedUniversity()}
+          {getTranslatedFaculty() && `, ${getTranslatedFaculty()}`}
         </p>
         <p className="text-sm text-bolf-gray/70 mb-2">
           {education.period} · {education.location}

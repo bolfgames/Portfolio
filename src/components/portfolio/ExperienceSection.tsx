@@ -21,6 +21,64 @@ interface ExperienceSectionProps {
 export default function ExperienceSection({ experiences }: ExperienceSectionProps) {
   const { t } = useI18n();
 
+  // Helper function to translate company names
+  const translateCompany = (company: string): string => {
+    const companyMap: Record<string, string> = {
+      'BOLF Games': 'portfolio.companies.bolfGames',
+      'Freelance': 'portfolio.companies.freelance',
+      'Rollic': 'portfolio.companies.rollic',
+      'RATIC': 'portfolio.companies.ratic',
+    };
+    
+    const key = companyMap[company];
+    if (key) {
+      try {
+        const translated = t(key);
+        if (translated && translated !== key) {
+          return translated;
+        }
+      } catch {}
+    }
+    return company;
+  };
+
+  // Helper function to translate positions
+  const translatePosition = (position: string): string => {
+    if (position.includes('Unity Game Developer')) {
+      try {
+        const translated = t('portfolio.positions.unityGameDeveloper');
+        if (translated && translated !== 'portfolio.positions.unityGameDeveloper') {
+          return translated;
+        }
+      } catch {}
+    }
+    return position;
+  };
+
+  // Helper function to translate descriptions
+  const translateDescription = (description: string): string => {
+    const descMap: Record<string, string> = {
+      'Level-based arcade game inspired by Flappy Bird': 'portfolio.projectDescriptions.levelBasedArcade',
+      'Local multiplayer for touch tables': 'portfolio.projectDescriptions.localMultiplayer',
+      'Digital board game for touch tables': 'portfolio.projectDescriptions.digitalBoardGame',
+      'With power-ups for touch tables': 'portfolio.projectDescriptions.powerUps',
+      'Local multiplayer with boosters': 'portfolio.projectDescriptions.localMultiplayerBoosters',
+      'Contributed to feature development': 'portfolio.projectDescriptions.contributedFeatureDevelopment',
+      'Developed various Unity games using C#, implementing diverse mechanics and gameplay systems': 'portfolio.projectDescriptions.developedVariousGames',
+    };
+    
+    const key = descMap[description];
+    if (key) {
+      try {
+        const translated = t(key);
+        if (translated && translated !== key) {
+          return translated;
+        }
+      } catch {}
+    }
+    return description;
+  };
+
   return (
     <section className="mb-12">
       <motion.h2
@@ -43,9 +101,9 @@ export default function ExperienceSection({ experiences }: ExperienceSectionProp
           >
             <div className="mb-4">
               <h3 className="text-2xl font-bold text-bolf-neon-blue mb-2">
-                {exp.company}
+                {translateCompany(exp.company)}
               </h3>
-              <p className="text-lg text-bolf-gray mb-1">{exp.position}</p>
+              <p className="text-lg text-bolf-gray mb-1">{translatePosition(exp.position)}</p>
               <p className="text-sm text-bolf-gray/70">{exp.period}</p>
             </div>
 
@@ -55,7 +113,7 @@ export default function ExperienceSection({ experiences }: ExperienceSectionProp
                   <h4 className="text-xl font-semibold text-bolf-white mb-2">
                     {project.name}
                   </h4>
-                  <p className="text-bolf-gray/80 mb-2">{project.description}</p>
+                  <p className="text-bolf-gray/80 mb-2">{translateDescription(project.description)}</p>
                   
                   {project.features && project.features.length > 0 && (
                     <ul className="list-disc list-inside space-y-1 text-bolf-gray/70 ml-4">
