@@ -14,14 +14,13 @@ interface Project {
 
 interface ProjectSliderProps {
   projects: Project[];
-  year: string;
   currentIndex?: number;
   onProjectChange?: (project: Project) => void;
   onIndexChange?: (index: number) => void;
   onPause?: () => void;
 }
 
-export default function ProjectSlider({ projects, year, currentIndex: externalIndex, onProjectChange, onIndexChange, onPause }: ProjectSliderProps) {
+export default function ProjectSlider({ projects, currentIndex: externalIndex, onProjectChange, onIndexChange, onPause }: ProjectSliderProps) {
   const { t } = useI18n();
   const [currentIndex, setCurrentIndex] = useState(externalIndex ?? 0);
   const [isPaused, setIsPaused] = useState(false);

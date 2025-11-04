@@ -144,7 +144,6 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                   <div className="w-full h-full">
                     <ProjectSlider
                       projects={projects}
-                      year=""
                       currentIndex={currentIndex}
                       onProjectChange={handleProjectChange}
                       onIndexChange={setCurrentIndex}
