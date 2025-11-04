@@ -175,6 +175,10 @@ export default function ProjectSlider({
             exit={{ opacity: 0, scale: 1.05 }}
             transition={{ duration: 0.4 }}
             className="w-full h-full object-contain rounded-lg"
+            style={{
+              transform: externalIsLandscape ? 'rotate(-90deg)' : 'rotate(0deg)',
+              transformOrigin: 'center center',
+            }}
             loading="lazy"
             decoding="async"
             onLoad={handleImageLoad}

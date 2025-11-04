@@ -349,8 +349,10 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
 
               {/* Slider Indicator - Bottom center, counter-rotate to stay upright */}
               <div 
-                className="absolute bottom-2 left-1/2 z-30 flex justify-center gap-2"
+                className="absolute z-30 flex justify-center gap-2"
                 style={{
+                  left: '50%',
+                  bottom: '8px',
                   transform: isLandscape ? 'translateX(-50%) rotate(-90deg)' : 'translateX(-50%) rotate(0deg)',
                 }}
               >
