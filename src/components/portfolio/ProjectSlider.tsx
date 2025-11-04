@@ -22,7 +22,7 @@ interface ProjectSliderProps {
 export default function ProjectSlider({ projects, year, onProjectChange, onPause }: ProjectSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const pauseTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const pauseTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     if (projects.length === 0) return;

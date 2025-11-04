@@ -255,7 +255,7 @@ function TeamMemberPage() {
                   </motion.h2>
 
                   <div className="space-y-16">
-                    {furkanData.projects.map((yearGroup, index) => (
+                    {furkanData.projects.map((yearGroup) => (
                       <ProjectMockup
                         key={yearGroup.year}
                         year={yearGroup.year}
