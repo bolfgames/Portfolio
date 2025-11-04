@@ -5,6 +5,7 @@ import { settingsService } from '../../services/settingsService';
 import DeveloperPanel from '../developer/DeveloperPanel';
 import EditorPanel from '../editor/EditorPanel';
 import { Edit } from 'lucide-react';
+import { getAssetPath } from '../../utils/assetPath';
 
 /**
  * Header Component - Navigation and logo with glassmorphism
@@ -109,13 +110,13 @@ function Header() {
             }}
           >
             <img 
-              src={`${import.meta.env.BASE_URL}assets/icons/logo_cropped_by_gunduzdev/logobeyazpng_Çalışma Yüzeyi 1c.png`}
+              src={getAssetPath('/assets/icons/logo_cropped_by_gunduzdev/logobeyazpng_Çalışma Yüzeyi 1c.png')}
               alt="BOLF Games Logo"
               className="h-10 md:h-12 w-auto"
               loading="eager"
               decoding="async"
               onError={(e) => {
-                (e.target as HTMLImageElement).src = `${import.meta.env.BASE_URL}assets/icons/logo_transparant/logobznpng_Çalışma Yüzeyi 1.png`;
+                (e.target as HTMLImageElement).src = getAssetPath('/assets/icons/logo_transparant/logobznpng_Çalışma Yüzeyi 1.png');
               }}
             />
           </a>
