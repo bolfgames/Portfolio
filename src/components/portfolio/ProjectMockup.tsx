@@ -247,21 +247,23 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
       )}
 
       {/* Mockup Container */}
-      <div className={`relative flex items-center ${isLandscape ? 'flex-row gap-8' : 'flex-row gap-4'}`}>
+      <div className={`relative flex items-center ${isLandscape ? 'flex-col gap-4' : 'flex-row gap-4'}`}>
         {/* Previous Arrow - Outside mockup */}
         {projects.length > 1 && (
           <button
             onClick={handlePrevious}
-            className="z-30 p-2 rounded-full bg-bolf-black/80 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-600 ease-in-out order-1"
+            className={`z-30 p-2 rounded-full bg-bolf-black/80 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-600 ease-in-out ${
+              isLandscape ? 'order-1' : 'order-1'
+            }`}
             aria-label={t('portfolio.previous')}
           >
             <svg className="w-6 h-6 text-bolf-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isLandscape ? "M19 9l-7 7-7-7" : "M15 19l-7-7 7-7"} />
             </svg>
           </button>
         )}
 
-        <div className="relative order-2" ref={mockupRef}>
+        <div className={`relative ${isLandscape ? 'order-2' : 'order-2'}`} ref={mockupRef}>
           {/* iPhone Mockup */}
           <div
             className="relative rounded-[45px] shadow-[0_0_2px_2px_rgba(255,255,255,0.1)] border-8 border-zinc-900 transition-all duration-600 ease-in-out w-[280px] h-[600px] max-w-[70vw] max-h-[150vw]"
@@ -349,10 +351,10 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                 </div>
               </div>
 
-              {/* Slider Indicator - Yatay modda sağ orta, dikey modda alt orta */}
+              {/* Slider Indicator - Yatay modda sağ kenar orta, dikey modda alt orta */}
               <div 
                 className={`absolute z-30 flex justify-center gap-2 ${
-                  isLandscape ? 'right-2 top-1/2' : 'bottom-2 left-1/2'
+                  isLandscape ? 'right-1 top-1/2' : 'bottom-2 left-1/2'
                 }`}
                 style={{
                   transform: isLandscape 
@@ -423,11 +425,13 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
         {projects.length > 1 && (
           <button
             onClick={handleNext}
-            className="z-30 p-2 rounded-full bg-bolf-black/80 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-600 ease-in-out order-3"
+            className={`z-30 p-2 rounded-full bg-bolf-black/80 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-600 ease-in-out ${
+              isLandscape ? 'order-3' : 'order-3'
+            }`}
             aria-label={t('portfolio.next')}
           >
             <svg className="w-6 h-6 text-bolf-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isLandscape ? "M5 15l7-7 7 7" : "M9 5l7 7-7 7"} />
             </svg>
           </button>
         )}
