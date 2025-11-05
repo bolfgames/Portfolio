@@ -24,3 +24,8 @@ Rol Level Designer, Narrator Game Designer
 
 TPS Shooter Dönemlik dersimiz için geliştirdiğimiz TPS-Shooter oyunumuz.
 Rol Level Design
+
+
+(Gerekli durumlar için sen şişirmeler yapabilirsin. Sonra düzeltiriz. Ama localization kısmını vs kesinlikle doğru yap. 
+Her dilde locakize olacak! Ayrıca, bu metinde bazı kısımlar Türkçe, bazı kısımlar İngilizce olabilir. 
+Bunları da doğru şekilde localize edeceksin. )

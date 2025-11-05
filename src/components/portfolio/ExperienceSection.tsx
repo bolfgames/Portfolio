@@ -52,6 +52,14 @@ export default function ExperienceSection({ experiences }: ExperienceSectionProp
         }
       } catch {}
     }
+    if (position.includes('Level Designer')) {
+      try {
+        const translated = t('portfolio.positions.levelDesigner');
+        if (translated && translated !== 'portfolio.positions.levelDesigner') {
+          return translated;
+        }
+      } catch {}
+    }
     return position;
   };
 
@@ -63,6 +71,7 @@ export default function ExperienceSection({ experiences }: ExperienceSectionProp
       'July – Sept 2024': 'portfolio.periods.julySept2024',
       '2022-2023': 'portfolio.periods.2022-2023',
       '2019-2024': 'portfolio.periods.2019-2024',
+      'Current': 'portfolio.periods.current',
     };
     
     const key = periodMap[period];
@@ -87,6 +96,9 @@ export default function ExperienceSection({ experiences }: ExperienceSectionProp
       'Bomberman-style Game': 'portfolio.projectNames.bombermanStyleGame',
       'Bus Jam': 'portfolio.projectNames.busJam',
       'Multiple 2D and 3D Unity Games': 'portfolio.projectNames.multipleUnityGames',
+      'Black Spot': 'portfolio.projectNames.blackSpot',
+      'Gloveffect': 'portfolio.projectNames.gloveffect',
+      'TPS Shooter': 'portfolio.projectNames.tpsShooter',
     };
     
     const key = nameMap[name];
@@ -111,6 +123,9 @@ export default function ExperienceSection({ experiences }: ExperienceSectionProp
       'Local multiplayer with boosters': 'portfolio.projectDescriptions.localMultiplayerBoosters',
       'Contributed to feature development': 'portfolio.projectDescriptions.contributedFeatureDevelopment',
       'Developed various Unity games using C#, implementing diverse mechanics and gameplay systems': 'portfolio.projectDescriptions.developedVariousGames',
+      'Level Design and Game Design project': 'portfolio.projectDescriptions.blackSpotDescription',
+      'FPS-Shooter game developed from a semester project to a playable prototype': 'portfolio.projectDescriptions.gloveffectDescription',
+      'TPS-Shooter game developed for academic course': 'portfolio.projectDescriptions.tpsShooterDescription',
     };
     
     const key = descMap[description];
@@ -142,6 +157,16 @@ export default function ExperienceSection({ experiences }: ExperienceSectionProp
       'Designed multiplayer 2D games using Photon with smooth networking experiences': 'portfolio.experienceFeatures.photonMultiplayer2D',
       'Utilized Cinemachine for camera control, DOTween for animations, and ScriptableObjects to build modular, scalable architectures': 'portfolio.experienceFeatures.cinemachineDotween',
       'Applied best practices in game optimization and clean code principles': 'portfolio.experienceFeatures.optimizationCleanCode',
+      'Level Design': 'portfolio.projectFeatures.levelDesign',
+      'Game Design': 'portfolio.projectFeatures.gameDesign',
+      'Narrative Design': 'portfolio.projectFeatures.narrativeDesign',
+      '3D Level Design': 'portfolio.projectFeatures.3dLevelDesign',
+      'Environment Design': 'portfolio.projectFeatures.environmentDesign',
+      'Environment creation': 'portfolio.projectFeatures.environmentCreation',
+      'Gameplay mechanics design': 'portfolio.projectFeatures.gameplayMechanicsDesign',
+      'Prototype development': 'portfolio.projectFeatures.prototypeDevelopment',
+      'FPS gameplay mechanics': 'portfolio.projectFeatures.fpsGameplayMechanics',
+      'TPS gameplay mechanics': 'portfolio.projectFeatures.tpsGameplayMechanics',
     };
     
     const key = featureMap[feature];
@@ -161,6 +186,8 @@ export default function ExperienceSection({ experiences }: ExperienceSectionProp
     const linkMap: Record<string, string> = {
       'Google Play Store': 'portfolio.links.googlePlayStore',
       'App Store / Google Play Store': 'portfolio.links.appStoreGooglePlay',
+      'Trailer': 'portfolio.links.trailer',
+      'Gameplay Trailer': 'portfolio.links.gameplayTrailer',
     };
     
     const key = linkMap[link];

@@ -15,6 +15,7 @@ interface LaptopSliderProps {
   currentIndex?: number;
   onProjectChange?: (project: LaptopProject) => void;
   onIndexChange?: (index: number) => void;
+  onImageIndexChange?: (imageIndex: number) => void;
   isPaused?: boolean;
   resetTimer?: number;
   showIndicators?: boolean;
@@ -24,7 +25,8 @@ export default function LaptopSlider({
   projects, 
   currentIndex: externalIndex, 
   onProjectChange, 
-  onIndexChange, 
+  onIndexChange,
+  onImageIndexChange,
   isPaused: externalPaused,
   resetTimer,
   showIndicators = true
@@ -106,6 +108,13 @@ export default function LaptopSlider({
       onIndexChange(currentProjectIndex);
     }
   }, [currentProjectIndex, onIndexChange]);
+
+  // Notify image index change
+  useEffect(() => {
+    if (onImageIndexChange) {
+      onImageIndexChange(currentImageIndex);
+    }
+  }, [currentImageIndex, onImageIndexChange]);
 
   const handleImageLoad = useCallback(() => {
     setImageLoading(false);

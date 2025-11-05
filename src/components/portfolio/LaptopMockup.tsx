@@ -21,6 +21,7 @@ export default function LaptopMockup({ projects }: LaptopMockupProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [resetTimer, setResetTimer] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const mockupRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -35,6 +36,7 @@ export default function LaptopMockup({ projects }: LaptopMockupProps) {
     const index = projects.findIndex(p => p.name === project.name);
     if (index !== -1) {
       setCurrentIndex(index);
+      setCurrentImageIndex(0); // Reset image index when project changes
     }
   }, [projects]);
 
@@ -215,49 +217,56 @@ export default function LaptopMockup({ projects }: LaptopMockupProps) {
               width: '80%',
             }}
           >
-            {/* Screen border */}
+            {/* Screen border - aspect ratio container */}
             <div
+              className="relative"
               style={{
                 border: '2px solid #cacacc',
                 borderRadius: '3% 3% 0.5% 0.5% / 5%',
                 boxShadow: '0 0 0 1px rgba(0, 0, 0, 0.8) inset, 0 0 1px 2px rgba(255, 255, 255, 0.3) inset',
                 paddingTop: '67%',
               }}
-            />
-            
-            {/* Viewport */}
-            <div
-              className="absolute inset-0"
-              style={{
-                margin: '4.3% 3.2%',
-                background: '#333',
-                borderRadius: '2% 2% 0.3% 0.3% / 4%',
-              }}
             >
-              <LaptopSlider
-                key={`${currentProject?.name}-${currentIndex}-${resetTimer}`}
-                projects={projects}
-                currentIndex={currentIndex}
-                onProjectChange={handleProjectChange}
-                onIndexChange={setCurrentIndex}
-                isPaused={isPaused}
-                resetTimer={resetTimer}
-                showIndicators={false}
+              {/* Viewport - absolute positioned inside screen border */}
+              <div
+                className="absolute overflow-hidden"
+                style={{
+                  top: '4.3%',
+                  left: '3.2%',
+                  right: '3.2%',
+                  bottom: '4.3%',
+                  background: '#333',
+                  borderRadius: '2% 2% 0.3% 0.3% / 4%',
+                }}
+              >
+                <LaptopSlider
+                  key={`${currentProject?.name}-${currentIndex}-${resetTimer}`}
+                  projects={projects}
+                  currentIndex={currentIndex}
+                  onProjectChange={handleProjectChange}
+                  onIndexChange={(index) => {
+                    setCurrentIndex(index);
+                    setCurrentImageIndex(0);
+                  }}
+                  onImageIndexChange={setCurrentImageIndex}
+                  isPaused={isPaused}
+                  resetTimer={resetTimer}
+                  showIndicators={false}
+                />
+              </div>
+
+              {/* Bottom border effect */}
+              <div
+                className="absolute bottom-0 left-0 right-0"
+                style={{
+                  height: '1px',
+                  borderTop: '2px solid rgba(255, 255, 255, 0.15)',
+                  bottom: '0.75%',
+                  left: '0.5%',
+                  width: '99%',
+                }}
               />
             </div>
-
-            {/* Bottom border effect */}
-            <div
-              className="absolute bottom-0 left-0"
-              style={{
-                content: '""',
-                borderTop: '2px solid rgba(255, 255, 255, 0.15)',
-                bottom: '0.75%',
-                left: '0.5%',
-                paddingTop: '1%',
-                width: '99%',
-              }}
-            />
           </div>
 
           {/* Pause Indicator */}
@@ -278,8 +287,8 @@ export default function LaptopMockup({ projects }: LaptopMockupProps) {
                 <div
                   key={index}
                   className={`w-2 h-2 rounded-full transition-all ${
-                    index === 0
-                      ? 'bg-bolf-neon-blue'
+                    index === currentImageIndex
+                      ? 'bg-bolf-neon-blue w-6'
                       : 'bg-bolf-gray/50'
                   }`}
                 />
