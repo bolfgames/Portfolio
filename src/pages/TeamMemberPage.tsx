@@ -84,10 +84,12 @@ interface EmirData {
   skills: string[];
   projects: Array<{
     name: string;
-    image: string;
+    images: string[];
     features?: string[];
     link?: string;
     linkUrl?: string;
+    landscapeScale?: number;
+    portraitScale?: number;
   }>;
 }
 
@@ -496,7 +498,7 @@ function TeamMemberPage() {
 
                   <div className="space-y-16">
                     {emirData.projects.map((project) => (
-                      <LaptopMockup key={project.name} project={{ ...project, images: [project.image] }} />
+                      <LaptopMockup key={project.name} project={project} />
                     ))}
                   </div>
                 </section>
