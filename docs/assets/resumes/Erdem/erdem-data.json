@@ -1,0 +1,66 @@
+{
+  "contact": {
+    "email": "",
+    "phone": "",
+    "location": "",
+    "linkedin": "",
+    "artstation": ""
+  },
+  "education": {
+    "degree": "",
+    "university": "",
+    "faculty": "",
+    "period": "",
+    "location": ""
+  },
+  "experience": [],
+  "skills": [],
+  "projects": [
+    {
+      "name": "DDs Bunga",
+      "images": [
+        "WhatsApp Image 2024-07-09 at 03.53.27_fbc84e71.jpg",
+        "WhatsApp Image 2024-07-09 at 03.53.28_7d8ebde7.jpg",
+        "WhatsApp Image 2024-07-12 at 01.06.33_ee1a7e8a.jpg"
+      ]
+    },
+    {
+      "name": "DDs CMR",
+      "images": [
+        "camera11.6_1.jpg",
+        "camera5.1_1.jpg",
+        "camera5_1.jpg",
+        "camera8.jpg",
+        "camera8_1.jpg",
+        "camera9_1.jpg"
+      ]
+    },
+    {
+      "name": "DDs CP",
+      "images": [
+        "WhatsApp Image 2025-10-11 at 22.20.21_4bfc1d14.jpg",
+        "WhatsApp Image 2025-10-11 at 22.20.21_4c571340.jpg",
+        "WhatsApp Image 2025-10-11 at 22.20.21_61e5e95d.jpg"
+      ]
+    },
+    {
+      "name": "DDs G10",
+      "images": [
+        "untitled.jpg",
+        "untitled.tif2.tif3.jpg",
+        "untitled.tif2.tif3.tif4.tif5.jpg",
+        "untitled.tif2.tif3.tif4.tif5.tif6.jpg"
+      ]
+    },
+    {
+      "name": "DDs MAc 10",
+      "images": [
+        "mac1.3bbn.,.jpg",
+        "mac1.6.jpg",
+        "macbbdc.jpg",
+        "macbbdc_1.jpg"
+      ]
+    }
+  ]
+}
+
