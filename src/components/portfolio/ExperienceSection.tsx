@@ -4,7 +4,7 @@ import { useI18n } from '../../contexts/I18nContext';
 interface Experience {
   company: string;
   position: string;
-  period: string;
+  period?: string;
   projects: Array<{
     name: string;
     description: string;
@@ -36,6 +36,8 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
       'Proyecto de Graduación': 'portfolio.companies.graduationProject',
       '卒業プロジェクト': 'portfolio.companies.graduationProject',
       '毕业项目': 'portfolio.companies.graduationProject',
+      'Durih': 'portfolio.companies.durih',
+      'Lunscale': 'portfolio.companies.lunscale',
     };
     
     const key = companyMap[company];
@@ -64,6 +66,14 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
       try {
         const translated = t('portfolio.positions.levelDesigner');
         if (translated && translated !== 'portfolio.positions.levelDesigner') {
+          return translated;
+        }
+      } catch {}
+    }
+    if (position.includes('2D Tasarımcı') || position.includes('2D Designer')) {
+      try {
+        const translated = t('portfolio.positions.2dDesigner');
+        if (translated && translated !== 'portfolio.positions.2dDesigner') {
           return translated;
         }
       } catch {}
@@ -134,6 +144,8 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
       'Level Design and Game Design project': 'portfolio.projectDescriptions.blackSpotDescription',
       'FPS-Shooter game developed from a semester project to a playable prototype': 'portfolio.projectDescriptions.gloveffectDescription',
       'TPS-Shooter game developed for academic course': 'portfolio.projectDescriptions.tpsShooterDescription',
+      'Oyun projesi için oyun karakterleri, konsept sanat çalışmaları ve kart tasarımları üzerinde çalıştım. Karakterlerin görsel kimliğini oluştururken, oyun mekaniklerine uygun tasarımlar geliştirdim ve kart tasarımlarında tutarlı bir görsel dil oluşturdum.': 'portfolio.projectDescriptions.durihDescription',
+      'Proje için konsept sanat ve görsel tasarım alanlarında çalıştım. Çizimlerimle projenin görsel kimliğini şekillendirdim ve sanatsal yönlendirmelerde bulundum.': 'portfolio.projectDescriptions.lunscaleDescription',
     };
     
     const key = descMap[description];
@@ -177,6 +189,10 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
       'Prototype development': 'portfolio.projectFeatures.prototypeDevelopment',
       'FPS gameplay mechanics': 'portfolio.projectFeatures.fpsGameplayMechanics',
       'TPS gameplay mechanics': 'portfolio.projectFeatures.tpsGameplayMechanics',
+      'Karakter Tasarımı': 'portfolio.projectFeatures.karakterTasarimi',
+      'Konsept Çizimi': 'portfolio.projectFeatures.konseptCizimi',
+      'Kart Tasarımı': 'portfolio.projectFeatures.kartTasarim',
+      'Görsel Tasarım': 'portfolio.projectFeatures.gorselTasarim',
     };
     
     const key = featureMap[feature];
@@ -237,7 +253,7 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
                 {translateCompany(exp.company)}
               </h3>
               <p className="text-lg text-bolf-gray mb-1">{translatePosition(exp.position)}</p>
-              <p className="text-sm text-bolf-gray/70">{translatePeriod(exp.period)}</p>
+              {exp.period && <p className="text-sm text-bolf-gray/70">{translatePeriod(exp.period)}</p>}
             </div>
 
             <div className="space-y-4">

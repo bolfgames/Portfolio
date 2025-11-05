@@ -12,11 +12,19 @@ export function getAssetPath(path: string): string {
   // Remove leading slash if present
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
   
+  // Split path into segments and encode each segment (but keep slashes)
+  const segments = cleanPath.split('/');
+  const encodedSegments = segments.map(segment => {
+    // Encode each segment but preserve slashes
+    return encodeURIComponent(segment);
+  });
+  const encodedPath = encodedSegments.join('/');
+  
   // Get base URL from Vite (includes trailing slash, e.g., "/Portolio/")
   const baseUrl = import.meta.env.BASE_URL || '/';
   
-  // Combine base URL with path
-  // baseUrl already has trailing slash, cleanPath should not start with /
-  return `${baseUrl}${cleanPath}`;
+  // Combine base URL with encoded path
+  // baseUrl already has trailing slash, encodedPath should not start with /
+  return `${baseUrl}${encodedPath}`;
 }
 

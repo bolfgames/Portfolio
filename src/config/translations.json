@@ -128,19 +128,25 @@
         "faculty": "İletişim Fakültesi",
         "emirDegree": "Dijital Oyun Tasarımı Lisansı",
         "emirUniversity": "İstanbul Bilgi Üniversitesi",
-        "emirFaculty": "İletişim Fakültesi"
+        "emirFaculty": "İletişim Fakültesi",
+        "ataCemDegree": "Çizgi Film ve Animasyon",
+        "ataCemUniversity": "İstanbul Aydın Üniversitesi",
+        "ataCemFaculty": "Güzel Sanatlar Fakültesi"
       },
       "positions": {
         "unityGameDeveloper": "Unity Oyun Geliştirici",
         "freelance": "Serbest Çalışan",
-        "levelDesigner": "Seviye Tasarımcısı"
+        "levelDesigner": "Seviye Tasarımcısı",
+        "2dDesigner": "2D Tasarımcı"
       },
       "companies": {
         "bolfGames": "BOLF Games",
         "freelance": "Serbest Çalışan",
         "rollic": "Rollic",
         "ratic": "RATIC",
-        "graduationProject": "Mezuniyet Projesi"
+        "graduationProject": "Mezuniyet Projesi",
+        "durih": "Durih",
+        "lunscale": "Lunscale"
       },
       "months": {
         "jan": "Oca",
@@ -166,7 +172,9 @@
         "developedVariousGames": "C# kullanarak çeşitli Unity oyunları geliştirdi, farklı mekanikler ve oynanış sistemleri uyguladı",
         "blackSpotDescription": "Seviye Tasarımı ve Oyun Tasarımı projesi",
         "gloveffectDescription": "Okulda dönemlik bir proje olması amacıyla çıkılan yolda daha uzun süren bir geliştirme aşamasıyla oynanabilir bir prototip aşamasına kadar getirilen bir FPS-Shooter oyunu",
-        "tpsShooterDescription": "Dönemlik dersimiz için geliştirdiğimiz TPS-Shooter oyunumuz"
+        "tpsShooterDescription": "Dönemlik dersimiz için geliştirdiğimiz TPS-Shooter oyunumuz",
+        "durihDescription": "Oyun projesi için oyun karakterleri, konsept sanat çalışmaları ve kart tasarımları üzerinde çalıştım. Karakterlerin görsel kimliğini oluştururken, oyun mekaniklerine uygun tasarımlar geliştirdim ve kart tasarımlarında tutarlı bir görsel dil oluşturdum.",
+        "lunscaleDescription": "Proje için konsept sanat ve görsel tasarım alanlarında çalıştım. Çizimlerimle projenin görsel kimliğini şekillendirdim ve sanatsal yönlendirmelerde bulundum."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -214,7 +222,10 @@
         "tileVania": "TileVania",
         "blackSpot": "Black Spot",
         "gloveffect": "Gloveffect",
-        "tpsShooter": "TPS Shooter"
+        "tpsShooter": "TPS Shooter",
+        "durih": "Durih",
+        "lunscale": "Lunscale",
+        "personalArt": "Kişisel çizimler"
       },
       "projectFeatures": {
         "levelBasedArcadeGame": "Flappy Bird'den ilham alan seviye tabanlı arcade oyunu",
@@ -267,7 +278,11 @@
         "tpsGameplayMechanics": "TPS oynanış mekanikleri",
         "prototypeDevelopment": "Prototip geliştirme",
         "environmentCreation": "Çevre oluşturma",
-        "gameplayMechanicsDesign": "Oynanış mekanikleri tasarımı"
+        "gameplayMechanicsDesign": "Oynanış mekanikleri tasarımı",
+        "karakterTasarimi": "Karakter Tasarımı",
+        "konseptCizimi": "Konsept Çizimi",
+        "kartTasarim": "Kart Tasarımı",
+        "gorselTasarim": "Görsel Tasarım"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -279,7 +294,10 @@
         "gameDesign": "Oyun Tasarımı",
         "narrativeDesign": "Anlatı Tasarımı",
         "3dLevelDesign": "3D Seviye Tasarımı",
-        "environmentDesign": "Çevre Tasarımı"
+        "environmentDesign": "Çevre Tasarımı",
+        "karakterTasarimi": "Karakter Tasarımı",
+        "konseptTasarimi": "Konsept Tasarımı",
+        "2dCizim": "2D Çizim"
       },
       "links": {
         "googlePlayStore": "Google Play Store",
@@ -510,19 +528,25 @@
         "faculty": "Faculty of Communication",
         "emirDegree": "Bachelor of Digital Game Design",
         "emirUniversity": "Istanbul Bilgi University",
-        "emirFaculty": "Faculty of Communication"
+        "emirFaculty": "Faculty of Communication",
+        "ataCemDegree": "Animation and Cartoon",
+        "ataCemUniversity": "Istanbul Aydin University",
+        "ataCemFaculty": "Faculty of Fine Arts"
       },
       "positions": {
         "unityGameDeveloper": "Unity Game Developer",
         "freelance": "Freelance",
-        "levelDesigner": "Level Designer"
+        "levelDesigner": "Level Designer",
+        "2dDesigner": "2D Designer"
       },
       "companies": {
         "bolfGames": "BOLF Games",
         "freelance": "Freelance",
         "rollic": "Rollic",
         "ratic": "RATIC",
-        "graduationProject": "Graduation Project"
+        "graduationProject": "Graduation Project",
+        "durih": "Durih",
+        "lunscale": "Lunscale"
       },
       "months": {
         "jan": "Jan",
@@ -548,7 +572,9 @@
         "developedVariousGames": "Developed various Unity games using C#, implementing diverse mechanics and gameplay systems",
         "blackSpotDescription": "Level Design and Game Design project",
         "gloveffectDescription": "FPS-Shooter game developed from a semester project to a playable prototype",
-        "tpsShooterDescription": "TPS-Shooter game developed for academic course"
+        "tpsShooterDescription": "TPS-Shooter game developed for academic course",
+        "durihDescription": "Worked on game characters, concept art, and card designs for the game project. While creating the visual identity of characters, I developed designs compatible with game mechanics and established a consistent visual language in card designs.",
+        "lunscaleDescription": "Worked on concept art and visual design for the project. I shaped the project's visual identity with my drawings and provided artistic direction."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -596,7 +622,10 @@
         "tileVania": "TileVania",
         "blackSpot": "Black Spot",
         "gloveffect": "Gloveffect",
-        "tpsShooter": "TPS Shooter"
+        "tpsShooter": "TPS Shooter",
+        "durih": "Durih",
+        "lunscale": "Lunscale",
+        "personalArt": "Personal Art"
       },
       "projectFeatures": {
         "levelBasedArcadeGame": "Level-based arcade game inspired by Flappy Bird",
@@ -649,7 +678,11 @@
         "tpsGameplayMechanics": "TPS gameplay mechanics",
         "prototypeDevelopment": "Prototype development",
         "environmentCreation": "Environment creation",
-        "gameplayMechanicsDesign": "Gameplay mechanics design"
+        "gameplayMechanicsDesign": "Gameplay mechanics design",
+        "karakterTasarimi": "Character Design",
+        "konseptCizimi": "Concept Drawing",
+        "kartTasarim": "Card Design",
+        "gorselTasarim": "Visual Design"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -661,7 +694,10 @@
         "gameDesign": "Game Design",
         "narrativeDesign": "Narrative Design",
         "3dLevelDesign": "3D Level Design",
-        "environmentDesign": "Environment Design"
+        "environmentDesign": "Environment Design",
+        "karakterTasarimi": "Character Design",
+        "konseptTasarimi": "Concept Design",
+        "2dCizim": "2D Drawing"
       },
       "links": {
         "googlePlayStore": "Google Play Store",
@@ -894,19 +930,25 @@
         "faculty": "Fakultät für Kommunikation",
         "emirDegree": "Bachelor of Digital Game Design",
         "emirUniversity": "Istanbul Bilgi Universität",
-        "emirFaculty": "Fakultät für Kommunikation"
+        "emirFaculty": "Fakultät für Kommunikation",
+        "ataCemDegree": "Animation und Zeichentrickfilm",
+        "ataCemUniversity": "Istanbul Aydin Universität",
+        "ataCemFaculty": "Fakultät der Schönen Künste"
       },
       "positions": {
         "unityGameDeveloper": "Unity Spielentwickler",
         "freelance": "Freiberuflich",
-        "levelDesigner": "Level-Designer"
+        "levelDesigner": "Level-Designer",
+        "2dDesigner": "2D-Designer"
       },
       "companies": {
         "bolfGames": "BOLF Games",
         "freelance": "Freiberuflich",
         "rollic": "Rollic",
         "ratic": "RATIC",
-        "graduationProject": "Abschlussprojekt"
+        "graduationProject": "Abschlussprojekt",
+        "durih": "Durih",
+        "lunscale": "Lunscale"
       },
       "months": {
         "jan": "Jan",
@@ -932,7 +974,9 @@
         "developedVariousGames": "Entwicklung verschiedener Unity-Spiele mit C#, Implementierung verschiedener Mechaniken und Gameplay-Systeme",
         "blackSpotDescription": "Level-Design- und Spiel-Design-Projekt",
         "gloveffectDescription": "FPS-Shooter-Spiel, das von einem Semesterprojekt zu einem spielbaren Prototyp entwickelt wurde",
-        "tpsShooterDescription": "TPS-Shooter-Spiel, das für einen akademischen Kurs entwickelt wurde"
+        "tpsShooterDescription": "TPS-Shooter-Spiel, das für einen akademischen Kurs entwickelt wurde",
+        "durihDescription": "An Spielcharakteren, Konzeptkunst und Kartendesigns für das Spielprojekt gearbeitet. Bei der Erstellung der visuellen Identität der Charaktere entwickelte ich designs, die mit den Spielmechaniken kompatibel sind, und etablierte eine konsistente visuelle Sprache in den Kartendesigns.",
+        "lunscaleDescription": "An Konzeptkunst und visuellem Design für das Projekt gearbeitet. Ich prägte die visuelle Identität des Projekts mit meinen Zeichnungen und gab künstlerische Richtungen vor."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -1033,7 +1077,11 @@
         "tpsGameplayMechanics": "TPS-Gameplay-Mechaniken",
         "prototypeDevelopment": "Prototyp-Entwicklung",
         "environmentCreation": "Umgebungserstellung",
-        "gameplayMechanicsDesign": "Gameplay-Mechaniken-Design"
+        "gameplayMechanicsDesign": "Gameplay-Mechaniken-Design",
+        "karakterTasarimi": "Charakterdesign",
+        "konseptCizimi": "Konzeptzeichnung",
+        "kartTasarim": "Kartendesign",
+        "gorselTasarim": "Visuelles Design"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -1045,7 +1093,10 @@
         "gameDesign": "Spiel-Design",
         "narrativeDesign": "Narratives Design",
         "3dLevelDesign": "3D-Level-Design",
-        "environmentDesign": "Umgebungsdesign"
+        "environmentDesign": "Umgebungsdesign",
+        "karakterTasarimi": "Charakterdesign",
+        "konseptTasarimi": "Konzeptdesign",
+        "2dCizim": "2D-Zeichnung"
       },
       "links": {
         "googlePlayStore": "Google Play Store",
@@ -1278,19 +1329,25 @@
         "faculty": "Faculté de Communication",
         "emirDegree": "Licence en Conception de Jeux Numériques",
         "emirUniversity": "Université Istanbul Bilgi",
-        "emirFaculty": "Faculté de Communication"
+        "emirFaculty": "Faculté de Communication",
+        "ataCemDegree": "Animation et Dessin Animé",
+        "ataCemUniversity": "Université Istanbul Aydin",
+        "ataCemFaculty": "Faculté des Beaux-Arts"
       },
       "positions": {
         "unityGameDeveloper": "Développeur de Jeux Unity",
         "freelance": "Freelance",
-        "levelDesigner": "Concepteur de Niveaux"
+        "levelDesigner": "Concepteur de Niveaux",
+        "2dDesigner": "Designer 2D"
       },
       "companies": {
         "bolfGames": "BOLF Games",
         "freelance": "Freelance",
         "rollic": "Rollic",
         "ratic": "RATIC",
-        "graduationProject": "Projet de Fin d'Études"
+        "graduationProject": "Projet de Fin d'Études",
+        "durih": "Durih",
+        "lunscale": "Lunscale"
       },
       "months": {
         "jan": "Jan",
@@ -1316,7 +1373,9 @@
         "developedVariousGames": "Développé divers jeux Unity avec C#, implémentant des mécaniques et systèmes de gameplay diversifiés",
         "blackSpotDescription": "Projet de conception de niveaux et de conception de jeux",
         "gloveffectDescription": "Jeu FPS-Shooter développé d'un projet de semestre à un prototype jouable",
-        "tpsShooterDescription": "Jeu TPS-Shooter développé pour un cours académique"
+        "tpsShooterDescription": "Jeu TPS-Shooter développé pour un cours académique",
+        "durihDescription": "Travail sur les personnages de jeu, l'art conceptuel et les designs de cartes pour le projet de jeu. Lors de la création de l'identité visuelle des personnages, j'ai développé des designs compatibles avec les mécaniques de jeu et établi un langage visuel cohérent dans les designs de cartes.",
+        "lunscaleDescription": "Travail sur l'art conceptuel et le design visuel pour le projet. J'ai façonné l'identité visuelle du projet avec mes dessins et fourni des directions artistiques."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -1417,7 +1476,11 @@
         "tpsGameplayMechanics": "Mécaniques de gameplay TPS",
         "prototypeDevelopment": "Développement de prototype",
         "environmentCreation": "Création d'environnement",
-        "gameplayMechanicsDesign": "Conception de mécaniques de gameplay"
+        "gameplayMechanicsDesign": "Conception de mécaniques de gameplay",
+        "karakterTasarimi": "Design de Personnages",
+        "konseptCizimi": "Dessin Conceptuel",
+        "kartTasarim": "Design de Cartes",
+        "gorselTasarim": "Design Visuel"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -1429,7 +1492,10 @@
         "gameDesign": "Conception de Jeux",
         "narrativeDesign": "Conception Narrative",
         "3dLevelDesign": "Conception de Niveaux 3D",
-        "environmentDesign": "Conception d'Environnement"
+        "environmentDesign": "Conception d'Environnement",
+        "karakterTasarimi": "Design de Personnages",
+        "konseptTasarimi": "Design Conceptuel",
+        "2dCizim": "Dessin 2D"
       },
       "links": {
         "googlePlayStore": "Google Play Store",
@@ -1662,19 +1728,25 @@
         "faculty": "Facultad de Comunicación",
         "emirDegree": "Licenciatura en Diseño de Juegos Digitales",
         "emirUniversity": "Universidad Istanbul Bilgi",
-        "emirFaculty": "Facultad de Comunicación"
+        "emirFaculty": "Facultad de Comunicación",
+        "ataCemDegree": "Animación y Dibujos Animados",
+        "ataCemUniversity": "Universidad Istanbul Aydin",
+        "ataCemFaculty": "Facultad de Bellas Artes"
       },
       "positions": {
         "unityGameDeveloper": "Desarrollador de Juegos Unity",
         "freelance": "Freelance",
-        "levelDesigner": "Diseñador de Niveles"
+        "levelDesigner": "Diseñador de Niveles",
+        "2dDesigner": "Diseñador 2D"
       },
       "companies": {
         "bolfGames": "BOLF Games",
         "freelance": "Freelance",
         "rollic": "Rollic",
         "ratic": "RATIC",
-        "graduationProject": "Proyecto de Graduación"
+        "graduationProject": "Proyecto de Graduación",
+        "durih": "Durih",
+        "lunscale": "Lunscale"
       },
       "months": {
         "jan": "Ene",
@@ -1700,7 +1772,9 @@
         "developedVariousGames": "Desarrollado varios juegos Unity usando C#, implementando mecánicas y sistemas de gameplay diversos",
         "blackSpotDescription": "Proyecto de diseño de niveles y diseño de juegos",
         "gloveffectDescription": "Juego FPS-Shooter desarrollado de un proyecto de semestre a un prototipo jugable",
-        "tpsShooterDescription": "Juego TPS-Shooter desarrollado para curso académico"
+        "tpsShooterDescription": "Juego TPS-Shooter desarrollado para curso académico",
+        "durihDescription": "Trabajé en personajes de juego, arte conceptual y diseños de cartas para el proyecto del juego. Al crear la identidad visual de los personajes, desarrollé diseños compatibles con las mecánicas del juego y establecí un lenguaje visual consistente en los diseños de cartas.",
+        "lunscaleDescription": "Trabajé en arte conceptual y diseño visual para el proyecto. Di forma a la identidad visual del proyecto con mis dibujos y proporcioné direcciones artísticas."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -1801,7 +1875,11 @@
         "tpsGameplayMechanics": "Mecánicas de gameplay TPS",
         "prototypeDevelopment": "Desarrollo de prototipo",
         "environmentCreation": "Creación de entornos",
-        "gameplayMechanicsDesign": "Diseño de mecánicas de gameplay"
+        "gameplayMechanicsDesign": "Diseño de mecánicas de gameplay",
+        "karakterTasarimi": "Diseño de Personajes",
+        "konseptCizimi": "Dibujo Conceptual",
+        "kartTasarim": "Diseño de Cartas",
+        "gorselTasarim": "Diseño Visual"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -1813,7 +1891,10 @@
         "gameDesign": "Diseño de Juegos",
         "narrativeDesign": "Diseño Narrativo",
         "3dLevelDesign": "Diseño de Niveles 3D",
-        "environmentDesign": "Diseño de Entornos"
+        "environmentDesign": "Diseño de Entornos",
+        "karakterTasarimi": "Diseño de Personajes",
+        "konseptTasarimi": "Diseño Conceptual",
+        "2dCizim": "Dibujo 2D"
       },
       "links": {
         "googlePlayStore": "Google Play Store",
@@ -2047,19 +2128,25 @@
         "faculty": "コミュニケーション学部",
         "emirDegree": "デジタルゲームデザイン学士",
         "emirUniversity": "イスタンブール・ビルギ大学",
-        "emirFaculty": "コミュニケーション学部"
+        "emirFaculty": "コミュニケーション学部",
+        "ataCemDegree": "アニメーションとアニメ",
+        "ataCemUniversity": "イスタンブール・アイドゥン大学",
+        "ataCemFaculty": "美術学部"
       },
       "positions": {
         "unityGameDeveloper": "Unityゲーム開発者",
         "freelance": "フリーランス",
-        "levelDesigner": "レベルデザイナー"
+        "levelDesigner": "レベルデザイナー",
+        "2dDesigner": "2Dデザイナー"
       },
       "companies": {
         "bolfGames": "BOLF Games",
         "freelance": "フリーランス",
         "rollic": "Rollic",
         "ratic": "RATIC",
-        "graduationProject": "卒業プロジェクト"
+        "graduationProject": "卒業プロジェクト",
+        "durih": "Durih",
+        "lunscale": "Lunscale"
       },
       "months": {
         "jan": "1月",
@@ -2085,7 +2172,9 @@
         "developedVariousGames": "C#を使用して様々なUnityゲームを開発し、多様なメカニクスとゲームプレイシステムを実装",
         "blackSpotDescription": "レベルデザインとゲームデザインプロジェクト",
         "gloveffectDescription": "学期プロジェクトから遊べるプロトタイプまで開発されたFPSシューターゲーム",
-        "tpsShooterDescription": "学術コース用に開発されたTPSシューターゲーム"
+        "tpsShooterDescription": "学術コース用に開発されたTPSシューターゲーム",
+        "durihDescription": "ゲームプロジェクトのゲームキャラクター、コンセプトアート、カードデザインに取り組みました。キャラクターの視覚的アイデンティティを作成する際、ゲームメカニクスと互換性のあるデザインを開発し、カードデザインで一貫した視覚的言語を確立しました。",
+        "lunscaleDescription": "プロジェクトのコンセプトアートと視覚デザインに取り組みました。私の絵でプロジェクトの視覚的アイデンティティを形作り、芸術的な方向性を提供しました。"
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -2186,7 +2275,11 @@
         "tpsGameplayMechanics": "TPSゲームプレイメカニクス",
         "prototypeDevelopment": "プロトタイプ開発",
         "environmentCreation": "環境作成",
-        "gameplayMechanicsDesign": "ゲームプレイメカニクスデザイン"
+        "gameplayMechanicsDesign": "ゲームプレイメカニクスデザイン",
+        "karakterTasarimi": "キャラクターデザイン",
+        "konseptCizimi": "コンセプトドローイング",
+        "kartTasarim": "カードデザイン",
+        "gorselTasarim": "ビジュアルデザイン"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -2198,7 +2291,10 @@
         "gameDesign": "ゲームデザイン",
         "narrativeDesign": "ナラティブデザイン",
         "3dLevelDesign": "3Dレベルデザイン",
-        "environmentDesign": "環境デザイン"
+        "environmentDesign": "環境デザイン",
+        "karakterTasarimi": "キャラクターデザイン",
+        "konseptTasarimi": "コンセプトデザイン",
+        "2dCizim": "2Dドローイング"
       },
       "links": {
         "googlePlayStore": "Google Play Store",
@@ -2431,19 +2527,25 @@
         "faculty": "传播学院",
         "emirDegree": "数字游戏设计学士",
         "emirUniversity": "伊斯坦布尔比尔吉大学",
-        "emirFaculty": "传播学院"
+        "emirFaculty": "传播学院",
+        "ataCemDegree": "动画与卡通",
+        "ataCemUniversity": "伊斯坦布尔阿登大学",
+        "ataCemFaculty": "美术学院"
       },
       "positions": {
         "unityGameDeveloper": "Unity游戏开发者",
         "freelance": "自由职业者",
-        "levelDesigner": "关卡设计师"
+        "levelDesigner": "关卡设计师",
+        "2dDesigner": "2D设计师"
       },
       "companies": {
         "bolfGames": "BOLF Games",
         "freelance": "自由职业者",
         "rollic": "Rollic",
         "ratic": "RATIC",
-        "graduationProject": "毕业项目"
+        "graduationProject": "毕业项目",
+        "durih": "Durih",
+        "lunscale": "Lunscale"
       },
       "months": {
         "jan": "1月",
@@ -2469,7 +2571,9 @@
         "developedVariousGames": "使用C#开发各种Unity游戏，实现多样化的机制和游戏系统",
         "blackSpotDescription": "关卡设计和游戏设计项目",
         "gloveffectDescription": "从学期项目开发到可玩原型的FPS射击游戏",
-        "tpsShooterDescription": "为学术课程开发的TPS射击游戏"
+        "tpsShooterDescription": "为学术课程开发的TPS射击游戏",
+        "durihDescription": "为游戏项目从事游戏角色、概念艺术和卡片设计工作。在创建角色的视觉身份时，我开发了与游戏机制兼容的设计，并在卡片设计中建立了统一的视觉语言。",
+        "lunscaleDescription": "为项目从事概念艺术和视觉设计工作。我用我的绘画塑造了项目的视觉身份，并提供了艺术方向。"
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -2570,7 +2674,11 @@
         "tpsGameplayMechanics": "TPS游戏机制",
         "prototypeDevelopment": "原型开发",
         "environmentCreation": "环境创建",
-        "gameplayMechanicsDesign": "游戏机制设计"
+        "gameplayMechanicsDesign": "游戏机制设计",
+        "karakterTasarimi": "角色设计",
+        "konseptCizimi": "概念绘画",
+        "kartTasarim": "卡片设计",
+        "gorselTasarim": "视觉设计"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -2582,7 +2690,10 @@
         "gameDesign": "游戏设计",
         "narrativeDesign": "叙事设计",
         "3dLevelDesign": "3D关卡设计",
-        "environmentDesign": "环境设计"
+        "environmentDesign": "环境设计",
+        "karakterTasarimi": "角色设计",
+        "konseptTasarimi": "概念设计",
+        "2dCizim": "2D绘画"
       },
       "links": {
         "googlePlayStore": "Google Play Store",

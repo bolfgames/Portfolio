@@ -19,68 +19,52 @@ export default function EducationSection({ education, accentColor }: EducationSe
 
   // Try to get translated values, fallback to JSON values
   const getTranslatedDegree = () => {
-    try {
-      const translated = t('portfolio.educationData.degree');
-      if (translated && translated !== 'portfolio.educationData.degree') {
-        return translated;
-      }
-    } catch {}
+    // Check if this is Ata Cem's education
+    if (education.degree === 'Çizgi Film ve Animasyon') {
+      try {
+        const translated = t('portfolio.educationData.ataCemDegree');
+        if (translated && translated !== 'portfolio.educationData.ataCemDegree') {
+          return translated;
+        }
+      } catch {}
+    }
     return education.degree;
   };
 
   const getTranslatedUniversity = () => {
-    try {
-      const translated = t('portfolio.educationData.university');
-      if (translated && translated !== 'portfolio.educationData.university') {
-        return translated;
-      }
-    } catch {}
+    // Check if this is Ata Cem's education
+    if (education.university === 'İstanbul Aydın Üniversitesi') {
+      try {
+        const translated = t('portfolio.educationData.ataCemUniversity');
+        if (translated && translated !== 'portfolio.educationData.ataCemUniversity') {
+          return translated;
+        }
+      } catch {}
+    }
     return education.university;
   };
 
   const getTranslatedFaculty = () => {
     if (!education.faculty) return '';
-    try {
-      const translated = t('portfolio.educationData.faculty');
-      if (translated && translated !== 'portfolio.educationData.faculty') {
-        return translated;
-      }
-    } catch {}
+    // Check if this is Ata Cem's education
+    if (education.faculty === 'Güzel Sanatlar Fakültesi') {
+      try {
+        const translated = t('portfolio.educationData.ataCemFaculty');
+        if (translated && translated !== 'portfolio.educationData.ataCemFaculty') {
+          return translated;
+        }
+      } catch {}
+    }
     return education.faculty;
   };
 
   const getTranslatedPeriod = () => {
-    const periodMap: Record<string, string> = {
-      '2019-2024': 'portfolio.periods.2019-2024',
-    };
-    
-    const key = periodMap[education.period];
-    if (key) {
-      try {
-        const translated = t(key);
-        if (translated && translated !== key) {
-          return translated;
-        }
-      } catch {}
-    }
+    // Always use the JSON value directly
     return education.period;
   };
 
   const getTranslatedLocation = () => {
-    const locationMap: Record<string, string> = {
-      'Istanbul, Türkiye': 'portfolio.locations.istanbulTurkey',
-      'Ankara, Türkiye': 'portfolio.locations.ankaraTurkey',
-    };
-    
-    const key = locationMap[education.location];
-    if (key) {
-      try {
-        const translated = t(key);
-        if (translated && translated !== key) {
-          return translated;
-        }
-      } catch {}
-    }
+    // Always use the JSON value directly
     return education.location;
   };
 

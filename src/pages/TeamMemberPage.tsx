@@ -8,6 +8,7 @@ import { useI18n } from '../contexts/I18nContext';
 import { getAssetPath } from '../utils/assetPath';
 import ProjectMockup from '../components/portfolio/ProjectMockup';
 import LaptopMockup from '../components/portfolio/LaptopMockup';
+import ResponsiveSlideshow from '../components/portfolio/ResponsiveSlideshow';
 import ExperienceSection from '../components/portfolio/ExperienceSection';
 import EducationSection from '../components/portfolio/EducationSection';
 import SkillsSection from '../components/portfolio/SkillsSection';
@@ -83,10 +84,43 @@ interface EmirData {
   skills: string[];
   projects: Array<{
     name: string;
-    images: string[];
+    image: string;
     features?: string[];
     link?: string;
     linkUrl?: string;
+  }>;
+}
+
+interface AtaCemData {
+  contact: {
+    email: string;
+    phone: string;
+    location: string;
+    linkedin: string;
+    artstation: string;
+  };
+  education: {
+    degree: string;
+    university: string;
+    faculty?: string;
+    period: string;
+    location: string;
+  };
+  experience: Array<{
+    company: string;
+    position: string;
+    period?: string;
+    projects: Array<{
+      name: string;
+      description: string;
+      features?: string[];
+    }>;
+  }>;
+  skills: string[];
+  projects: Array<{
+    name: string;
+    images: string[];
+    features?: string[];
   }>;
 }
 
@@ -96,6 +130,7 @@ function TeamMemberPage() {
   const navigate = useNavigate();
   const [furkanData, setFurkanData] = useState<FurkanData | null>(null);
   const [emirData, setEmirData] = useState<EmirData | null>(null);
+  const [ataCemData, setAtaCemData] = useState<AtaCemData | null>(null);
   
   // Update dataService language when language changes
   useEffect(() => {
@@ -130,6 +165,19 @@ function TeamMemberPage() {
         .then((data) => setEmirData(data))
         .catch((err) => {
           console.error('Failed to load Emir portfolio data:', err);
+        });
+    }
+  }, [member]);
+
+  // Load Ata Cem's portfolio data if this is Ata Cem's page
+  useEffect(() => {
+    const isAtaCem = member?.name.toLowerCase().includes('ata');
+    if (isAtaCem) {
+      fetch(getAssetPath('assets/resumes/AtaCem/atacem-data.json'))
+        .then((res) => res.json())
+        .then((data) => setAtaCemData(data))
+        .catch((err) => {
+          console.error('Failed to load Ata Cem portfolio data:', err);
         });
     }
   }, [member]);
@@ -220,7 +268,8 @@ function TeamMemberPage() {
 
   const roleColor = ROLE_COLORS[member.roleType];
   const isEmir = member?.name.toLowerCase().includes('emir');
-  const accentColor = isEmir ? '#2ECC71' : roleColor; // Emir için yeşil, diğerleri için role color
+  const isAtaCem = member?.name.toLowerCase().includes('ata');
+  const accentColor = isEmir ? '#2ECC71' : (isAtaCem ? '#FFD700' : roleColor); // Emir için yeşil, Ata Cem için altın, diğerleri için role color
 
   return (
     <Layout>
@@ -447,7 +496,112 @@ function TeamMemberPage() {
 
                   <div className="space-y-16">
                     {emirData.projects.map((project) => (
-                      <LaptopMockup key={project.name} project={project} />
+                      <LaptopMockup key={project.name} project={{ ...project, images: [project.image] }} />
+                    ))}
+                  </div>
+                </section>
+              </div>
+            ) : ataCemData && member?.name.toLowerCase().includes('ata') ? (
+              <div className="space-y-12">
+                {/* Contact Section */}
+                <section className="mb-12">
+                  <motion.h2
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="text-3xl md:text-4xl font-bold text-bolf-white mb-6"
+                  >
+                    {t('portfolio.contact')}
+                  </motion.h2>
+
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    className="bg-bolf-black/50 border border-bolf-gray/20 rounded-lg p-6"
+                  >
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-bolf-gray">
+                      <div className="flex items-center gap-2">
+                        <svg className="w-5 h-5" style={{ color: accentColor }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <a href={`mailto:${ataCemData.contact.email}`} style={{ color: accentColor }} className="hover:opacity-80 transition-colors">
+                          {ataCemData.contact.email}
+                        </a>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <svg className="w-5 h-5" style={{ color: accentColor }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <a href={`tel:${ataCemData.contact.phone}`} style={{ color: accentColor }} className="hover:opacity-80 transition-colors">
+                          {ataCemData.contact.phone}
+                        </a>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <svg className="w-5 h-5" style={{ color: accentColor }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>{ataCemData.contact.location}</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <svg className="w-5 h-5" style={{ color: accentColor }} fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        <a href={`https://${ataCemData.contact.linkedin}`} target="_blank" rel="noopener noreferrer" style={{ color: accentColor }} className="hover:opacity-80 transition-colors">
+                          LinkedIn
+                        </a>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <svg className="w-5 h-5" style={{ color: accentColor }} fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11V7h2v4h-2zm0 4v-2h2v2h-2z"/>
+                        </svg>
+                        <a href={`https://${ataCemData.contact.artstation}`} target="_blank" rel="noopener noreferrer" style={{ color: accentColor }} className="hover:opacity-80 transition-colors">
+                          ArtStation
+                        </a>
+                      </div>
+                    </div>
+                  </motion.div>
+                </section>
+
+                {/* Education Section */}
+                <EducationSection education={ataCemData.education} accentColor={accentColor} />
+
+                {/* Experience Section */}
+                <ExperienceSection experiences={ataCemData.experience} accentColor={accentColor} />
+
+                {/* Skills Section */}
+                <SkillsSection skills={ataCemData.skills} accentColor={accentColor} />
+
+                {/* Projects Section */}
+                <section id="portfolio-projects" className="mb-12">
+                  <motion.h2
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="text-3xl md:text-4xl font-bold text-bolf-white mb-8"
+                  >
+                    {t('portfolio.projects')}
+                  </motion.h2>
+
+                  <div className="space-y-16">
+                    {ataCemData.projects.map((project) => (
+                      <div key={project.name} className="mb-12">
+                        <motion.h3
+                          initial={{ opacity: 0, y: -10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.3 }}
+                          className="text-2xl md:text-3xl font-bold mb-6 text-center"
+                          style={{ color: accentColor }}
+                        >
+                          {project.name}
+                        </motion.h3>
+                        <ResponsiveSlideshow
+                          images={project.images}
+                          projectName={project.name}
+                          accentColor={accentColor}
+                        />
+                      </div>
                     ))}
                   </div>
                 </section>

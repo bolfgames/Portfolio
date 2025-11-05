@@ -1,0 +1,91 @@
+{
+  "contact": {
+    "email": "atacem41@gmail.com",
+    "phone": "+90 507 495 7040",
+    "location": "Istanbul, Türkiye",
+    "linkedin": "linkedin.com/in/ata-cem-kilinc-03942621b",
+    "artstation": "artstation.com/grumpyfc"
+  },
+  "education": {
+    "degree": "Çizgi Film ve Animasyon",
+    "university": "İstanbul Aydın Üniversitesi",
+    "faculty": "Güzel Sanatlar Fakültesi",
+    "period": "2019-2023",
+    "location": "Istanbul, Türkiye"
+  },
+  "experience": [
+    {
+      "company": "Durih",
+      "position": "2D Tasarımcı",
+      "projects": [
+        {
+          "name": "Durih",
+          "description": "Oyun projesi için oyun karakterleri, konsept sanat çalışmaları ve kart tasarımları üzerinde çalıştım. Karakterlerin görsel kimliğini oluştururken, oyun mekaniklerine uygun tasarımlar geliştirdim ve kart tasarımlarında tutarlı bir görsel dil oluşturdum.",
+          "features": [
+            "Karakter Tasarımı",
+            "Konsept Çizimi",
+            "Kart Tasarımı"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Lunscale",
+      "position": "2D Tasarımcı",
+      "projects": [
+        {
+          "name": "Lunscale",
+          "description": "Proje için konsept sanat ve görsel tasarım alanlarında çalıştım. Çizimlerimle projenin görsel kimliğini şekillendirdim ve sanatsal yönlendirmelerde bulundum.",
+          "features": [
+            "Konsept Çizimi",
+            "Görsel Tasarım"
+          ]
+        }
+      ]
+    }
+  ],
+  "skills": [
+    "Karakter Tasarımı",
+    "Konsept Tasarımı",
+    "2D Çizim"
+  ],
+  "projects": [
+    {
+      "name": "Durih",
+      "images": [
+        "durih_1.jpg",
+        "durih_2.png",
+        "durih_3.png",
+        "durih_4.png",
+        "durih_5.png"
+      ],
+      "features": [
+        "Karakter Tasarımı",
+        "Konsept Çizimi",
+        "Kart Tasarımı"
+      ]
+    },
+    {
+      "name": "Lunscale",
+      "images": [
+        "lundscale_1.jpg",
+        "lundscale_2.jpg",
+        "lundscale_3.jpg",
+        "lundscale_4.jpg"
+      ],
+      "features": [
+        "Konsept Çizimi"
+      ]
+    },
+    {
+      "name": "Kişisel çizimler",
+      "images": [
+        "personal_1.jpg",
+        "personal_2.jpg",
+        "personal_3.jpg",
+        "personal_4.jpg"
+      ]
+    }
+  ]
+}
+

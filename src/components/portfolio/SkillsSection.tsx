@@ -22,6 +22,9 @@ export default function SkillsSection({ skills, accentColor }: SkillsSectionProp
       'Narrative Design': 'portfolio.skillItems.narrativeDesign',
       '3D Level Design': 'portfolio.skillItems.3dLevelDesign',
       'Environment Design': 'portfolio.skillItems.environmentDesign',
+      'Karakter Tasarımı': 'portfolio.skillItems.karakterTasarimi',
+      'Konsept Tasarımı': 'portfolio.skillItems.konseptTasarimi',
+      '2D Çizim': 'portfolio.skillItems.2dCizim',
     };
     
     const key = skillMap[skill];

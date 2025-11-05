@@ -1,0 +1,42 @@
+Selim Sabuncu
+selimsabuncu0@gmail.com
+https://www.linkedin.com/in/selimsabuncu/
+github.com/selimsabuncu
+
+Eğitim:
+ Dijital Oyun Tasarımı- İstanbul Bilgi Üniversitesi - İletişim Fakültesi 2021-2025
+
+Deneyim:
+ Microcosmos - Co-Founder and Game Developer
+ NeptuneForKids - Game Developer
+ Team Rezerve - Game Developer
+
+Projeler
+ 
+ Miniverse
+	
+	Okul projesi olarak başladığımız daha sonrasında bugLabTekmer ön inkübasyonuna girip geliştirdiğimiz bir proje.
+
+	Market ve Inventory Sistemi
+	Tarla ve inşaat için Tilemap sistemi
+	NPC ve Dialogue Sistemleri
+	Scriptable Objects
+
+ Neptune
+	
+	Startup olarak başlayan uluslararası bir şirket. Çocuklara yönelik mobil cihazlarda müzik eğitimini oyunlaştırıyorlar. AI kullanımı ile çocukların enstrümanları kullanışına göre puanlandırma ve tavsiye verme. Kurulumu sonrası Alamanyada Fraounhofer HHI tech startup programına katıldı.
+
+	Oyundaki farklı minigameler
+	Farklı mobil cihazlar için çözünürlük ayarları
+	UX tecrübesi
+	Android build
+
+Magnesian
+
+	5 kişi olarak geliştirdiğimiz bir Action-Platformer. 2 ve 3 Boyutlu sahnelemeyi ve oynanışı birbirine kattığımız, hikayesi boyunca farklı dünyalara tanık olduğumuz ve geçtiğimiz bir oyun. OGEM destek programı sonrasında steam sayfası açıldı.
+
+	Enemy ve NPC AI
+	Sound ve Audio sistemlerinin inşası
+	Unity Editor kodlaması ile takım arkadaşları için yaratılan tools
+	Inventory Sistemi
+	
