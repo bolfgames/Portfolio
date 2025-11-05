@@ -1,0 +1,128 @@
+{
+  "contact": {
+    "email": "emrsyn61@gmail.com",
+    "phone": "+90 545 975 2035",
+    "location": "Istanbul, Türkiye",
+    "linkedin": "linkedin.com/in/Muhammet-Emir-Sayın",
+    "artstation": "artstation.com/twilightistaken"
+  },
+  "education": {
+    "degree": "Bachelor of Digital Game Design",
+    "university": "İstanbul Bilgi University",
+    "faculty": "Faculty of Communication",
+    "period": "2020-2025",
+    "location": "Istanbul, Türkiye"
+  },
+  "experience": [
+    {
+      "company": "BOLF Games",
+      "position": "Level Designer",
+      "period": "Current",
+      "projects": [
+        {
+          "name": "Black Spot",
+          "description": "Level Design and Game Design project",
+          "features": [
+            "Level Design",
+            "Game Design",
+            "Environment creation",
+            "Gameplay mechanics design"
+          ],
+          "link": "Trailer",
+          "linkUrl": ""
+        },
+        {
+          "name": "Gloveffect",
+          "description": "FPS-Shooter game developed from a semester project to a playable prototype",
+          "features": [
+            "Level Design",
+            "Narrative Design",
+            "Game Design",
+            "Prototype development",
+            "FPS gameplay mechanics"
+          ],
+          "link": "Gameplay Trailer",
+          "linkUrl": ""
+        },
+        {
+          "name": "TPS Shooter",
+          "description": "TPS-Shooter game developed for academic course",
+          "features": [
+            "Level Design",
+            "TPS gameplay mechanics",
+            "Environment design"
+          ]
+        }
+      ]
+    }
+  ],
+  "skills": [
+    "Level Design",
+    "Game Design",
+    "Narrative Design",
+    "3D Level Design",
+    "Environment Design"
+  ],
+  "projects": [
+    {
+      "name": "Black Spot",
+      "images": [
+        "Black Spot_1.jpg",
+        "Black Spot_2.jpg",
+        "Black Spot_3.jpg",
+        "Black Spot_4.jpg",
+        "Black Spot_5.jpg",
+        "Black Spot_6.jpg"
+      ],
+      "features": [
+        "Level Design",
+        "Game Design",
+        "Environment creation",
+        "Gameplay mechanics design"
+      ],
+      "link": "Trailer",
+      "linkUrl": "",
+      "landscapeScale": 1.86,
+      "portraitScale": 1
+    },
+    {
+      "name": "Gloveffect",
+      "images": [
+        "Gloveffect_1.jpg",
+        "Gloveffect_2.jpg",
+        "Gloveffect_3.jpg",
+        "Gloveffect_4.jpg",
+        "Gloveffect_5.jpg",
+        "Gloveffect_6.jpg"
+      ],
+      "features": [
+        "Level Design",
+        "Narrative Design",
+        "Game Design",
+        "Prototype development",
+        "FPS gameplay mechanics"
+      ],
+      "link": "Gameplay Trailer",
+      "linkUrl": "",
+      "landscapeScale": 1.86,
+      "portraitScale": 1
+    },
+    {
+      "name": "TPS Shooter",
+      "images": [
+        "TPS Shooter_1.jpg",
+        "TPS Shooter_2.jpg",
+        "TPS Shooter_3.jpg",
+        "TPS Shooter_4.jpg"
+      ],
+      "features": [
+        "Level Design",
+        "TPS gameplay mechanics",
+        "Environment design"
+      ],
+      "landscapeScale": 1.86,
+      "portraitScale": 1
+    }
+  ]
+}
+

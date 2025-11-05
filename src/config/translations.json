@@ -79,11 +79,15 @@
       "educationData": {
         "degree": "Dijital Oyun Tasarımı Lisansı",
         "university": "İstanbul Bilgi Üniversitesi",
-        "faculty": "İletişim Fakültesi"
+        "faculty": "İletişim Fakültesi",
+        "emirDegree": "Dijital Oyun Tasarımı Lisansı",
+        "emirUniversity": "İstanbul Bilgi Üniversitesi",
+        "emirFaculty": "İletişim Fakültesi"
       },
       "positions": {
         "unityGameDeveloper": "Unity Oyun Geliştirici",
-        "freelance": "Serbest Çalışan"
+        "freelance": "Serbest Çalışan",
+        "levelDesigner": "Seviye Tasarımcısı"
       },
       "companies": {
         "bolfGames": "BOLF Games",
@@ -112,14 +116,19 @@
         "powerUps": "Güçlendirmelerle dokunmatik masalar için",
         "localMultiplayerBoosters": "Güçlendirmelerle yerel çok oyunculu",
         "contributedFeatureDevelopment": "Özellik geliştirmesine katkıda bulundu",
-        "developedVariousGames": "C# kullanarak çeşitli Unity oyunları geliştirdi, farklı mekanikler ve oynanış sistemleri uyguladı"
+        "developedVariousGames": "C# kullanarak çeşitli Unity oyunları geliştirdi, farklı mekanikler ve oynanış sistemleri uyguladı",
+        "blackSpotDescription": "Seviye Tasarımı ve Oyun Tasarımı projesi",
+        "gloveffectDescription": "Okulda dönemlik bir proje olması amacıyla çıkılan yolda daha uzun süren bir geliştirme aşamasıyla oynanabilir bir prototip aşamasına kadar getirilen bir FPS-Shooter oyunu",
+        "tpsShooterDescription": "Dönemlik dersimiz için geliştirdiğimiz TPS-Shooter oyunumuz"
       },
       "periods": {
         "2019-2024": "2019-2024",
         "sept2024Jan2025": "Eyl 2024 – Oca 2025",
         "oct2024Jan2025": "Eki 2024 – Oca 2025",
         "julySept2024": "Tem – Eyl 2024",
-        "2022-2023": "2022-2023"
+        "2022-2023": "2022-2023",
+        "2020-2025": "2020-2025",
+        "current": "Devam Ediyor"
       },
       "locations": {
         "ankaraTurkey": "Ankara, Türkiye",
@@ -155,7 +164,10 @@
         "wizardGuesser": "Wizard Guesser",
         "mathGame": "Math Game",
         "breakingBlocks": "Breaking Blocks",
-        "tileVania": "TileVania"
+        "tileVania": "TileVania",
+        "blackSpot": "Black Spot",
+        "gloveffect": "Gloveffect",
+        "tpsShooter": "TPS Shooter"
       },
       "projectFeatures": {
         "levelBasedArcadeGame": "Flappy Bird'den ilham alan seviye tabanlı arcade oyunu",
@@ -198,14 +210,29 @@
         "infinityLoopingUI": "Sonsuz döngü arka plan UI",
         "firebaseLoginLeaderboard": "Giriş ve liderlik tablosu sistemi için Firebase",
         "clueSystem": "İpucu sistemi",
-        "levelSystem": "Seviye sistemi"
+        "levelSystem": "Seviye sistemi",
+        "levelDesign": "Seviye Tasarımı",
+        "gameDesign": "Oyun Tasarımı",
+        "narrativeDesign": "Anlatı Tasarımı",
+        "3dLevelDesign": "3D Seviye Tasarımı",
+        "environmentDesign": "Çevre Tasarımı",
+        "fpsGameplayMechanics": "FPS oynanış mekanikleri",
+        "tpsGameplayMechanics": "TPS oynanış mekanikleri",
+        "prototypeDevelopment": "Prototip geliştirme",
+        "environmentCreation": "Çevre oluşturma",
+        "gameplayMechanicsDesign": "Oynanış mekanikleri tasarımı"
       },
       "skills": {
         "unityEngine": "Unity Engine",
         "csharp": "C#",
         "gitGithub": "Git - GitHub",
         "sourceTree": "SourceTree",
-        "jetbrainsRider": "JetBrains Rider"
+        "jetbrainsRider": "JetBrains Rider",
+        "levelDesign": "Seviye Tasarımı",
+        "gameDesign": "Oyun Tasarımı",
+        "narrativeDesign": "Anlatı Tasarımı",
+        "3dLevelDesign": "3D Seviye Tasarımı",
+        "environmentDesign": "Çevre Tasarımı"
       },
       "links": {
         "googlePlayStore": "Google Play Store",
@@ -387,11 +414,15 @@
       "educationData": {
         "degree": "Bachelor of Digital Game Design",
         "university": "Istanbul Bilgi University",
-        "faculty": "Faculty of Communication"
+        "faculty": "Faculty of Communication",
+        "emirDegree": "Bachelor of Digital Game Design",
+        "emirUniversity": "Istanbul Bilgi University",
+        "emirFaculty": "Faculty of Communication"
       },
       "positions": {
         "unityGameDeveloper": "Unity Game Developer",
-        "freelance": "Freelance"
+        "freelance": "Freelance",
+        "levelDesigner": "Level Designer"
       },
       "companies": {
         "bolfGames": "BOLF Games",
@@ -420,14 +451,19 @@
         "powerUps": "With power-ups for touch tables",
         "localMultiplayerBoosters": "Local multiplayer with boosters",
         "contributedFeatureDevelopment": "Contributed to feature development",
-        "developedVariousGames": "Developed various Unity games using C#, implementing diverse mechanics and gameplay systems"
+        "developedVariousGames": "Developed various Unity games using C#, implementing diverse mechanics and gameplay systems",
+        "blackSpotDescription": "Level Design and Game Design project",
+        "gloveffectDescription": "FPS-Shooter game developed from a semester project to a playable prototype",
+        "tpsShooterDescription": "TPS-Shooter game developed for academic course"
       },
       "periods": {
         "2019-2024": "2019-2024",
         "sept2024Jan2025": "Sept 2024 – Jan 2025",
         "oct2024Jan2025": "Oct 2024 – Jan 2025",
         "julySept2024": "July – Sept 2024",
-        "2022-2023": "2022-2023"
+        "2022-2023": "2022-2023",
+        "2020-2025": "2020-2025",
+        "current": "Current"
       },
       "locations": {
         "ankaraTurkey": "Ankara, Turkey",
@@ -463,7 +499,10 @@
         "wizardGuesser": "Wizard Guesser",
         "mathGame": "Math Game",
         "breakingBlocks": "Breaking Blocks",
-        "tileVania": "TileVania"
+        "tileVania": "TileVania",
+        "blackSpot": "Black Spot",
+        "gloveffect": "Gloveffect",
+        "tpsShooter": "TPS Shooter"
       },
       "projectFeatures": {
         "levelBasedArcadeGame": "Level-based arcade game inspired by Flappy Bird",
@@ -513,11 +552,18 @@
         "csharp": "C#",
         "gitGithub": "Git - GitHub",
         "sourceTree": "SourceTree",
-        "jetbrainsRider": "JetBrains Rider"
+        "jetbrainsRider": "JetBrains Rider",
+        "levelDesign": "Level Design",
+        "gameDesign": "Game Design",
+        "narrativeDesign": "Narrative Design",
+        "3dLevelDesign": "3D Level Design",
+        "environmentDesign": "Environment Design"
       },
       "links": {
         "googlePlayStore": "Google Play Store",
-        "appStoreGooglePlay": "App Store / Google Play Store"
+        "appStoreGooglePlay": "App Store / Google Play Store",
+        "trailer": "Trailer",
+        "gameplayTrailer": "Gameplay Trailer"
       },
       "experienceFeatures": {
         "implementedBoosters": "Implemented boosters (shield, pipe gap extender, continuous run boosters) with purchase and usage systems",
@@ -695,11 +741,15 @@
       "educationData": {
         "degree": "Bachelor of Digital Game Design",
         "university": "Istanbul Bilgi Universität",
-        "faculty": "Fakultät für Kommunikation"
+        "faculty": "Fakultät für Kommunikation",
+        "emirDegree": "Bachelor of Digital Game Design",
+        "emirUniversity": "Istanbul Bilgi Universität",
+        "emirFaculty": "Fakultät für Kommunikation"
       },
       "positions": {
         "unityGameDeveloper": "Unity Spielentwickler",
-        "freelance": "Freiberuflich"
+        "freelance": "Freiberuflich",
+        "levelDesigner": "Level-Designer"
       },
       "companies": {
         "bolfGames": "BOLF Games",
@@ -728,14 +778,19 @@
         "powerUps": "Mit Power-Ups für Touch-Tische",
         "localMultiplayerBoosters": "Lokaler Multiplayer mit Boostern",
         "contributedFeatureDevelopment": "Beitrag zur Funktionsentwicklung",
-        "developedVariousGames": "Entwicklung verschiedener Unity-Spiele mit C#, Implementierung verschiedener Mechaniken und Gameplay-Systeme"
+        "developedVariousGames": "Entwicklung verschiedener Unity-Spiele mit C#, Implementierung verschiedener Mechaniken und Gameplay-Systeme",
+        "blackSpotDescription": "Level-Design- und Spiel-Design-Projekt",
+        "gloveffectDescription": "FPS-Shooter-Spiel, das von einem Semesterprojekt zu einem spielbaren Prototyp entwickelt wurde",
+        "tpsShooterDescription": "TPS-Shooter-Spiel, das für einen akademischen Kurs entwickelt wurde"
       },
       "periods": {
         "2019-2024": "2019-2024",
         "sept2024Jan2025": "Sep 2024 – Jan 2025",
         "oct2024Jan2025": "Okt 2024 – Jan 2025",
         "julySept2024": "Jul – Sep 2024",
-        "2022-2023": "2022-2023"
+        "2022-2023": "2022-2023",
+        "2020-2025": "2020-2025",
+        "current": "Laufend"
       },
       "locations": {
         "ankaraTurkey": "Ankara, Türkei",
@@ -771,7 +826,10 @@
         "wizardGuesser": "Wizard Guesser",
         "mathGame": "Math Game",
         "breakingBlocks": "Breaking Blocks",
-        "tileVania": "TileVania"
+        "tileVania": "TileVania",
+        "blackSpot": "Black Spot",
+        "gloveffect": "Gloveffect",
+        "tpsShooter": "TPS Shooter"
       },
       "projectFeatures": {
         "levelBasedArcadeGame": "Levelbasiertes Arcade-Spiel inspiriert von Flappy Bird",
@@ -821,11 +879,18 @@
         "csharp": "C#",
         "gitGithub": "Git - GitHub",
         "sourceTree": "SourceTree",
-        "jetbrainsRider": "JetBrains Rider"
+        "jetbrainsRider": "JetBrains Rider",
+        "levelDesign": "Level-Design",
+        "gameDesign": "Spiel-Design",
+        "narrativeDesign": "Narratives Design",
+        "3dLevelDesign": "3D-Level-Design",
+        "environmentDesign": "Umgebungsdesign"
       },
       "links": {
         "googlePlayStore": "Google Play Store",
-        "appStoreGooglePlay": "App Store / Google Play Store"
+        "appStoreGooglePlay": "App Store / Google Play Store",
+        "trailer": "Trailer",
+        "gameplayTrailer": "Gameplay-Trailer"
       },
       "experienceFeatures": {
         "implementedBoosters": "Booster (Schild, Rohrlücken-Erweiterer, kontinuierliche Lauf-Booster) mit Kauf- und Nutzungssystemen implementiert",
@@ -1003,11 +1068,15 @@
       "educationData": {
         "degree": "Licence en Conception de Jeux Numériques",
         "university": "Université Istanbul Bilgi",
-        "faculty": "Faculté de Communication"
+        "faculty": "Faculté de Communication",
+        "emirDegree": "Licence en Conception de Jeux Numériques",
+        "emirUniversity": "Université Istanbul Bilgi",
+        "emirFaculty": "Faculté de Communication"
       },
       "positions": {
         "unityGameDeveloper": "Développeur de Jeux Unity",
-        "freelance": "Freelance"
+        "freelance": "Freelance",
+        "levelDesigner": "Concepteur de Niveaux"
       },
       "companies": {
         "bolfGames": "BOLF Games",
@@ -1036,14 +1105,19 @@
         "powerUps": "Avec power-ups pour tables tactiles",
         "localMultiplayerBoosters": "Multijoueur local avec boosters",
         "contributedFeatureDevelopment": "Contribution au développement de fonctionnalités",
-        "developedVariousGames": "Développé divers jeux Unity avec C#, implémentant des mécaniques et systèmes de gameplay diversifiés"
+        "developedVariousGames": "Développé divers jeux Unity avec C#, implémentant des mécaniques et systèmes de gameplay diversifiés",
+        "blackSpotDescription": "Projet de conception de niveaux et de conception de jeux",
+        "gloveffectDescription": "Jeu FPS-Shooter développé d'un projet de semestre à un prototype jouable",
+        "tpsShooterDescription": "Jeu TPS-Shooter développé pour un cours académique"
       },
       "periods": {
         "2019-2024": "2019-2024",
         "sept2024Jan2025": "Sep 2024 – Jan 2025",
         "oct2024Jan2025": "Oct 2024 – Jan 2025",
         "julySept2024": "Juil – Sep 2024",
-        "2022-2023": "2022-2023"
+        "2022-2023": "2022-2023",
+        "2020-2025": "2020-2025",
+        "current": "En cours"
       },
       "locations": {
         "ankaraTurkey": "Ankara, Turquie",
@@ -1079,7 +1153,10 @@
         "wizardGuesser": "Wizard Guesser",
         "mathGame": "Math Game",
         "breakingBlocks": "Breaking Blocks",
-        "tileVania": "TileVania"
+        "tileVania": "TileVania",
+        "blackSpot": "Black Spot",
+        "gloveffect": "Gloveffect",
+        "tpsShooter": "TPS Shooter"
       },
       "projectFeatures": {
         "levelBasedArcadeGame": "Jeu d'arcade basé sur les niveaux inspiré de Flappy Bird",
@@ -1129,11 +1206,18 @@
         "csharp": "C#",
         "gitGithub": "Git - GitHub",
         "sourceTree": "SourceTree",
-        "jetbrainsRider": "JetBrains Rider"
+        "jetbrainsRider": "JetBrains Rider",
+        "levelDesign": "Conception de Niveaux",
+        "gameDesign": "Conception de Jeux",
+        "narrativeDesign": "Conception Narrative",
+        "3dLevelDesign": "Conception de Niveaux 3D",
+        "environmentDesign": "Conception d'Environnement"
       },
       "links": {
         "googlePlayStore": "Google Play Store",
-        "appStoreGooglePlay": "App Store / Google Play Store"
+        "appStoreGooglePlay": "App Store / Google Play Store",
+        "trailer": "Bande-annonce",
+        "gameplayTrailer": "Bande-annonce de Gameplay"
       },
       "experienceFeatures": {
         "implementedBoosters": "Boosters implémentés (bouclier, extension d'écart de tuyau, boosters de course continue) avec systèmes d'achat et d'utilisation",
@@ -1311,11 +1395,15 @@
       "educationData": {
         "degree": "Licenciatura en Diseño de Juegos Digitales",
         "university": "Universidad Istanbul Bilgi",
-        "faculty": "Facultad de Comunicación"
+        "faculty": "Facultad de Comunicación",
+        "emirDegree": "Licenciatura en Diseño de Juegos Digitales",
+        "emirUniversity": "Universidad Istanbul Bilgi",
+        "emirFaculty": "Facultad de Comunicación"
       },
       "positions": {
         "unityGameDeveloper": "Desarrollador de Juegos Unity",
-        "freelance": "Freelance"
+        "freelance": "Freelance",
+        "levelDesigner": "Diseñador de Niveles"
       },
       "companies": {
         "bolfGames": "BOLF Games",
@@ -1344,14 +1432,19 @@
         "powerUps": "Con power-ups para mesas táctiles",
         "localMultiplayerBoosters": "Multijugador local con boosters",
         "contributedFeatureDevelopment": "Contribuido al desarrollo de características",
-        "developedVariousGames": "Desarrollado varios juegos Unity usando C#, implementando mecánicas y sistemas de gameplay diversos"
+        "developedVariousGames": "Desarrollado varios juegos Unity usando C#, implementando mecánicas y sistemas de gameplay diversos",
+        "blackSpotDescription": "Proyecto de diseño de niveles y diseño de juegos",
+        "gloveffectDescription": "Juego FPS-Shooter desarrollado de un proyecto de semestre a un prototipo jugable",
+        "tpsShooterDescription": "Juego TPS-Shooter desarrollado para curso académico"
       },
       "periods": {
         "2019-2024": "2019-2024",
         "sept2024Jan2025": "Sep 2024 – Ene 2025",
         "oct2024Jan2025": "Oct 2024 – Ene 2025",
         "julySept2024": "Jul – Sep 2024",
-        "2022-2023": "2022-2023"
+        "2022-2023": "2022-2023",
+        "2020-2025": "2020-2025",
+        "current": "Actual"
       },
       "locations": {
         "ankaraTurkey": "Ankara, Turquía",
@@ -1387,7 +1480,10 @@
         "wizardGuesser": "Wizard Guesser",
         "mathGame": "Math Game",
         "breakingBlocks": "Breaking Blocks",
-        "tileVania": "TileVania"
+        "tileVania": "TileVania",
+        "blackSpot": "Black Spot",
+        "gloveffect": "Gloveffect",
+        "tpsShooter": "TPS Shooter"
       },
       "projectFeatures": {
         "levelBasedArcadeGame": "Juego arcade basado en niveles inspirado en Flappy Bird",
@@ -1437,11 +1533,18 @@
         "csharp": "C#",
         "gitGithub": "Git - GitHub",
         "sourceTree": "SourceTree",
-        "jetbrainsRider": "JetBrains Rider"
+        "jetbrainsRider": "JetBrains Rider",
+        "levelDesign": "Diseño de Niveles",
+        "gameDesign": "Diseño de Juegos",
+        "narrativeDesign": "Diseño Narrativo",
+        "3dLevelDesign": "Diseño de Niveles 3D",
+        "environmentDesign": "Diseño de Entornos"
       },
       "links": {
         "googlePlayStore": "Google Play Store",
-        "appStoreGooglePlay": "App Store / Google Play Store"
+        "appStoreGooglePlay": "App Store / Google Play Store",
+        "trailer": "Tráiler",
+        "gameplayTrailer": "Tráiler de Gameplay"
       },
       "experienceFeatures": {
         "implementedBoosters": "Boosters implementados (escudo, extensor de brecha de tubería, boosters de carrera continua) con sistemas de compra y uso",
@@ -1619,11 +1722,15 @@
       "educationData": {
         "degree": "デジタルゲームデザイン学士",
         "university": "イスタンブール・ビルギ大学",
-        "faculty": "コミュニケーション学部"
+        "faculty": "コミュニケーション学部",
+        "emirDegree": "デジタルゲームデザイン学士",
+        "emirUniversity": "イスタンブール・ビルギ大学",
+        "emirFaculty": "コミュニケーション学部"
       },
       "positions": {
         "unityGameDeveloper": "Unityゲーム開発者",
-        "freelance": "フリーランス"
+        "freelance": "フリーランス",
+        "levelDesigner": "レベルデザイナー"
       },
       "companies": {
         "bolfGames": "BOLF Games",
@@ -1652,14 +1759,19 @@
         "powerUps": "タッチテーブル用パワーアップ付き",
         "localMultiplayerBoosters": "ブースター付きローカルマルチプレイヤー",
         "contributedFeatureDevelopment": "機能開発に貢献",
-        "developedVariousGames": "C#を使用して様々なUnityゲームを開発し、多様なメカニクスとゲームプレイシステムを実装"
+        "developedVariousGames": "C#を使用して様々なUnityゲームを開発し、多様なメカニクスとゲームプレイシステムを実装",
+        "blackSpotDescription": "レベルデザインとゲームデザインプロジェクト",
+        "gloveffectDescription": "学期プロジェクトから遊べるプロトタイプまで開発されたFPSシューターゲーム",
+        "tpsShooterDescription": "学術コース用に開発されたTPSシューターゲーム"
       },
       "periods": {
         "2019-2024": "2019-2024",
         "sept2024Jan2025": "2024年9月 – 2025年1月",
         "oct2024Jan2025": "2024年10月 – 2025年1月",
         "julySept2024": "2024年7月 – 9月",
-        "2022-2023": "2022-2023"
+        "2022-2023": "2022-2023",
+        "2020-2025": "2020-2025",
+        "current": "進行中"
       },
       "locations": {
         "ankaraTurkey": "アンカラ、トルコ",
@@ -1695,7 +1807,10 @@
         "wizardGuesser": "Wizard Guesser",
         "mathGame": "Math Game",
         "breakingBlocks": "Breaking Blocks",
-        "tileVania": "TileVania"
+        "tileVania": "TileVania",
+        "blackSpot": "Black Spot",
+        "gloveffect": "Gloveffect",
+        "tpsShooter": "TPS Shooter"
       },
       "projectFeatures": {
         "levelBasedArcadeGame": "Flappy Birdにインスパイアされたレベルベースのアーケードゲーム",
@@ -1745,11 +1860,18 @@
         "csharp": "C#",
         "gitGithub": "Git - GitHub",
         "sourceTree": "SourceTree",
-        "jetbrainsRider": "JetBrains Rider"
+        "jetbrainsRider": "JetBrains Rider",
+        "levelDesign": "レベルデザイン",
+        "gameDesign": "ゲームデザイン",
+        "narrativeDesign": "ナラティブデザイン",
+        "3dLevelDesign": "3Dレベルデザイン",
+        "environmentDesign": "環境デザイン"
       },
       "links": {
         "googlePlayStore": "Google Play Store",
-        "appStoreGooglePlay": "App Store / Google Play Store"
+        "appStoreGooglePlay": "App Store / Google Play Store",
+        "trailer": "トレーラー",
+        "gameplayTrailer": "ゲームプレイトレーラー"
       },
       "experienceFeatures": {
         "implementedBoosters": "ブースター（シールド、パイプギャップ拡張器、連続実行ブースター）を購入および使用システムと共に実装",
@@ -1927,11 +2049,15 @@
       "educationData": {
         "degree": "数字游戏设计学士",
         "university": "伊斯坦布尔比尔吉大学",
-        "faculty": "传播学院"
+        "faculty": "传播学院",
+        "emirDegree": "数字游戏设计学士",
+        "emirUniversity": "伊斯坦布尔比尔吉大学",
+        "emirFaculty": "传播学院"
       },
       "positions": {
         "unityGameDeveloper": "Unity游戏开发者",
-        "freelance": "自由职业者"
+        "freelance": "自由职业者",
+        "levelDesigner": "关卡设计师"
       },
       "companies": {
         "bolfGames": "BOLF Games",
@@ -1960,14 +2086,19 @@
         "powerUps": "带能量提升的触摸桌游戏",
         "localMultiplayerBoosters": "带加速器的本地多人游戏",
         "contributedFeatureDevelopment": "为功能开发做出贡献",
-        "developedVariousGames": "使用C#开发各种Unity游戏，实现多样化的机制和游戏系统"
+        "developedVariousGames": "使用C#开发各种Unity游戏，实现多样化的机制和游戏系统",
+        "blackSpotDescription": "关卡设计和游戏设计项目",
+        "gloveffectDescription": "从学期项目开发到可玩原型的FPS射击游戏",
+        "tpsShooterDescription": "为学术课程开发的TPS射击游戏"
       },
       "periods": {
         "2019-2024": "2019-2024",
         "sept2024Jan2025": "2024年9月 – 2025年1月",
         "oct2024Jan2025": "2024年10月 – 2025年1月",
         "julySept2024": "2024年7月 – 9月",
-        "2022-2023": "2022-2023"
+        "2022-2023": "2022-2023",
+        "2020-2025": "2020-2025",
+        "current": "进行中"
       },
       "locations": {
         "ankaraTurkey": "安卡拉，土耳其",
@@ -2003,7 +2134,10 @@
         "wizardGuesser": "Wizard Guesser",
         "mathGame": "Math Game",
         "breakingBlocks": "Breaking Blocks",
-        "tileVania": "TileVania"
+        "tileVania": "TileVania",
+        "blackSpot": "Black Spot",
+        "gloveffect": "Gloveffect",
+        "tpsShooter": "TPS Shooter"
       },
       "projectFeatures": {
         "levelBasedArcadeGame": "受Flappy Bird启发的基于关卡的街机游戏",
@@ -2053,11 +2187,18 @@
         "csharp": "C#",
         "gitGithub": "Git - GitHub",
         "sourceTree": "SourceTree",
-        "jetbrainsRider": "JetBrains Rider"
+        "jetbrainsRider": "JetBrains Rider",
+        "levelDesign": "关卡设计",
+        "gameDesign": "游戏设计",
+        "narrativeDesign": "叙事设计",
+        "3dLevelDesign": "3D关卡设计",
+        "environmentDesign": "环境设计"
       },
       "links": {
         "googlePlayStore": "Google Play Store",
-        "appStoreGooglePlay": "App Store / Google Play Store"
+        "appStoreGooglePlay": "App Store / Google Play Store",
+        "trailer": "预告片",
+        "gameplayTrailer": "游戏玩法预告片"
       },
       "experienceFeatures": {
         "implementedBoosters": "实现加速器（护盾、管道间隙扩展器、连续运行加速器）以及购买和使用系统",

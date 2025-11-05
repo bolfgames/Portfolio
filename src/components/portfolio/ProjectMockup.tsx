@@ -48,17 +48,21 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
 
   const handlePrevious = useCallback(() => {
     const newIndex = (currentIndex - 1 + projects.length) % projects.length;
+    const newProject = projects[newIndex];
     setCurrentIndex(newIndex);
-    setCurrentProject(projects[newIndex]);
-    setIsLandscape(false); // Reset landscape state, let ProjectSlider detect it
+    setCurrentProject(newProject);
+    // Don't reset landscape immediately - let ProjectSlider detect it from the new image
+    // This prevents the phone from briefly rotating to portrait when switching between landscape images
     setResetTimer(prev => prev + 1); // Reset timer
   }, [currentIndex, projects]);
 
   const handleNext = useCallback(() => {
     const newIndex = (currentIndex + 1) % projects.length;
+    const newProject = projects[newIndex];
     setCurrentIndex(newIndex);
-    setCurrentProject(projects[newIndex]);
-    setIsLandscape(false); // Reset landscape state, let ProjectSlider detect it
+    setCurrentProject(newProject);
+    // Don't reset landscape immediately - let ProjectSlider detect it from the new image
+    // This prevents the phone from briefly rotating to portrait when switching between landscape images
     setResetTimer(prev => prev + 1); // Reset timer
   }, [currentIndex, projects]);
 
@@ -250,10 +254,11 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
       <div className="relative flex items-center justify-center" ref={mockupRef}>
           {/* iPhone Mockup */}
           <div
-            className="relative rounded-[45px] shadow-[0_0_2px_2px_rgba(255,255,255,0.1)] border-8 border-zinc-900 transition-all duration-600 ease-in-out w-[280px] h-[600px] max-w-[70vw] max-h-[150vw]"
+            className="relative rounded-[45px] shadow-[0_0_2px_2px_rgba(255,255,255,0.1)] border-8 border-zinc-900 w-[280px] h-[600px] max-w-[70vw] max-h-[150vw]"
             style={{
               transform: isLandscape ? 'rotate(90deg)' : 'rotate(0deg)',
               transformOrigin: 'center center',
+              transition: 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)',
             }}
           >
           {/* Previous Arrow - Outside mockup */}
@@ -395,7 +400,6 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                       const newIndex = index;
                       setCurrentIndex(newIndex);
                       setCurrentProject(projects[newIndex]);
-                      setIsLandscape(false); // Reset landscape state, let ProjectSlider detect it
                       setResetTimer(prev => prev + 1);
                     }}
                     className={`h-1.5 rounded-full transition-all duration-300 ${

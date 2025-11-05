@@ -121,8 +121,12 @@ export default function ProjectSlider({
     const height = img.naturalHeight;
     const isLandscape = width > 0 && height > 0 && width / height > 1.2;
     
+    // Smoothly update landscape state
     if (onLandscapeDetected) {
-      onLandscapeDetected(isLandscape);
+      // Use setTimeout to ensure smooth transition
+      setTimeout(() => {
+        onLandscapeDetected(isLandscape);
+      }, 50);
     }
   }, [onLandscapeDetected]);
 
@@ -175,6 +179,7 @@ export default function ProjectSlider({
           transformOrigin: 'center center',
           width: externalIsLandscape ? '100%' : '100%',
           height: externalIsLandscape ? '100%' : '100%',
+          transition: 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)',
         }}
       >
         {imageLoading && (
