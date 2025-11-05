@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useI18n } from '../../contexts/I18nContext';
 import LanguageSelector from '../common/LanguageSelector';
 import { settingsService } from '../../services/settingsService';
@@ -12,6 +13,8 @@ import { getAssetPath } from '../../utils/assetPath';
  * Follows Single Responsibility Principle
  */
 function Header() {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDeveloperPanelOpen, setIsDeveloperPanelOpen] = useState(false);
   const [isEditorPanelOpen, setIsEditorPanelOpen] = useState(false);
@@ -33,20 +36,45 @@ function Header() {
     e?.preventDefault();
     closeMenu();
     
-    // Wait a bit for menu to close on mobile
-    setTimeout(() => {
-      const element = document.getElementById(sectionId);
-      if (element) {
-        const headerHeight = 80; // Header yüksekliği
-        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-        const offsetPosition = elementPosition - headerHeight;
+    // If we're on a different page (like team member page), navigate to home first
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Wait for navigation to complete before scrolling
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const headerHeight = 80;
+          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+          const offsetPosition = elementPosition - headerHeight;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }, 300);
+    } else {
+      // Wait a bit for menu to close on mobile
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const headerHeight = 80; // Header yüksekliği
+          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+          const offsetPosition = elementPosition - headerHeight;
 
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-      }
-    }, 100);
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }, 100);
+    }
+  };
+
+  const handleHomeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    closeMenu();
+    navigate('/');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   // Developer button handler:
@@ -103,11 +131,7 @@ function Header() {
           <a 
             href="/" 
             className="flex items-center z-10" 
-            onClick={(e) => {
-              e.preventDefault();
-              closeMenu();
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
+            onClick={handleHomeClick}
           >
             <img 
               src={getAssetPath('/assets/icons/logo_cropped_by_gunduzdev/logobeyazpng_Çalışma Yüzeyi 1c.png')}
@@ -127,10 +151,7 @@ function Header() {
               <a 
                 href="/" 
                 className="px-2 py-1.5 text-sm text-bolf-white hover:text-bolf-neon-blue transition-colors rounded-full hover:bg-bolf-white/10 whitespace-nowrap"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }}
+                onClick={handleHomeClick}
               >
                 {t('nav.home')}
               </a>
@@ -254,11 +275,7 @@ function Header() {
               <a 
                 href="/" 
                 className="px-4 py-3 text-bolf-white hover:text-bolf-neon-blue transition-colors rounded-lg hover:bg-bolf-white/10"
-                onClick={(e) => {
-                  e.preventDefault();
-                  closeMenu();
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }}
+                onClick={handleHomeClick}
               >
                 {t('nav.home')}
               </a>
