@@ -183,10 +183,15 @@
         "lunscaleDescription": "Proje için konsept sanat ve görsel tasarım alanlarında çalıştım. Çizimlerimle projenin görsel kimliğini şekillendirdim ve sanatsal yönlendirmelerde bulundum.",
         "gloveffectDescriptionAhmetEmir": "Yarıyıl projesi olarak başlayan FPS-Shooter oyunu, oynanabilir bir prototip haline getirildi.",
         "lunscaleDescriptionAhmetEmir": "Oyun Tasarımcısı olarak görev aldım.",
-        "diruhDescriptionAhmetEmir": "Unity Developer & Game Designer olarak görev aldım.",
+        "diruhDescriptionAhmetEmir": "Oyun Tasarımcısı olarak görev aldım.",
         "miniverseDescription": "Okul projesi olarak başladığımız daha sonrasında bugLabTekmer ön inkübasyonuna girip geliştirdiğimiz bir proje.",
         "neptuneDescription": "Startup olarak başlayan uluslararası bir şirket. Çocuklara yönelik mobil cihazlarda müzik eğitimini oyunlaştırıyorlar. AI kullanımı ile çocukların enstrümanları kullanışına göre puanlandırma ve tavsiye verme. Kurulumu sonrası Almanya'da Fraunhofer HHI tech startup programına katıldı.",
-        "magnesianDescription": "5 kişi olarak geliştirdiğimiz bir Action-Platformer. 2 ve 3 Boyutlu sahnelemeyi ve oynanışı birbirine kattığımız, hikayesi boyunca farklı dünyalara tanık olduğumuz ve geçtiğimiz bir oyun. OGEM destek programı sonrasında Steam sayfası açıldı."
+        "magnesianDescription": "5 kişi olarak geliştirdiğimiz bir Action-Platformer. 2 ve 3 Boyutlu sahnelemeyi ve oynanışı birbirine kattığımız, hikayesi boyunca farklı dünyalara tanık olduğumuz ve geçtiğimiz bir oyun. OGEM destek programı sonrasında Steam sayfası açıldı.",
+        "ballooseDescription": "Game Jam projesi olarak geliştirilen bir oyun.",
+        "gallooopDescription": "Game Jam projesi olarak geliştirilen bir oyun.",
+        "durihDescriptionSelim": "Game Developer olarak görev aldım.",
+        "durihDescriptionEmir": "Seviye Tasarımcısı olarak görev aldım.",
+        "lunscaleDescriptionFurkan": "Unity Game Developer olarak görev aldım."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -241,7 +246,9 @@
         "personalArt": "Kişisel çizimler",
         "miniverse": "Miniverse",
         "neptune": "Neptune",
-        "magnesian": "Magnesian"
+        "magnesian": "Magnesian",
+        "balloose": "Balloose",
+        "gallooop": "Gallooop"
       },
       "projectFeatures": {
         "levelBasedArcadeGame": "Flappy Bird'den ilham alan seviye tabanlı arcade oyunu",
@@ -628,10 +635,15 @@
         "lunscaleDescription": "Worked on concept art and visual design for the project. I shaped the project's visual identity with my drawings and provided artistic direction.",
         "gloveffectDescriptionAhmetEmir": "FPS-Shooter game that started as a semester project and was developed into a playable prototype.",
         "lunscaleDescriptionAhmetEmir": "Worked as Game Designer.",
-        "diruhDescriptionAhmetEmir": "Worked as Unity Developer & Game Designer.",
+        "diruhDescriptionAhmetEmir": "Worked as Game Designer.",
         "miniverseDescription": "A project that started as a school project and was later developed by entering bugLabTekmer pre-incubation.",
         "neptuneDescription": "An international company that started as a startup. They gamify music education for children on mobile devices. Using AI, they score and provide recommendations based on how children use instruments. After its establishment, it participated in Fraunhofer HHI tech startup program in Germany.",
-        "magnesianDescription": "An Action-Platformer developed by 5 people. A game that combines 2D and 3D staging and gameplay, where we witness and pass through different worlds throughout its story. Steam page was opened after OGEM support program."
+        "magnesianDescription": "An Action-Platformer developed by 5 people. A game that combines 2D and 3D staging and gameplay, where we witness and pass through different worlds throughout its story. Steam page was opened after OGEM support program.",
+        "ballooseDescription": "A game developed as a Game Jam project.",
+        "gallooopDescription": "A game developed as a Game Jam project.",
+        "durihDescriptionSelim": "Worked as Game Developer.",
+        "durihDescriptionEmir": "Worked as Level Designer.",
+        "lunscaleDescriptionFurkan": "Worked as Unity Game Developer."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -1061,10 +1073,15 @@
         "lunscaleDescription": "An Konzeptkunst und visuellem Design für das Projekt gearbeitet. Ich prägte die visuelle Identität des Projekts mit meinen Zeichnungen und gab künstlerische Richtungen vor.",
         "gloveffectDescriptionAhmetEmir": "FPS-Shooter-Spiel, das als Semesterprojekt begann und zu einem spielbaren Prototyp entwickelt wurde.",
         "lunscaleDescriptionAhmetEmir": "Als Spieledesigner gearbeitet.",
-        "diruhDescriptionAhmetEmir": "Als Unity Entwickler & Spieledesigner gearbeitet.",
+        "diruhDescriptionAhmetEmir": "Als Spieledesigner gearbeitet.",
         "miniverseDescription": "Ein Projekt, das als Schulprojekt begann und später durch den Eintritt in die bugLabTekmer Vor-Inkubation entwickelt wurde.",
         "neptuneDescription": "Ein internationales Unternehmen, das als Startup begann. Sie gamifizieren die Musikerziehung für Kinder auf mobilen Geräten. Mit KI bewerten sie und geben Empfehlungen basierend auf der Art und Weise, wie Kinder Instrumente verwenden. Nach seiner Gründung nahm es am Fraunhofer HHI Tech-Startup-Programm in Deutschland teil.",
-        "magnesianDescription": "Ein Action-Platformer, der von 5 Personen entwickelt wurde. Ein Spiel, das 2D- und 3D-Inszenierung und Gameplay kombiniert, in dem wir während seiner Geschichte verschiedene Welten erleben und durchqueren. Steam-Seite wurde nach dem OGEM-Unterstützungsprogramm eröffnet."
+        "magnesianDescription": "Ein Action-Platformer, der von 5 Personen entwickelt wurde. Ein Spiel, das 2D- und 3D-Inszenierung und Gameplay kombiniert, in dem wir während seiner Geschichte verschiedene Welten erleben und durchqueren. Steam-Seite wurde nach dem OGEM-Unterstützungsprogramm eröffnet.",
+        "ballooseDescription": "Ein als Game Jam-Projekt entwickeltes Spiel.",
+        "gallooopDescription": "Ein als Game Jam-Projekt entwickeltes Spiel.",
+        "durihDescriptionSelim": "Als Spieleentwickler gearbeitet.",
+        "durihDescriptionEmir": "Als Level-Designer gearbeitet.",
+        "lunscaleDescriptionFurkan": "Als Unity Spieleentwickler gearbeitet."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -1488,10 +1505,15 @@
         "lunscaleDescription": "Travail sur l'art conceptuel et le design visuel pour le projet. J'ai façonné l'identité visuelle du projet avec mes dessins et fourni des directions artistiques.",
         "gloveffectDescriptionAhmetEmir": "Jeu FPS-Shooter qui a commencé comme projet de semestre et a été développé en prototype jouable.",
         "lunscaleDescriptionAhmetEmir": "Travail en tant que Concepteur de Jeux.",
-        "diruhDescriptionAhmetEmir": "Travail en tant que Développeur Unity & Concepteur de Jeux.",
+        "diruhDescriptionAhmetEmir": "Travail en tant que Concepteur de Jeux.",
         "miniverseDescription": "Un projet qui a commencé comme projet scolaire et a été développé plus tard en entrant dans la pré-incubation bugLabTekmer.",
         "neptuneDescription": "Une entreprise internationale qui a commencé comme startup. Ils gamifient l'éducation musicale pour les enfants sur les appareils mobiles. En utilisant l'IA, ils notent et fournissent des recommandations basées sur la façon dont les enfants utilisent les instruments. Après sa création, elle a participé au programme tech startup Fraunhofer HHI en Allemagne.",
-        "magnesianDescription": "Un Action-Platformer développé par 5 personnes. Un jeu qui combine la mise en scène 2D et 3D et le gameplay, où nous témoignons et traversons différents mondes tout au long de son histoire. La page Steam a été ouverte après le programme de soutien OGEM."
+        "magnesianDescription": "Un Action-Platformer développé par 5 personnes. Un jeu qui combine la mise en scène 2D et 3D et le gameplay, où nous témoignons et traversons différents mondes tout au long de son histoire. La page Steam a été ouverte après le programme de soutien OGEM.",
+        "ballooseDescription": "Un jeu développé comme projet Game Jam.",
+        "gallooopDescription": "Un jeu développé comme projet Game Jam.",
+        "durihDescriptionSelim": "Travail en tant que Développeur de Jeux.",
+        "durihDescriptionEmir": "Travail en tant que Concepteur de Niveaux.",
+        "lunscaleDescriptionFurkan": "Travail en tant que Développeur de Jeux Unity."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -1915,10 +1937,15 @@
         "lunscaleDescription": "Trabajé en arte conceptual y diseño visual para el proyecto. Di forma a la identidad visual del proyecto con mis dibujos y proporcioné direcciones artísticas.",
         "gloveffectDescriptionAhmetEmir": "Juego FPS-Shooter que comenzó como proyecto de semestre y fue desarrollado en un prototipo jugable.",
         "lunscaleDescriptionAhmetEmir": "Trabajé como Diseñador de Juegos.",
-        "diruhDescriptionAhmetEmir": "Trabajé como Desarrollador Unity & Diseñador de Juegos.",
+        "diruhDescriptionAhmetEmir": "Trabajé como Diseñador de Juegos.",
         "miniverseDescription": "Un proyecto que comenzó como proyecto escolar y fue desarrollado posteriormente al entrar en la pre-incubación bugLabTekmer.",
         "neptuneDescription": "Una empresa internacional que comenzó como startup. Gamifican la educación musical para niños en dispositivos móviles. Usando IA, califican y brindan recomendaciones basadas en cómo los niños usan los instrumentos. Después de su establecimiento, participó en el programa tech startup Fraunhofer HHI en Alemania.",
-        "magnesianDescription": "Un Action-Platformer desarrollado por 5 personas. Un juego que combina escenografía 2D y 3D y gameplay, donde presenciamos y atravesamos diferentes mundos a lo largo de su historia. La página de Steam se abrió después del programa de apoyo OGEM."
+        "magnesianDescription": "Un Action-Platformer desarrollado por 5 personas. Un juego que combina escenografía 2D y 3D y gameplay, donde presenciamos y atravesamos diferentes mundos a lo largo de su historia. La página de Steam se abrió después del programa de apoyo OGEM.",
+        "ballooseDescription": "Un juego desarrollado como proyecto Game Jam.",
+        "gallooopDescription": "Un juego desarrollado como proyecto Game Jam.",
+        "durihDescriptionSelim": "Trabajé como Desarrollador de Juegos.",
+        "durihDescriptionEmir": "Trabajé como Diseñador de Niveles.",
+        "lunscaleDescriptionFurkan": "Trabajé como Desarrollador de Juegos Unity."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -2343,10 +2370,15 @@
         "lunscaleDescription": "プロジェクトのコンセプトアートと視覚デザインに取り組みました。私の絵でプロジェクトの視覚的アイデンティティを形作り、芸術的な方向性を提供しました。",
         "gloveffectDescriptionAhmetEmir": "学期プロジェクトとして始まり、遊べるプロトタイプに開発されたFPSシューターゲーム。",
         "lunscaleDescriptionAhmetEmir": "ゲームデザイナーとして働きました。",
-        "diruhDescriptionAhmetEmir": "Unity開発者＆ゲームデザイナーとして働きました。",
+        "diruhDescriptionAhmetEmir": "ゲームデザイナーとして働きました。",
         "miniverseDescription": "学校プロジェクトとして始まり、その後bugLabTekmer前インキュベーションに入って開発されたプロジェクト。",
         "neptuneDescription": "スタートアップとして始まった国際的な企業。モバイルデバイスで子供向けの音楽教育をゲーミフィケーションしています。AIを使用して、子供が楽器を使用する方法に基づいてスコアリングと推奨を提供します。設立後、ドイツのFraunhofer HHIテックスタートアッププログラムに参加しました。",
-        "magnesianDescription": "5人で開発したアクションプラットフォーマー。2Dと3Dのステージングとゲームプレイを組み合わせたゲームで、ストーリーを通じて異なる世界を目撃し、通過します。OGEMサポートプログラム後にSteamページが開設されました。"
+        "magnesianDescription": "5人で開発したアクションプラットフォーマー。2Dと3Dのステージングとゲームプレイを組み合わせたゲームで、ストーリーを通じて異なる世界を目撃し、通過します。OGEMサポートプログラム後にSteamページが開設されました。",
+        "ballooseDescription": "Game Jamプロジェクトとして開発されたゲーム。",
+        "gallooopDescription": "Game Jamプロジェクトとして開発されたゲーム。",
+        "durihDescriptionSelim": "ゲーム開発者として働きました。",
+        "durihDescriptionEmir": "レベルデザイナーとして働きました。",
+        "lunscaleDescriptionFurkan": "Unityゲーム開発者として働きました。"
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -2770,10 +2802,15 @@
         "lunscaleDescription": "为项目从事概念艺术和视觉设计工作。我用我的绘画塑造了项目的视觉身份，并提供了艺术方向。",
         "gloveffectDescriptionAhmetEmir": "从学期项目开始开发的FPS射击游戏，已开发成可玩原型。",
         "lunscaleDescriptionAhmetEmir": "作为游戏设计师工作。",
-        "diruhDescriptionAhmetEmir": "作为Unity开发者和游戏设计师工作。",
+        "diruhDescriptionAhmetEmir": "作为游戏设计师工作。",
         "miniverseDescription": "一个作为学校项目开始的项目，后来通过进入bugLabTekmer预孵化进行开发。",
         "neptuneDescription": "一家作为初创公司开始的国际公司。他们在移动设备上为儿童游戏化音乐教育。使用AI，他们根据儿童使用乐器的方式评分并提供建议。成立后，它参加了德国的Fraunhofer HHI科技初创计划。",
-        "magnesianDescription": "由5人开发的动作平台游戏。一个将2D和3D场景和游戏玩法结合在一起的游戏，我们在整个故事中见证并穿越不同的世界。在OGEM支持计划后开设了Steam页面。"
+        "magnesianDescription": "由5人开发的动作平台游戏。一个将2D和3D场景和游戏玩法结合在一起的游戏，我们在整个故事中见证并穿越不同的世界。在OGEM支持计划后开设了Steam页面。",
+        "ballooseDescription": "作为Game Jam项目开发的游戏。",
+        "gallooopDescription": "作为Game Jam项目开发的游戏。",
+        "durihDescriptionSelim": "作为游戏开发者工作。",
+        "durihDescriptionEmir": "作为关卡设计师工作。",
+        "lunscaleDescriptionFurkan": "作为Unity游戏开发者工作。"
       },
       "periods": {
         "2019-2024": "2019-2024",

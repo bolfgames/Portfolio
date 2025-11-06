@@ -7,9 +7,9 @@
     "artstation": "artstation.com/twilightistaken"
   },
   "education": {
-    "degree": "Bachelor of Digital Game Design",
-    "university": "İstanbul Bilgi University",
-    "faculty": "Faculty of Communication",
+    "degree": "Dijital Oyun Tasarımı Lisansı",
+    "university": "İstanbul Bilgi Üniversitesi",
+    "faculty": "İletişim Fakültesi",
     "period": "2020-2025",
     "location": "Istanbul, Türkiye"
   },
@@ -58,6 +58,13 @@
             "Level Design",
             "TPS gameplay mechanics",
             "Environment design"
+          ]
+        },
+        {
+          "name": "Diruh",
+          "description": "Seviye Tasarımcısı olarak görev aldım.",
+          "features": [
+            "Level Design"
           ]
         }
       ]
@@ -127,6 +134,21 @@
         "Level Design",
         "TPS gameplay mechanics",
         "Environment design"
+      ],
+      "landscapeScale": 1.86,
+      "portraitScale": 1
+    },
+    {
+      "name": "Durih",
+      "images": [
+        "durih_1.jpg",
+        "durih_2.png",
+        "durih_3.png",
+        "durih_4.png",
+        "durih_5.png"
+      ],
+      "features": [
+        "Level Design"
       ],
       "landscapeScale": 1.86,
       "portraitScale": 1

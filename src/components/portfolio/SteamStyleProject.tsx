@@ -130,6 +130,10 @@ export default function SteamStyleProject({ project, accentColor = '#2ECC71', im
       'Miniverse': 'portfolio.projectNames.miniverse',
       'Neptune': 'portfolio.projectNames.neptune',
       'Magnesian': 'portfolio.projectNames.magnesian',
+      'Durih': 'portfolio.projectNames.durih',
+      'Lunscale': 'portfolio.projectNames.lunscale',
+      'Balloose': 'portfolio.projectNames.balloose',
+      'Gallooop': 'portfolio.projectNames.gallooop',
     };
     
     const key = nameMap[name];

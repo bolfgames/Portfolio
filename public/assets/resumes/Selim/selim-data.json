@@ -64,6 +64,20 @@
           ]
         }
       ]
+    },
+    {
+      "company": "BOLF Games",
+      "position": "Game Developer",
+      "period": "",
+      "projects": [
+        {
+          "name": "Durih",
+          "description": "Game Developer olarak görev aldım.",
+          "features": [
+            "Unity Geliştirme"
+          ]
+        }
+      ]
     }
   ],
   "skills": [
@@ -120,6 +134,19 @@
         "Sound ve Audio sistemlerinin inşası",
         "Unity Editor kodlaması ile takım arkadaşları için yaratılan tools",
         "Inventory Sistemi"
+      ]
+    },
+    {
+      "name": "Durih",
+      "images": [
+        "Durih/durih_1.jpg",
+        "Durih/durih_2.png",
+        "Durih/durih_3.png",
+        "Durih/durih_4.png",
+        "Durih/durih_5.png"
+      ],
+      "features": [
+        "Unity Geliştirme"
       ]
     }
   ]

@@ -7,9 +7,9 @@
     "linkedin": "linkedin.com/in/furkangunduz60"
   },
   "education": {
-    "degree": "Bachelor of Digital Game Design",
-    "university": "İstanbul Bilgi University",
-    "faculty": "Faculty of Communication",
+    "degree": "Dijital Oyun Tasarımı Lisansı",
+    "university": "İstanbul Bilgi Üniversitesi",
+    "faculty": "İletişim Fakültesi",
     "period": "2019-2024",
     "location": "Istanbul, Türkiye"
   },
@@ -30,6 +30,13 @@
           ],
           "link": "Google Play Store",
           "linkUrl": "https://play.google.com/store/apps/details?id=com.BOLFGames.Birdie"
+        },
+        {
+          "name": "Lunscale",
+          "description": "Unity Game Developer olarak görev aldım.",
+          "features": [
+            "Unity Geliştirme"
+          ]
         }
       ]
     },
@@ -119,6 +126,15 @@
           ],
           "link": "Google Play Store",
           "linkUrl": "https://play.google.com/store/apps/details?id=com.BOLFGames.Birdie",
+          "landscapeScale": 1.86,
+          "portraitScale": 1
+        },
+        {
+          "name": "Lunscale",
+          "image": "lundscale_1.jpg",
+          "features": [
+            "Unity Geliştirme"
+          ],
           "landscapeScale": 1.86,
           "portraitScale": 1
         },

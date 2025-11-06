@@ -16,6 +16,23 @@
   },
   "experience": [
     {
+      "company": "Mezuniyet Projesi",
+      "position": "Unity Developer & Game Designer",
+      "period": "2024-2025",
+      "projects": [
+        {
+          "name": "Black Spot",
+          "description": "Level Design and Game Design project",
+          "features": [
+            "Unity Geliştirme",
+            "Oyun Tasarımı"
+          ],
+          "link": "Fragman",
+          "linkUrl": "https://youtu.be/39ljbqiGe-A"
+        }
+      ]
+    },
+    {
       "company": "BOLF Games",
       "position": "Unity Developer & Game Designer",
       "period": "Ekim 2023 – Günümüz",
@@ -40,9 +57,8 @@
         },
         {
           "name": "Diruh",
-          "description": "Unity Developer & Game Designer olarak görev aldım.",
+          "description": "Oyun Tasarımcısı olarak görev aldım.",
           "features": [
-            "Unity Geliştirme",
             "Oyun Tasarımı"
           ]
         }
@@ -95,6 +111,60 @@
       "link": "Oynanış Fragmanı",
       "linkUrl": "https://youtu.be/j-8xLWhAXwU",
       "videoUrl": "https://youtu.be/j-8xLWhAXwU"
+    },
+    {
+      "name": "Durih",
+      "images": [
+        "Durih/durih_1.jpg",
+        "Durih/durih_2.png",
+        "Durih/durih_3.png",
+        "Durih/durih_4.png",
+        "Durih/durih_5.png"
+      ],
+      "features": [
+        "Oyun Tasarımı"
+      ]
+    },
+    {
+      "name": "Lunscale",
+      "images": [
+        "Lunscale/lundscale_1.jpg",
+        "Lunscale/lundscale_2.jpg",
+        "Lunscale/lundscale_3.jpg",
+        "Lunscale/lundscale_4.jpg"
+      ],
+      "features": [
+        "Oyun Tasarımı"
+      ]
+    },
+    {
+      "name": "Balloose",
+      "images": [
+        "Balloose/Ekran görüntüsü 2024-12-21 100022.png",
+        "Balloose/Ekran görüntüsü 2024-12-21 101456.png",
+        "Balloose/Ekran görüntüsü 2024-12-21 203613.png",
+        "Balloose/Ekran görüntüsü 2024-12-22 132153.png",
+        "Balloose/Ekran görüntüsü 2024-12-22 132232.png",
+        "Balloose/Ekran görüntüsü 2024-12-22 132244.png",
+        "Balloose/Ekran görüntüsü 2024-12-22 132525.png",
+        "Balloose/Ekran görüntüsü 2024-12-22 132726.png"
+      ],
+      "features": [
+        "Oyun Tasarımı"
+      ]
+    },
+    {
+      "name": "Gallooop",
+      "images": [
+        "Gallooop/1.jpg",
+        "Gallooop/2.jpg",
+        "Gallooop/3.jpg",
+        "Gallooop/4.jpg",
+        "Gallooop/5.jpg"
+      ],
+      "features": [
+        "Oyun Tasarımı"
+      ]
     }
   ]
 }
