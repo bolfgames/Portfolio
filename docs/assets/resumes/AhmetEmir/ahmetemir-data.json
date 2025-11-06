@@ -1,0 +1,101 @@
+{
+  "contact": {
+    "email": "ahmetemirozde@gmail.com",
+    "phone": "",
+    "location": "Istanbul, Türkiye",
+    "github": "Fernle",
+    "linkedin": "ahmet-emir-özdemir",
+    "website": "https://fernle.github.io/FernleTheWebsite/index.html"
+  },
+  "education": {
+    "degree": "Dijital Oyun Tasarımı Lisansı",
+    "university": "İstanbul Bilgi Üniversitesi",
+    "faculty": "İletişim Fakültesi",
+    "period": "2020-2025",
+    "location": "Istanbul, Türkiye"
+  },
+  "experience": [
+    {
+      "company": "BOLF Games",
+      "position": "Unity Developer & Game Designer",
+      "period": "Ekim 2023 – Günümüz",
+      "projects": [
+        {
+          "name": "Gloveffect",
+          "description": "Yarıyıl projesi olarak başlayan FPS-Shooter oyunu, oynanabilir bir prototip haline getirildi.",
+          "features": [
+            "Unity Geliştirme",
+            "Oyun Tasarımı",
+            "C# Programlama"
+          ],
+          "link": "Oynanış Fragmanı",
+          "linkUrl": "https://youtu.be/j-8xLWhAXwU"
+        },
+        {
+          "name": "Lunscale",
+          "description": "Oyun Tasarımcısı olarak görev aldım.",
+          "features": [
+            "Oyun Tasarımı"
+          ]
+        },
+        {
+          "name": "Diruh",
+          "description": "Unity Developer & Game Designer olarak görev aldım.",
+          "features": [
+            "Unity Geliştirme",
+            "Oyun Tasarımı"
+          ]
+        }
+      ]
+    }
+  ],
+  "skills": [
+    "Unity",
+    "C#",
+    "GitHub",
+    "Trello",
+    "Figma",
+    "JetBrains Rider"
+  ],
+  "projects": [
+    {
+      "name": "Black Spot",
+      "images": [
+        "BS_1.png",
+        "BS_2.png",
+        "BS_3.png",
+        "BS_4.png",
+        "BS_5.png",
+        "BS_6.png",
+        "BS_7.png",
+        "BS_8.png"
+      ],
+      "features": [
+        "Unity Geliştirme",
+        "Oyun Tasarımı"
+      ],
+      "link": "Fragman",
+      "linkUrl": "https://youtu.be/39ljbqiGe-A",
+      "videoUrl": "https://youtu.be/39ljbqiGe-A"
+    },
+    {
+      "name": "Gloveffect",
+      "images": [
+        "Gloveffect_1.jpg",
+        "Gloveffect_2.jpg",
+        "Gloveffect_3.jpg",
+        "Gloveffect_4.jpg",
+        "Gloveffect_5.jpg",
+        "Gloveffect_6.jpg"
+      ],
+      "features": [
+        "Unity Geliştirme",
+        "Oyun Tasarımı"
+      ],
+      "link": "Oynanış Fragmanı",
+      "linkUrl": "https://youtu.be/j-8xLWhAXwU",
+      "videoUrl": "https://youtu.be/j-8xLWhAXwU"
+    }
+  ]
+}
+

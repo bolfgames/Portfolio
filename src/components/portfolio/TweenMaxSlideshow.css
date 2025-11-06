@@ -1,0 +1,156 @@
+/* TweenMax Slideshow Styles */
+.tweenmax-slideshow-wrapper {
+  max-width: 60em;
+  margin: 2em auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.tweenmax-slider-container {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, rgba(30, 30, 30, 0.95) 0%, rgba(20, 20, 20, 0.95) 100%);
+}
+
+.tweenmax-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  box-sizing: border-box;
+  will-change: transform, opacity;
+  opacity: 1;
+  visibility: visible;
+}
+
+.tweenmax-slide-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tweenmax-slide-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  will-change: transform, opacity;
+  opacity: 1;
+  visibility: visible;
+}
+
+.tweenmax-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.tweenmax-controls button {
+  pointer-events: all;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tweenmax-dots {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  text-align: center;
+  padding: 15px 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.tweenmax-dots button {
+  pointer-events: all;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Tablet */
+@media only screen and (max-width: 850px) and (min-width: 450px) {
+  .tweenmax-slideshow-wrapper {
+    max-width: 90%;
+  }
+
+  .tweenmax-slider-container {
+    min-height: 350px;
+    border-radius: 8px;
+  }
+
+  .tweenmax-slide {
+    padding: 1.5em;
+  }
+
+  .tweenmax-controls button {
+    width: 45px;
+    height: 45px;
+  }
+
+  .tweenmax-controls {
+    padding: 0 15px;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 450px) {
+  .tweenmax-slideshow-wrapper {
+    max-width: 95%;
+    margin: 1em auto;
+  }
+
+  .tweenmax-slider-container {
+    min-height: 300px;
+    border-radius: 6px;
+  }
+
+  .tweenmax-slide {
+    padding: 1em;
+  }
+
+  .tweenmax-controls button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tweenmax-controls {
+    padding: 0 10px;
+  }
+
+  .tweenmax-dots {
+    bottom: 15px;
+    padding: 10px 0;
+  }
+
+  .tweenmax-dots button {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+  }
+}
+

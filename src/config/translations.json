@@ -137,7 +137,8 @@
         "unityGameDeveloper": "Unity Oyun Geliştirici",
         "freelance": "Serbest Çalışan",
         "levelDesigner": "Seviye Tasarımcısı",
-        "2dDesigner": "2D Tasarımcı"
+        "2dDesigner": "2D Tasarımcı",
+        "unityDeveloperGameDesigner": "Unity Developer & Game Designer"
       },
       "companies": {
         "bolfGames": "BOLF Games",
@@ -174,7 +175,10 @@
         "gloveffectDescription": "Okulda dönemlik bir proje olması amacıyla çıkılan yolda daha uzun süren bir geliştirme aşamasıyla oynanabilir bir prototip aşamasına kadar getirilen bir FPS-Shooter oyunu",
         "tpsShooterDescription": "Dönemlik dersimiz için geliştirdiğimiz TPS-Shooter oyunumuz",
         "durihDescription": "Oyun projesi için oyun karakterleri, konsept sanat çalışmaları ve kart tasarımları üzerinde çalıştım. Karakterlerin görsel kimliğini oluştururken, oyun mekaniklerine uygun tasarımlar geliştirdim ve kart tasarımlarında tutarlı bir görsel dil oluşturdum.",
-        "lunscaleDescription": "Proje için konsept sanat ve görsel tasarım alanlarında çalıştım. Çizimlerimle projenin görsel kimliğini şekillendirdim ve sanatsal yönlendirmelerde bulundum."
+        "lunscaleDescription": "Proje için konsept sanat ve görsel tasarım alanlarında çalıştım. Çizimlerimle projenin görsel kimliğini şekillendirdim ve sanatsal yönlendirmelerde bulundum.",
+        "gloveffectDescriptionAhmetEmir": "Yarıyıl projesi olarak başlayan FPS-Shooter oyunu, oynanabilir bir prototip haline getirildi.",
+        "lunscaleDescriptionAhmetEmir": "Oyun Tasarımcısı olarak görev aldım.",
+        "diruhDescriptionAhmetEmir": "Unity Developer & Game Designer olarak görev aldım."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -183,7 +187,8 @@
         "julySept2024": "Tem – Eyl 2024",
         "2022-2023": "2022-2023",
         "2020-2025": "2020-2025",
-        "current": "Devam Ediyor"
+        "current": "Devam Ediyor",
+        "oct2023Current": "Ekim 2023 – Günümüz"
       },
       "locations": {
         "ankaraTurkey": "Ankara, Türkiye",
@@ -282,7 +287,9 @@
         "karakterTasarimi": "Karakter Tasarımı",
         "konseptCizimi": "Konsept Çizimi",
         "kartTasarim": "Kart Tasarımı",
-        "gorselTasarim": "Görsel Tasarım"
+        "gorselTasarim": "Görsel Tasarım",
+        "unityDevelopment": "Unity Geliştirme",
+        "csharpProgramming": "C# Programlama"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -297,11 +304,17 @@
         "environmentDesign": "Çevre Tasarımı",
         "karakterTasarimi": "Karakter Tasarımı",
         "konseptTasarimi": "Konsept Tasarımı",
-        "2dCizim": "2D Çizim"
+        "2dCizim": "2D Çizim",
+        "unity": "Unity",
+        "github": "GitHub",
+        "trello": "Trello",
+        "figma": "Figma"
       },
       "links": {
         "googlePlayStore": "Google Play Store",
-        "appStoreGooglePlay": "App Store / Google Play Store"
+        "appStoreGooglePlay": "App Store / Google Play Store",
+        "trailer": "Fragman",
+        "gameplayTrailer": "Oynanış Fragmanı"
       },
       "experienceFeatures": {
         "implementedBoosters": "Güçlendirmeler (kalkan, boru boşluğu genişletici, sürekli koşu güçlendiricileri) satın alma ve kullanım sistemleriyle uygulandı",
@@ -537,7 +550,8 @@
         "unityGameDeveloper": "Unity Game Developer",
         "freelance": "Freelance",
         "levelDesigner": "Level Designer",
-        "2dDesigner": "2D Designer"
+        "2dDesigner": "2D Designer",
+        "unityDeveloperGameDesigner": "Unity Developer & Game Designer"
       },
       "companies": {
         "bolfGames": "BOLF Games",
@@ -574,7 +588,10 @@
         "gloveffectDescription": "FPS-Shooter game developed from a semester project to a playable prototype",
         "tpsShooterDescription": "TPS-Shooter game developed for academic course",
         "durihDescription": "Worked on game characters, concept art, and card designs for the game project. While creating the visual identity of characters, I developed designs compatible with game mechanics and established a consistent visual language in card designs.",
-        "lunscaleDescription": "Worked on concept art and visual design for the project. I shaped the project's visual identity with my drawings and provided artistic direction."
+        "lunscaleDescription": "Worked on concept art and visual design for the project. I shaped the project's visual identity with my drawings and provided artistic direction.",
+        "gloveffectDescriptionAhmetEmir": "FPS-Shooter game that started as a semester project and was developed into a playable prototype.",
+        "lunscaleDescriptionAhmetEmir": "Worked as Game Designer.",
+        "diruhDescriptionAhmetEmir": "Worked as Unity Developer & Game Designer."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -583,7 +600,8 @@
         "julySept2024": "July – Sept 2024",
         "2022-2023": "2022-2023",
         "2020-2025": "2020-2025",
-        "current": "Current"
+        "current": "Current",
+        "oct2023Current": "Oct 2023 – Current"
       },
       "locations": {
         "ankaraTurkey": "Ankara, Turkey",
@@ -682,7 +700,9 @@
         "karakterTasarimi": "Character Design",
         "konseptCizimi": "Concept Drawing",
         "kartTasarim": "Card Design",
-        "gorselTasarim": "Visual Design"
+        "gorselTasarim": "Visual Design",
+        "unityDevelopment": "Unity Development",
+        "csharpProgramming": "C# Programming"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -939,7 +959,8 @@
         "unityGameDeveloper": "Unity Spielentwickler",
         "freelance": "Freiberuflich",
         "levelDesigner": "Level-Designer",
-        "2dDesigner": "2D-Designer"
+        "2dDesigner": "2D-Designer",
+        "unityDeveloperGameDesigner": "Unity Entwickler & Spieledesigner"
       },
       "companies": {
         "bolfGames": "BOLF Games",
@@ -976,7 +997,10 @@
         "gloveffectDescription": "FPS-Shooter-Spiel, das von einem Semesterprojekt zu einem spielbaren Prototyp entwickelt wurde",
         "tpsShooterDescription": "TPS-Shooter-Spiel, das für einen akademischen Kurs entwickelt wurde",
         "durihDescription": "An Spielcharakteren, Konzeptkunst und Kartendesigns für das Spielprojekt gearbeitet. Bei der Erstellung der visuellen Identität der Charaktere entwickelte ich designs, die mit den Spielmechaniken kompatibel sind, und etablierte eine konsistente visuelle Sprache in den Kartendesigns.",
-        "lunscaleDescription": "An Konzeptkunst und visuellem Design für das Projekt gearbeitet. Ich prägte die visuelle Identität des Projekts mit meinen Zeichnungen und gab künstlerische Richtungen vor."
+        "lunscaleDescription": "An Konzeptkunst und visuellem Design für das Projekt gearbeitet. Ich prägte die visuelle Identität des Projekts mit meinen Zeichnungen und gab künstlerische Richtungen vor.",
+        "gloveffectDescriptionAhmetEmir": "FPS-Shooter-Spiel, das als Semesterprojekt begann und zu einem spielbaren Prototyp entwickelt wurde.",
+        "lunscaleDescriptionAhmetEmir": "Als Spieledesigner gearbeitet.",
+        "diruhDescriptionAhmetEmir": "Als Unity Entwickler & Spieledesigner gearbeitet."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -985,7 +1009,8 @@
         "julySept2024": "Jul – Sep 2024",
         "2022-2023": "2022-2023",
         "2020-2025": "2020-2025",
-        "current": "Laufend"
+        "current": "Laufend",
+        "oct2023Current": "Okt 2023 – Laufend"
       },
       "locations": {
         "ankaraTurkey": "Ankara, Türkei",
@@ -1081,7 +1106,9 @@
         "karakterTasarimi": "Charakterdesign",
         "konseptCizimi": "Konzeptzeichnung",
         "kartTasarim": "Kartendesign",
-        "gorselTasarim": "Visuelles Design"
+        "gorselTasarim": "Visuelles Design",
+        "unityDevelopment": "Unity Entwicklung",
+        "csharpProgramming": "C# Programmierung"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -1338,7 +1365,8 @@
         "unityGameDeveloper": "Développeur de Jeux Unity",
         "freelance": "Freelance",
         "levelDesigner": "Concepteur de Niveaux",
-        "2dDesigner": "Designer 2D"
+        "2dDesigner": "Designer 2D",
+        "unityDeveloperGameDesigner": "Développeur Unity & Concepteur de Jeux"
       },
       "companies": {
         "bolfGames": "BOLF Games",
@@ -1375,7 +1403,10 @@
         "gloveffectDescription": "Jeu FPS-Shooter développé d'un projet de semestre à un prototype jouable",
         "tpsShooterDescription": "Jeu TPS-Shooter développé pour un cours académique",
         "durihDescription": "Travail sur les personnages de jeu, l'art conceptuel et les designs de cartes pour le projet de jeu. Lors de la création de l'identité visuelle des personnages, j'ai développé des designs compatibles avec les mécaniques de jeu et établi un langage visuel cohérent dans les designs de cartes.",
-        "lunscaleDescription": "Travail sur l'art conceptuel et le design visuel pour le projet. J'ai façonné l'identité visuelle du projet avec mes dessins et fourni des directions artistiques."
+        "lunscaleDescription": "Travail sur l'art conceptuel et le design visuel pour le projet. J'ai façonné l'identité visuelle du projet avec mes dessins et fourni des directions artistiques.",
+        "gloveffectDescriptionAhmetEmir": "Jeu FPS-Shooter qui a commencé comme projet de semestre et a été développé en prototype jouable.",
+        "lunscaleDescriptionAhmetEmir": "Travail en tant que Concepteur de Jeux.",
+        "diruhDescriptionAhmetEmir": "Travail en tant que Développeur Unity & Concepteur de Jeux."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -1384,7 +1415,8 @@
         "julySept2024": "Juil – Sep 2024",
         "2022-2023": "2022-2023",
         "2020-2025": "2020-2025",
-        "current": "En cours"
+        "current": "En cours",
+        "oct2023Current": "Oct 2023 – En cours"
       },
       "locations": {
         "ankaraTurkey": "Ankara, Turquie",
@@ -1480,7 +1512,9 @@
         "karakterTasarimi": "Design de Personnages",
         "konseptCizimi": "Dessin Conceptuel",
         "kartTasarim": "Design de Cartes",
-        "gorselTasarim": "Design Visuel"
+        "gorselTasarim": "Design Visuel",
+        "unityDevelopment": "Développement Unity",
+        "csharpProgramming": "Programmation C#"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -1737,7 +1771,8 @@
         "unityGameDeveloper": "Desarrollador de Juegos Unity",
         "freelance": "Freelance",
         "levelDesigner": "Diseñador de Niveles",
-        "2dDesigner": "Diseñador 2D"
+        "2dDesigner": "Diseñador 2D",
+        "unityDeveloperGameDesigner": "Desarrollador Unity & Diseñador de Juegos"
       },
       "companies": {
         "bolfGames": "BOLF Games",
@@ -1774,7 +1809,10 @@
         "gloveffectDescription": "Juego FPS-Shooter desarrollado de un proyecto de semestre a un prototipo jugable",
         "tpsShooterDescription": "Juego TPS-Shooter desarrollado para curso académico",
         "durihDescription": "Trabajé en personajes de juego, arte conceptual y diseños de cartas para el proyecto del juego. Al crear la identidad visual de los personajes, desarrollé diseños compatibles con las mecánicas del juego y establecí un lenguaje visual consistente en los diseños de cartas.",
-        "lunscaleDescription": "Trabajé en arte conceptual y diseño visual para el proyecto. Di forma a la identidad visual del proyecto con mis dibujos y proporcioné direcciones artísticas."
+        "lunscaleDescription": "Trabajé en arte conceptual y diseño visual para el proyecto. Di forma a la identidad visual del proyecto con mis dibujos y proporcioné direcciones artísticas.",
+        "gloveffectDescriptionAhmetEmir": "Juego FPS-Shooter que comenzó como proyecto de semestre y fue desarrollado en un prototipo jugable.",
+        "lunscaleDescriptionAhmetEmir": "Trabajé como Diseñador de Juegos.",
+        "diruhDescriptionAhmetEmir": "Trabajé como Desarrollador Unity & Diseñador de Juegos."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -1783,7 +1821,8 @@
         "julySept2024": "Jul – Sep 2024",
         "2022-2023": "2022-2023",
         "2020-2025": "2020-2025",
-        "current": "Actual"
+        "current": "Actual",
+        "oct2023Current": "Oct 2023 – Actual"
       },
       "locations": {
         "ankaraTurkey": "Ankara, Turquía",
@@ -1879,7 +1918,9 @@
         "karakterTasarimi": "Diseño de Personajes",
         "konseptCizimi": "Dibujo Conceptual",
         "kartTasarim": "Diseño de Cartas",
-        "gorselTasarim": "Diseño Visual"
+        "gorselTasarim": "Diseño Visual",
+        "unityDevelopment": "Desarrollo Unity",
+        "csharpProgramming": "Programación C#"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -2137,7 +2178,8 @@
         "unityGameDeveloper": "Unityゲーム開発者",
         "freelance": "フリーランス",
         "levelDesigner": "レベルデザイナー",
-        "2dDesigner": "2Dデザイナー"
+        "2dDesigner": "2Dデザイナー",
+        "unityDeveloperGameDesigner": "Unity開発者＆ゲームデザイナー"
       },
       "companies": {
         "bolfGames": "BOLF Games",
@@ -2174,7 +2216,10 @@
         "gloveffectDescription": "学期プロジェクトから遊べるプロトタイプまで開発されたFPSシューターゲーム",
         "tpsShooterDescription": "学術コース用に開発されたTPSシューターゲーム",
         "durihDescription": "ゲームプロジェクトのゲームキャラクター、コンセプトアート、カードデザインに取り組みました。キャラクターの視覚的アイデンティティを作成する際、ゲームメカニクスと互換性のあるデザインを開発し、カードデザインで一貫した視覚的言語を確立しました。",
-        "lunscaleDescription": "プロジェクトのコンセプトアートと視覚デザインに取り組みました。私の絵でプロジェクトの視覚的アイデンティティを形作り、芸術的な方向性を提供しました。"
+        "lunscaleDescription": "プロジェクトのコンセプトアートと視覚デザインに取り組みました。私の絵でプロジェクトの視覚的アイデンティティを形作り、芸術的な方向性を提供しました。",
+        "gloveffectDescriptionAhmetEmir": "学期プロジェクトとして始まり、遊べるプロトタイプに開発されたFPSシューターゲーム。",
+        "lunscaleDescriptionAhmetEmir": "ゲームデザイナーとして働きました。",
+        "diruhDescriptionAhmetEmir": "Unity開発者＆ゲームデザイナーとして働きました。"
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -2183,7 +2228,8 @@
         "julySept2024": "2024年7月 – 9月",
         "2022-2023": "2022-2023",
         "2020-2025": "2020-2025",
-        "current": "進行中"
+        "current": "進行中",
+        "oct2023Current": "2023年10月 – 進行中"
       },
       "locations": {
         "ankaraTurkey": "アンカラ、トルコ",
@@ -2279,7 +2325,9 @@
         "karakterTasarimi": "キャラクターデザイン",
         "konseptCizimi": "コンセプトドローイング",
         "kartTasarim": "カードデザイン",
-        "gorselTasarim": "ビジュアルデザイン"
+        "gorselTasarim": "ビジュアルデザイン",
+        "unityDevelopment": "Unity開発",
+        "csharpProgramming": "C#プログラミング"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -2536,7 +2584,8 @@
         "unityGameDeveloper": "Unity游戏开发者",
         "freelance": "自由职业者",
         "levelDesigner": "关卡设计师",
-        "2dDesigner": "2D设计师"
+        "2dDesigner": "2D设计师",
+        "unityDeveloperGameDesigner": "Unity开发者和游戏设计师"
       },
       "companies": {
         "bolfGames": "BOLF Games",
@@ -2573,7 +2622,10 @@
         "gloveffectDescription": "从学期项目开发到可玩原型的FPS射击游戏",
         "tpsShooterDescription": "为学术课程开发的TPS射击游戏",
         "durihDescription": "为游戏项目从事游戏角色、概念艺术和卡片设计工作。在创建角色的视觉身份时，我开发了与游戏机制兼容的设计，并在卡片设计中建立了统一的视觉语言。",
-        "lunscaleDescription": "为项目从事概念艺术和视觉设计工作。我用我的绘画塑造了项目的视觉身份，并提供了艺术方向。"
+        "lunscaleDescription": "为项目从事概念艺术和视觉设计工作。我用我的绘画塑造了项目的视觉身份，并提供了艺术方向。",
+        "gloveffectDescriptionAhmetEmir": "从学期项目开始开发的FPS射击游戏，已开发成可玩原型。",
+        "lunscaleDescriptionAhmetEmir": "作为游戏设计师工作。",
+        "diruhDescriptionAhmetEmir": "作为Unity开发者和游戏设计师工作。"
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -2582,7 +2634,8 @@
         "julySept2024": "2024年7月 – 9月",
         "2022-2023": "2022-2023",
         "2020-2025": "2020-2025",
-        "current": "进行中"
+        "current": "进行中",
+        "oct2023Current": "2023年10月 – 进行中"
       },
       "locations": {
         "ankaraTurkey": "安卡拉，土耳其",
@@ -2678,7 +2731,9 @@
         "karakterTasarimi": "角色设计",
         "konseptCizimi": "概念绘画",
         "kartTasarim": "卡片设计",
-        "gorselTasarim": "视觉设计"
+        "gorselTasarim": "视觉设计",
+        "unityDevelopment": "Unity开发",
+        "csharpProgramming": "C#编程"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",

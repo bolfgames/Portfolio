@@ -28,6 +28,15 @@ export default function EducationSection({ education, accentColor }: EducationSe
         }
       } catch {}
     }
+    // Check if this is Ahmet Emir's or Emir's education
+    if (education.degree === 'Dijital Oyun Tasarımı Lisansı') {
+      try {
+        const translated = t('portfolio.educationData.degree');
+        if (translated && translated !== 'portfolio.educationData.degree') {
+          return translated;
+        }
+      } catch {}
+    }
     return education.degree;
   };
 
@@ -37,6 +46,15 @@ export default function EducationSection({ education, accentColor }: EducationSe
       try {
         const translated = t('portfolio.educationData.ataCemUniversity');
         if (translated && translated !== 'portfolio.educationData.ataCemUniversity') {
+          return translated;
+        }
+      } catch {}
+    }
+    // Check if this is Ahmet Emir's or Emir's education
+    if (education.university === 'İstanbul Bilgi Üniversitesi') {
+      try {
+        const translated = t('portfolio.educationData.university');
+        if (translated && translated !== 'portfolio.educationData.university') {
           return translated;
         }
       } catch {}
@@ -51,6 +69,15 @@ export default function EducationSection({ education, accentColor }: EducationSe
       try {
         const translated = t('portfolio.educationData.ataCemFaculty');
         if (translated && translated !== 'portfolio.educationData.ataCemFaculty') {
+          return translated;
+        }
+      } catch {}
+    }
+    // Check if this is Ahmet Emir's or Emir's education
+    if (education.faculty === 'İletişim Fakültesi') {
+      try {
+        const translated = t('portfolio.educationData.faculty');
+        if (translated && translated !== 'portfolio.educationData.faculty') {
           return translated;
         }
       } catch {}

@@ -78,6 +78,14 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
         }
       } catch {}
     }
+    if (position.includes('Unity Developer & Game Designer') || position === 'Unity Developer & Game Designer') {
+      try {
+        const translated = t('portfolio.positions.unityDeveloperGameDesigner');
+        if (translated && translated !== 'portfolio.positions.unityDeveloperGameDesigner') {
+          return translated;
+        }
+      } catch {}
+    }
     return position;
   };
 
@@ -89,8 +97,10 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
       'July – Sept 2024': 'portfolio.periods.julySept2024',
       '2022-2023': 'portfolio.periods.2022-2023',
       '2019-2024': 'portfolio.periods.2019-2024',
-      'Current': 'portfolio.periods.current',
-    };
+          'Oct 2023 – Current': 'portfolio.periods.oct2023Current',
+          'Ekim 2023 – Günümüz': 'portfolio.periods.oct2023Current',
+          'Current': 'portfolio.periods.current',
+        };
     
     const key = periodMap[period];
     if (key) {
@@ -143,10 +153,13 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
       'Developed various Unity games using C#, implementing diverse mechanics and gameplay systems': 'portfolio.projectDescriptions.developedVariousGames',
       'Level Design and Game Design project': 'portfolio.projectDescriptions.blackSpotDescription',
       'FPS-Shooter game developed from a semester project to a playable prototype': 'portfolio.projectDescriptions.gloveffectDescription',
-      'TPS-Shooter game developed for academic course': 'portfolio.projectDescriptions.tpsShooterDescription',
-      'Oyun projesi için oyun karakterleri, konsept sanat çalışmaları ve kart tasarımları üzerinde çalıştım. Karakterlerin görsel kimliğini oluştururken, oyun mekaniklerine uygun tasarımlar geliştirdim ve kart tasarımlarında tutarlı bir görsel dil oluşturdum.': 'portfolio.projectDescriptions.durihDescription',
-      'Proje için konsept sanat ve görsel tasarım alanlarında çalıştım. Çizimlerimle projenin görsel kimliğini şekillendirdim ve sanatsal yönlendirmelerde bulundum.': 'portfolio.projectDescriptions.lunscaleDescription',
-    };
+          'TPS-Shooter game developed for academic course': 'portfolio.projectDescriptions.tpsShooterDescription',
+          'Oyun projesi için oyun karakterleri, konsept sanat çalışmaları ve kart tasarımları üzerinde çalıştım. Karakterlerin görsel kimliğini oluştururken, oyun mekaniklerine uygun tasarımlar geliştirdim ve kart tasarımlarında tutarlı bir görsel dil oluşturdum.': 'portfolio.projectDescriptions.durihDescription',
+          'Proje için konsept sanat ve görsel tasarım alanlarında çalıştım. Çizimlerimle projenin görsel kimliğini şekillendirdim ve sanatsal yönlendirmelerde bulundum.': 'portfolio.projectDescriptions.lunscaleDescription',
+          'Yarıyıl projesi olarak başlayan FPS-Shooter oyunu, oynanabilir bir prototip haline getirildi.': 'portfolio.projectDescriptions.gloveffectDescriptionAhmetEmir',
+          'Oyun Tasarımcısı olarak görev aldım.': 'portfolio.projectDescriptions.lunscaleDescriptionAhmetEmir',
+          'Unity Developer & Game Designer olarak görev aldım.': 'portfolio.projectDescriptions.diruhDescriptionAhmetEmir',
+        };
     
     const key = descMap[description];
     if (key) {
@@ -193,6 +206,11 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
       'Konsept Çizimi': 'portfolio.projectFeatures.konseptCizimi',
       'Kart Tasarımı': 'portfolio.projectFeatures.kartTasarim',
       'Görsel Tasarım': 'portfolio.projectFeatures.gorselTasarim',
+      'Unity Development': 'portfolio.projectFeatures.unityDevelopment',
+      'Unity Geliştirme': 'portfolio.projectFeatures.unityDevelopment',
+      'C# Programming': 'portfolio.projectFeatures.csharpProgramming',
+      'C# Programlama': 'portfolio.projectFeatures.csharpProgramming',
+      'Oyun Tasarımı': 'portfolio.projectFeatures.gameDesign',
     };
     
     const key = featureMap[feature];
@@ -212,9 +230,11 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
     const linkMap: Record<string, string> = {
       'Google Play Store': 'portfolio.links.googlePlayStore',
       'App Store / Google Play Store': 'portfolio.links.appStoreGooglePlay',
-      'Trailer': 'portfolio.links.trailer',
-      'Gameplay Trailer': 'portfolio.links.gameplayTrailer',
-    };
+          'Trailer': 'portfolio.links.trailer',
+          'Fragman': 'portfolio.links.trailer',
+          'Gameplay Trailer': 'portfolio.links.gameplayTrailer',
+          'Oynanış Fragmanı': 'portfolio.links.gameplayTrailer',
+        };
     
     const key = linkMap[link];
     if (key) {
