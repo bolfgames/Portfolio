@@ -40,7 +40,7 @@ export function DefaultProjectCard({
       className={`bg-bolf-black border border-bolf-gray/20 rounded-lg overflow-hidden hover:border-bolf-neon-blue/30 transition-all duration-300 group cursor-pointer ${className}`}
     >
       {/* Project Image/Video */}
-      <div className="relative h-24 bg-gradient-to-br from-bolf-neon-blue/10 to-bolf-orange/10 overflow-hidden">
+      <div className="relative h-48 bg-gradient-to-br from-bolf-neon-blue/10 to-bolf-orange/10 overflow-hidden">
         {project.video && !isVideoPlaying ? (
           <div className="relative w-full h-full">
             <img

@@ -56,7 +56,7 @@ export function NFTProjectCard({
       `}</style>
 
       {/* Project Image/Video */}
-      <div className="relative w-full h-24 overflow-hidden">
+      <div className="relative w-full h-48 overflow-hidden">
         {project.video && !isVideoPlaying ? (
           <div className="relative w-full h-full">
             <img

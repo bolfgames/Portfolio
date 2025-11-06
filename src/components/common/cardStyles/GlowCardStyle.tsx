@@ -139,7 +139,7 @@ export function GlowProjectCard({
       `}</style>
 
             {/* Project Image/Video */}
-            <div className="relative h-24 bg-gradient-to-br from-bolf-neon-blue/10 to-bolf-orange/10 overflow-hidden">
+            <div className="relative h-48 bg-gradient-to-br from-bolf-neon-blue/10 to-bolf-orange/10 overflow-hidden">
         {project.video && !isVideoPlaying ? (
           <div className="relative w-full h-full">
             <img

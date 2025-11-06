@@ -50,12 +50,18 @@
         {
           "name": "Balloose",
           "description": "Görev alındı.",
-          "features": []
+          "features": [
+            "3D Modelleme",
+            "Sanat Yönetmenliği"
+          ]
         },
         {
           "name": "Gallooop",
           "description": "Görev alındı.",
-          "features": []
+          "features": [
+            "3D Modelleme",
+            "Sanat Yönetmenliği"
+          ]
         }
       ]
     }

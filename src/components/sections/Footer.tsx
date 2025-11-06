@@ -52,19 +52,39 @@ function Footer() {
 
     e.preventDefault();
     const appLink = getSocialLink(type, username);
-    const webLink = type === 'youtube' 
-      ? `https://www.youtube.com/@${username}`
-      : type === 'tiktok'
-      ? `https://www.tiktok.com/@${username}`
-      : `https://www.instagram.com/${username}`;
-
-    // Try to open app
-    window.location.href = appLink;
     
-    // Fallback to web if app doesn't open after a short delay
+    // Try to open app - use hidden iframe trick for better detection
+    const iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    iframe.src = appLink;
+    document.body.appendChild(iframe);
+    
+    // Remove iframe after attempt
     setTimeout(() => {
-      window.open(webLink, '_blank');
-    }, 500);
+      document.body.removeChild(iframe);
+    }, 1000);
+    
+    // Only open web if app doesn't open (user stays on page)
+    let appOpened = false;
+    const checkAppOpened = () => {
+      if (document.hidden || document.visibilityState === 'hidden') {
+        appOpened = true;
+      }
+    };
+    
+    document.addEventListener('visibilitychange', checkAppOpened);
+    
+    setTimeout(() => {
+      document.removeEventListener('visibilitychange', checkAppOpened);
+      if (!appOpened) {
+        const webLink = type === 'youtube' 
+          ? `https://www.youtube.com/@${username}`
+          : type === 'tiktok'
+          ? `https://www.tiktok.com/@${username}`
+          : `https://www.instagram.com/${username}`;
+        window.open(webLink, '_blank');
+      }
+    }, 1000);
   };
 
   return (
