@@ -86,6 +86,8 @@ export default function ResponsiveSlideshow({
 
   // Check if this is Durih project and slide 3, 4, or 5 (index 2, 3, 4)
   const isDurihVertical = projectName === 'Durih' && (currentSlide === 2 || currentSlide === 3 || currentSlide === 4);
+  // Check if this is DDs CMR project
+  const isDDsCMR = projectName === 'DDs CMR';
   
   // Calculate max-width based on project and slide
   const getMaxWidth = () => {
@@ -100,6 +102,18 @@ export default function ResponsiveSlideshow({
         return '200px'; // Tablet
       }
       return '250px'; // Desktop
+    }
+    if (isDDsCMR) {
+      // 0.75 scale (%75)
+      // Desktop: 500px -> 375px
+      // Tablet: 400px -> 300px
+      // Mobile: 300px -> 225px
+      if (window.innerWidth <= 450) {
+        return '225px'; // Mobile
+      } else if (window.innerWidth <= 850) {
+        return '300px'; // Tablet
+      }
+      return '375px'; // Desktop
     }
     // Normal size
     if (window.innerWidth <= 450) {
